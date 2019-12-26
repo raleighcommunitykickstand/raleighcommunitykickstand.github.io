@@ -1,0 +1,347 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+@font-face {
+	font-family: 'HWTArtz';
+	src:
+		local('HWTArtz'),
+		url('fonts/HWTArtz.ttf')
+		format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src:
+		local('Montserrat'),
+		url('fonts/Montserrat-Regular.ttf')
+		format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat-SemiBold';
+	src:
+		local('Montserrat-SemiBold'),
+		url('fonts/Montserrat-SemiBold.ttf')
+		format('truetype');
+}
+
+header {
+  padding: 56px 0 0;
+}
+
+section {
+  padding: 150px 0;
+}
+
+html {
+	font-family: "Montserrat-SemiBold";
+}
+
+body {
+	font-family: "Montserrat-SemiBold", "Segoe UI", Arial, sans-serif;
+}
+
+.container .navbar-brand {
+	color: #f7f573;
+}
+
+.container .nav-item .nav-link {
+	color: #f7f573;
+	font-family: "HWTArtz";
+}
+
+/* title card */
+.w3-display-middle .container h1 {
+	font-family: "HWTArtz";
+	font-size: 3rem;
+	color: #f7f573;
+}
+.w3-display-middle .container p {
+	font-family: "Montserrat";
+	font-size: 1rem;
+}
+
+.mySlides {
+  width: 100% !important;
+}
+
+.w3-display-container {
+	width: 100%;
+	min-height: 200px;
+	max-height: 500px;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* section headers */
+.container h2 {
+	font-family: "HWTArtz";
+	font-size: 2.5rem;
+}
+
+.container h3 {
+	font-family: "Montserrat-SemiBold";
+	font-size: 1.5rem;
+}
+
+.container h4 {
+	font-family: "Montserrat-SemiBold";
+	font-size: 1.25rem;
+}
+
+/*.tumblr-post {
+  overflow: hidden;
+  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.tumblr-post iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}*/
+
+.embeddable-posts {
+    width: 80% !important;
+    max-width: 80% !important;
+		background-color: #fcfbcf;
+    width: 100%;
+		font-family: Montserrat;
+}
+.tumblr-post .post-wrapper {
+    background-color: #fcfbcf;
+    width: 100%;
+}
+.tumblr-post body {
+    font-family: Montserrat;
+}
+
+.container p {
+	font-family: "Montserrat";
+	font-size: 1rem;
+}
+
+.container li {
+	font-family: "Montserrat";
+	font-size: 1rem;
+}
+
+.section-padding {
+	padding-top: 5rem !important;
+	padding-bottom: 5rem !important;
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
+}
+
+
+/* about section */
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #ef4036;
+}
+
+.contact-section .card h4 {
+  font-size: 1.2rem;
+	font-family: 'HWTArtz';
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.contact-section .card hr {
+  border-color: #ef4036;
+  border-width: 0.25rem;
+  width: 3rem;
+	text-align: center;
+	margin: auto;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+.card .card-body .small a {
+	font-family: "Montserrat";
+	text-decoration: underline;
+}
+
+/* footer */
+/*footer {
+	font-size: 1.2rem;
+	font-family: "HWTArtz", "Segoe UI";
+	letter-spacing: .05rem;
+}
+.py-3 .container .text-center {
+	font-size: 1.2rem;
+	font-family: "HWTArtz", "Segoe UI";
+	letter-spacing: .05rem;
+}*/
+
+/* font colors */
+.text-green {
+	color: #148378 !important;
+}
+
+.text-red {
+  color: #ef4036 !important;
+}
+
+.text-black {
+	color: black !important;
+}
+
+
+/* background colors */
+.bg-green {
+	background-color: #fefde7 !important;
+}
+
+.bg-primary {
+  background-color: #f9f89f !important;
+}
+
+.bg-light {
+  background-color: #fcfbcf !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #0062cc !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+a.bg-secondary:hover, a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #545b62 !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+a.bg-success:hover, a.bg-success:focus,
+button.bg-success:hover,
+button.bg-success:focus {
+  background-color: #1e7e34 !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+a.bg-info:hover, a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+  background-color: #117a8b !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+a.bg-warning:hover, a.bg-warning:focus,
+button.bg-warning:hover,
+button.bg-warning:focus {
+  background-color: #d39e00 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+a.bg-danger:hover, a.bg-danger:focus,
+button.bg-danger:hover,
+button.bg-danger:focus {
+  background-color: #bd2130 !important;
+}
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #1d2124 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+}
+
+/* tumblr */
+
+
+/* calendar */
+.responsiveCal {
+	margin: 0 auto
+	position: relative;
+	max-width: 480px;
+	width: 100%;
+	height: 146px;
+	overflow: hidden;
+}
+
+.responsiveCal iframe {
+	width: 100%;
+	height: 146px;
+}
