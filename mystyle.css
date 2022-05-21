@@ -66,12 +66,12 @@ body {
 /* title card */
 .w3-display-middle .container h1 {
 	font-family: "HWTArtz";
-	font-size: 3rem;
+	font-size: calc(1.5rem + 3vw);
 	color: #f7f573;
 }
 .w3-display-middle .container p {
 	font-family: "Montserrat";
-	font-size: 1rem;
+	font-size: calc(.5rem + 1vw);
 }
 
 .bannerImg {
@@ -336,6 +336,10 @@ button.bg-dark:focus {
 
 .bg-black {
   background-color: #161616 !important;
+}
+
+.bg-trueblack {
+  background-color: #000 !important;
 }
 
 /* tumblr */
