@@ -4,6 +4,16 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
+
+ /* colors
+ Yellow - f7f573
+ Blue - 148378 , 17a2b8
+ Orange - ef4036
+ dark - 161616
+ grey - 1d2124
+ white/grey - dae0e5
+  */
+
 @font-face {
 	font-family: 'HWTArtz';
 	src:
@@ -64,7 +74,7 @@ body {
 	font-size: 1rem;
 }
 
-.mySlides {
+.bannerImg {
   width: 100% !important;
 }
 
