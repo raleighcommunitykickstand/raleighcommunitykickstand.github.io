@@ -384,8 +384,8 @@ button.bg-dark:focus {
 
 .ticker-value {
   /* font-size: 120px; */
-  /* font-size: 8em; */
-  font-size: 10vw;
+  font-size: 8em;
+  /* font-size: 10vw; */
   letter-spacing: 0.1em;
   margin: -20px;
   padding: 0;
