@@ -383,13 +383,16 @@ button.bg-dark:focus {
 }
 
 .ticker-value {
-  font-size: 120px;
+  /* font-size: 120px; */
+  /* font-size: 8em; */
+  font-size: 10vw;
   letter-spacing: 0.1em;
   margin: -20px;
   padding: 0;
 }
 
 #ticker-container h3 {
+  /* font-size: 2vw; */
   font-family: "HWTArtz";
   color: #148378;
 }
