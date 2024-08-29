@@ -11,26 +11,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Perform an action
         tickerContainer.classList.add('visible');
-
         const counters = document.querySelectorAll('.ticker-value');
-        const speed = 500;
-
+        const speed = 100;
+        
         counters.forEach(counter => {
           const animate = () => {
             const value = +counter.getAttribute('targetValue');
             const data = +counter.innerText;
-
+        
             const time = value / speed;
             if (data < value) {
               counter.innerText = Math.ceil(data + time);
-              setTimeout(animate, 1);
+              requestAnimationFrame(animate);
             } else {
               counter.innerText = value;
             }
-          }
-
+          };
+        
           animate();
-        });
+        });        
 
         // Unobserve the element if the action should happen only once
         observer.unobserve(entry.target);

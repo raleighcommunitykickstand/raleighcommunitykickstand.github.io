@@ -389,10 +389,12 @@ button.bg-dark:focus {
   letter-spacing: 0.1em;
   margin: -20px;
   padding: 0;
+  color: #148378;
+
 }
 
 #ticker-container h3 {
   /* font-size: 2vw; */
   font-family: "HWTArtz";
-  color: #148378;
+  color: #000;
 }
