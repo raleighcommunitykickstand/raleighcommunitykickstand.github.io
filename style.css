@@ -364,15 +364,13 @@ button.bg-dark:focus {
 .responsiveCal {
   margin: 0 auto;
   position: relative;
-  max-width: 480px;
+  max-width: 640px;
   width: 100%;
-  height: 146px;
   overflow: hidden;
 }
 
 .responsiveCal iframe {
   width: 100%;
-  height: 146px;
 }
 
 /* ticker */
@@ -397,4 +395,20 @@ button.bg-dark:focus {
   /* font-size: 2vw; */
   font-family: "HWTArtz";
   color: #000;
+}
+
+.pp-9KY8WZKZXDZQU {
+  text-align: center;
+  border: none;
+  border-radius: 1.5rem;
+  min-width: 11.625rem;
+  padding: 0 2rem;
+  height: 2rem;
+  font-weight: bold;
+  background-color: #FFD140;
+  color: #000000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  cursor: pointer;
 }
