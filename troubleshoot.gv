@@ -1,0 +1,86 @@
+digraph G {
+    // global attributes
+    rankdir = TB;
+    // top to bottom layout
+    // splines=ortho; // orthogonal edges for clarity
+    nodesep = 0.7;
+    // increase space between nodes
+    ranksep = 1.2;
+    // increase vertical space between levels
+    
+    // create and label nodes
+    start [label = "So you're repairing a bike and ran into an issue...";shape = rectangle;style = filled;fillcolor = "#ffb428";];
+    help [label = "What do you need?";shape = diamond;style = filled;fillcolor = "#fbeab3";];
+    
+    advice [label = "Email mechanics listserv";style = filled;fillcolor = "#fbeab3";];
+    part [label = "Email mechanics listserv";style = filled;fillcolor = "#d9ed92";];
+    tool [label = "Email mechanics listserv";style = filled;fillcolor = "#cbf3f0";];
+    
+    advice_question [label = "Did they solve your problem?";shape = diamond;style = filled;fillcolor = "#fbeab3";];
+    part_question [label = "Did you find the\npart from another mechanic\nor the shop space?";shape = diamond;style = filled;fillcolor = "#d9ed92";];
+    tool_question [label = "Did you find the\ntool from another mechanic\nor the shop space?";shape = diamond;style = filled;fillcolor = "#cbf3f0";];
+    
+    consult [label = "Consult Adopt-A-Bike\ncoordinator. Does the oracle think\nthe bike is worth repairing?";shape = diamond;style = filled;fillcolor = "#d9ed92";];
+    purchase [label = "If approved, purchase part and\nsubmit expense form for reimbursement\nor an in-kind donation.";style = filled;fillcolor = "#d9ed92";];
+    
+    done [label = "Congrats, you should be good to go!";shape = rectangle;style = filled;fillcolor = "#ffb428";];
+    scrap [label = "Sadly, the bike is beyond our repair \ncapabilities and should be scrapped for parts!";shape = rectangle;style = filled;fillcolor = "#ffb428";];
+    
+    
+    // define ranks to align nodes
+    subgraph {
+        rank = same;
+        start;
+    }
+    subgraph {
+        rank = same;
+        help;
+    }
+    subgraph {
+        rank = same;
+        advice;
+        part;
+        tool;
+    }
+    subgraph {
+        rank = same;
+        advice_question;
+        part_question;
+        tool_question;
+    }
+    subgraph {
+        rank = same;
+        consult;
+    }
+    subgraph {
+        rank = same;
+        purchase;
+    }
+    subgraph {
+        rank = same;
+        done;
+        scrap;
+    }
+    
+    // create and label edges
+    start -> help;
+    help -> advice [label = "Some advice!";];
+    help -> part [label = "A part!";];
+    help -> tool [label = "A tool!";];
+    
+    advice -> advice_question;
+    part -> part_question;
+    tool -> tool_question;
+    
+    advice_question -> done [label = "yes";];
+    part_question -> done [label = "yes";];
+    tool_question -> done [label = "yes";];
+    
+    advice_question -> scrap [label = "no";];
+    tool_question -> scrap [label = "no";];
+    part_question -> consult [label = "no";];
+    
+    consult -> scrap [label = "no";];
+    consult -> purchase [label = "yes";];
+    purchase -> done;
+}
