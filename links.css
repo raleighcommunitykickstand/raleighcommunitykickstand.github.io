@@ -11,13 +11,6 @@
       local('Montserrat'),
       url('fonts/Montserrat-Regular.ttf') format('truetype');
   }
-  
-  @font-face {
-    font-family: 'Montserrat-SemiBold';
-    src:
-      local('Montserrat-SemiBold'),
-      url('fonts/Montserrat-SemiBold.ttf') format('truetype');
-  }
 
 :root {
     --textColor: white;
@@ -33,7 +26,7 @@ html {
     font-weight: 400;
 
     /*BACKGROUND:*/
-    background: url('./media/linktree.svg');
+    background: url('./media/linktree_opt.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -49,11 +42,10 @@ body {
 }
 
 img {
-    width: 130px;
+    width: 150px;
     /* height: 130px; */
     display: block;
     margin: 20px auto;
-    border-radius: 50%; /*round image*/
 }
 
 #userName {
