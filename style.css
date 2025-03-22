@@ -6,12 +6,13 @@
 
 
 /* colors
- Yellow - f7f573
- Blue - 148378 , 17a2b8
- Orange - ef4036
- dark - 161616
- grey - 1d2124
- white/grey - dae0e5
+ Yellow - #f7f573
+ Teal - #148378
+ Blue -  #17a2b8
+ Orange - #ef4036
+ light grey - #dae0e5
+ dark grey - #1d2124
+ dark dark grey - #161616
   */
 
 @font-face {
@@ -50,6 +51,10 @@ html {
 body {
   font-family: "Montserrat-SemiBold", "Segoe UI", Arial, sans-serif;
   font-weight: bold !important;
+}
+
+div {
+  font-family: "Montserrat-SemiBold", "Segoe UI", Arial, sans-serif;
 }
 
 .container .navbar-brand {
@@ -382,6 +387,7 @@ button.bg-dark:focus {
 
 .ticker-value {
   /* font-size: 120px; */
+  font-family: "HWTArtz";
   font-size: 8em;
   /* font-size: 10vw; */
   letter-spacing: 0.1em;
