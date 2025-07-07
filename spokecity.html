@@ -77,6 +77,23 @@
         a:hover {
             color: #90caf9;
         }
+
+        .download-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #222;
+            color: #fff;
+            border: 1px solid #444;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .download-button:hover {
+            background: #333;
+            border-color: #666;
+        }
     </style>
 </head>
 
@@ -92,6 +109,9 @@
         NC.</p>
     <p><a style="text-decoration: underline" target="_blank"
             href="https://oaksandspokes.com/">www.oaksandspokes.com</a>, @oaksandspokes, info@oaksandspokes</p>
+    <p>
+        <a href="spoke_city.pdf" download="spoke_city.pdf" class="download-button">Download PDF</a>
+    </p>
 
 
     <!-- PDF.js library -->
