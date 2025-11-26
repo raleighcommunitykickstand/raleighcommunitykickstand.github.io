@@ -17,45 +17,28 @@
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <!-- CSS style sheets -->
   <link href="style.css" rel="stylesheet">
-  <link href="w3.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pl-0 pr-0 ml-0 mr-0" id="mainNav">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
       <a class="navbar-brand js-scroll-trigger m-0 p-0" href="#page-top">
         <img class="m-0 p-0" src="media/RCK_by.png" alt="RCK logo" style="user-select: none; height: 2.75rem;">
         &ensp;
         Raleigh Community Kickstand</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <!--
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-          </li>
-                    -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#fix">Fix</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#teach">Teach</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#give">Give</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fix">Fix</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teach">Teach</a></li>
+          <li class="nav-item"><a class="nav-link" href="#give">Give</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -63,146 +46,178 @@
 
   <!-- Banner Header -->
   <header class="bg-trueblack">
-    <div class="w3-display-container">
+    <div class="banner-wrapper position-relative">
       <img class="bannerImg" src="media/rck.gif" alt="Animated Bicycle Banner">
-      <div class="w3-display-middle w3-container text-white" style="background-color: rgba(0,0,0,0.65);">
-        <div class="container text-center">
+
+      <div class="banner-overlay position-absolute top-50 start-50 translate-middle text-white">
+        <div class="banner-overlay-content text-center px-4 py-3">
           <h1>Raleigh Community Kickstand</h1>
-          <p class="lead">a volunteer, community bicycle collective</p>
+          <p class="mb-0">a volunteer, community bicycle collective</p>
         </div>
       </div>
     </div>
   </header>
 
+
   <!-- About Section -->
-  <section id="about" class="bg-primary section-padding">
+  <section id="about" class="bg-primary">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 mx-auto">
-          <h2>About</h2>
-          <br>
-          <h3>Who We Are</h3>
-          <p class="lead">
-            The Raleigh Community Kickstand is an all-volunteer community bicycle collective founded in 2017 and
+        <div class="col-md-12">
+          <h1>About</h1>
+        </div>
+      </div>
+
+      <!-- <div class="row align-items-center my-5">
+        <div class="col-5 text-center">
+          <img src="media/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-7">
+          <h2>Image Left</h2>
+          <p>Text here…</p>
+        </div>
+      </div>
+
+      <div class="row align-items-center my-5">
+        <div class="col-7">
+          <h2>Image Right</h2>
+          <p>Text here…</p>
+        </div>
+        <div class="col-5 text-center">
+          <img src="media/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+
+      <div class="row align-items-center my-5">
+        <div class="col-5 text-center">
+          <img src="media/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-7">
+          <h2>Who We Are</h2>
+          <p>
+            Raleigh Community Kickstand is an all-volunteer community bicycle collective founded in 2017 and
             based in Raleigh, NC. We work with the city, the county, local cycling shops, cycling non-profits,
             other organizations, and individuals to collect resources and skills to address a need in our
             community for safe, reliable, self-sufficient transportation. Our motto is: fix, teach, give.
           </p>
-          <br>
-          <h3>Our Mission</h3>
-          <p class="lead">
+        </div>
+      </div> -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Who We Are</h2>
+          <p>
+            Raleigh Community Kickstand is an all-volunteer community bicycle collective founded in 2017 and
+            based in Raleigh, NC. We work with the city, the county, local cycling shops, cycling non-profits,
+            other organizations, and individuals to collect resources and skills to address a need in our
+            community for safe, reliable, self-sufficient transportation. Our motto is: fix, teach, give.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Our Mission</h2>
+          <p>
             We are volunteers who repair and distribute bicycles, teach bicycle maintenance, and connect community
             resources to enable access to safe, reliable, self-sufficient transportation for anyone who needs it.
           </p>
-          <br>
-          <p class="lead">
+          <p>
             Currently, we partner with organizations, shelters, and resource centers working with those experiencing
             housing insecurity in the Raleigh area to give folks refurbished bicycles, perform free repairs, and teach
             maintenance skills.
           </p>
-          <br>
-          <p class="lead">We are supported and fiscally sponsored by Oaks & Spokes, a registered 501(c)(3)
+          <p>We are supported and fiscally sponsored by Oaks & Spokes, a registered 501(c)(3)
             non-profit organization which fosters the community of people who ride bikes in
             Raleigh. For more information about Oaks & Spokes, you can visit their website <a
-              style="text-decoration: underline" target="_blank" href="https://oaksandspokes.com/">here</a>.</p>
-          <br>
-          <h3>Our Impact</h3>
-          <div id="ticker-container">
-            <div class="row">
-              <div class="col-md-4 col-sm-12 mt-5">
-                <h3>Hosted</h3>
-                <div class="ticker-value" targetValue="173">0</div>
-                <h3>free public events</h3>
-              </div>
-              <div class="col-md-4 col-sm-12 mt-5">
-                <h3>Performed</h3>
-                <div class="ticker-value" targetValue="841">0</div>
-                <h3>Free Bike Repairs</h3>
-              </div>
-              <div class="col-md-4 col-sm-12 mt-5">
-                <h3>Distributed</h3>
-                <div class="ticker-value" targetValue="1969">0</div>
-                <h3>free refurbished bikes</h3>
-              </div>
-            </div>
-          </div>
-          <br><br><br>
-          <h3>Upcoming Events</h3>
-          <br>
+              href="https://oaksandspokes.com/">here</a>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Our Impact</h2>
+        </div>
+      </div>
+      <div class="row" id="ticker-container">
+        <div class="col-md-4 col-sm-12">
+          <h3>Hosted</h3>
+          <div class="ticker-value" targetValue="180">0</div>
+          <h3>free public events</h3>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3>Performed</h3>
+          <div class="ticker-value" targetValue="848">0</div>
+          <h3>Free Bike Repairs</h3>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3>Distributed</h3>
+          <div class="ticker-value" targetValue="1975">0</div>
+          <h3>free refurbished bikes</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Upcoming Events</h2>
           <div style="margin: 0 auto; text-align: center;">
             <div style="display: inline-block;" class="responsiveCal">
               <iframe
                 src="https://calendar.google.com/calendar/embed?height=220&wkst=1&ctz=America%2FNew_York&showPrint=0&showTabs=0&mode=AGENDA&showTz=0&src=aHEwNWFtbmJhYTVwcjB1N3VsYzJ2MmljNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5"
-                style="border:solid 1px #777" width="800" height="380" frameborder="0" scrolling="no"></iframe>
+                style="border:solid 1px #777; overflow: hidden;" width="800" height="380"></iframe>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog section -->
-  <!--
-  <section id="blog" class="bg-light section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mx-auto">
-          <h2>Blog</h2>
-                    <br>
-                    <div class="tumblr-container" style="margin: 0 auto; display: table;">
-                     <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/qLhkOpTqlRqWEqbLh0LSqA/189758435813" data-did="231997aee2638983de642faef69eaae370f294f0"  ><a href="https://raleighcommunitykickstand.tumblr.com/post/189758435813/test">https://raleighcommunitykickstand.tumblr.com/post/189758435813/test</a></div><script async src="tumblr_post.js"></script>
-                    </div>
-                    <br>
-                    <p class="lead">First blog post coming soon!</p>
-                    <br>
-                    <p class="lead">You can view all our previous posts <a style="text-decoration: underline" target="_blank" href="https://raleighcommunitykickstand.tumblr.com/">here</a>.</p>
+        <div class="col-md-6">
+          <h2>Contact</h2>
+          <p>If you are interested in volunteering, contact <a style="text-decoration: underline"
+              href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>.</p>
+          <p>If you are interested in participating in our adopt-a-bike program, contact <a
+              style="text-decoration: underline"
+              href="mailto:adoptabike@raleighcommunitykickstand.org">adoptabike@raleighcommunitykickstand.org</a>.</p>
+          <p>If you are interested in donating a bicycle, contact <a style="text-decoration: underline"
+              href="mailto:bikes@raleighcommunitykickstand.org">bikes@raleighcommunitykickstand.org</a>.</p>
+          <p>For all other inquiries, contact <a style="text-decoration: underline"
+              href="mailto:info@raleighcommunitykickstand.org">info@raleighcommunitykickstand.org</a>.</p>
         </div>
       </div>
     </div>
   </section>
-    -->
 
   <!-- Fix section -->
-  <section id="fix" class="bg-light section-padding">
+  <section id="fix" class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 mx-auto">
-          <h2>Fix</h2>
-          <br>
-          <!-- <p class="lead font-italic font-weight-lighter">Due to the ongoing pandemic, we are not allowing any new volunteers at our events. We will not be publishing our upcoming repair events on our website until circumstances change. If you are still interested in getting involved, you can donate or contact us at <a style="text-decoration: underline"
-                            href="mailto:raleighcommunitykickstand@gmail.com">raleighcommunitykickstand@gmail.com</a> to participate in our Adopt-A-Bike program.</p>
-                    <br> -->
-          <h3>Monthly Repair & Distribution Event</h3>
+        <div class="col-md-12">
+          <h1>Fix</h1>
+          <h2>Monthly Repair & Distribution Event</h2>
           <p>We provide repair services, maintenance training, and distribute bikes on a first-come, first-served basis
             on the 2nd Saturday of each month at Oak City Cares from 1-3pm.
-            <a style="text-decoration: underline" target="_blank" href="https://oakcitycares.org/">Oak City Cares</a>
+            <a href="https://oakcitycares.org/">Oak City Cares</a>
             is a multi-service center serving folks experiencing housing insecurity in Raleigh, located at 1430 South
             Wilmington Street.
           </p>
           <p>If you're in need our services, please roll by one of our events. If you're interested in getting
             involved, contact <a style="text-decoration: underline"
               href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>.</p>
-          <br>
 
-          <h3>Pop-up Repair Events</h3>
+          <h2>Pop-up Repair Events</h2>
           <p>In addition to our second Saturday event, we host additional pop-up repair events around Raleigh throughout
             the year. See our calendar for more
             details.</p>
           <p>If you're in need our services, please roll by one of our events. If you're interested in getting
             involved, contact <a style="text-decoration: underline"
               href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>.</p>
-          <br>
 
-          <h3>Community Shop Hours</h3>
+          <h2>Community Shop Hours</h2>
           <p>Curious about bike repair? Need a space to tune up your bike? Join us for community shop hours at our
             storage space! It's a great way to learn bike maintenance. Bring your bike to tune up or help refurbish one
             for our next distribution event. We have tools, tunes, and a ParkTools BBB!</p>
           <p>Contact <a style="text-decoration: underline"
               href="mailto:michael@raleighcommunitykickstand.org">michael@raleighcommunitykickstand.org</a> for more
             info on shop hours.</p>
-          <br>
 
-          <h3>Adopt-A-Bike Program</h3>
+          <h2>Adopt-A-Bike Program</h2>
           <p>Want to help someone in need get a bike? Join our adopt-a-bike program! The Adopt-A-Bike program is a great
             way for beginners and veterans alike to tune up bikes to give community members reliable, self-sufficient
             transportation. We'll give you a project that matches your skill level, and we're here to help when you need
@@ -232,143 +247,123 @@
   </section>
 
   <!-- Teach section -->
-  <section id="teach" class="bg-primary section-padding">
+  <section id="teach" class="bg-primary">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 mx-auto">
-          <h2>Teach</h2>
-          <br>
-          <p class="lead">At our pop-up repair events, we not only offer mechanical repairs but also the
+        <div class="col-md-12">
+          <h1>Teach</h1>
+          <p>At our pop-up repair events, we not only offer mechanical repairs but also the
             opportunity for people to learn general bicycle maintenance. We provide all of the necessary
             tools and work with riders to teach them how to diagnose and repair common issues. We strive
             to put our riders on a path towards self-sufficiency.</p>
-          <br>
         </div>
         <div class="col-md-6">
           <h4>Local Maps</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank"
+            <li><a
                 href="https://cityofraleigh0drupal.blob.core.usgovcloudapi.net/drupal-prod/COR24/raleigh-greenway-map.pdf">Raleigh
                 Greenway System Map</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://map.oaksandspokes.com/">Oaks &
+            <li><a href="https://map.oaksandspokes.com/">Oaks &
                 Spokes - Interactive Raleigh Bikeways Map</a></li>
-            <!-- <li><a style="text-decoration: underline" target="_blank" href="https://www.bit.ly/ncgreenway">Triangle
-                Greenway Map</a></li> -->
           </ul>
           <h4>Educational Resources</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://raleighnc.gov/services/content/PWksTransit/Articles/BikesonBuses.html">Bike
+            <li><a href="https://raleighnc.gov/services/content/PWksTransit/Articles/BikesonBuses.html">Bike
                 on GoRaleigh Buses Guide</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.bikewalknc.org/safety-education/education-resources-for-bicyclists/">NC
+            <li><a href="https://www.bikewalknc.org/safety-education/education-resources-for-bicyclists/">NC
                 Bike Laws</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.bikelaw.com/laws/north-carolina/">Bike Law NC</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.parktool.com/blog/repair-help">Park Tool Repair Help Guide</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.rei.com/learn/expert-advice/bike-maintenance.html">REI Routine Bike
+            <li><a href="https://www.bikelaw.com/laws/north-carolina/">Bike Law NC</a></li>
+            <li><a href="https://www.parktool.com/blog/repair-help">Park Tool Repair Help Guide</a></li>
+            <li><a href="https://www.rei.com/learn/expert-advice/bike-maintenance.html">REI Routine Bike
                 Maintenance Guide</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.sheldonbrown.com/">Sheldon
+            <li><a href="https://www.sheldonbrown.com/">Sheldon
                 Brown's Bicycle Info</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://jimlangley.net/aboutsite/aboutsite.html">Jim Langley's Bike
+            <li><a href="https://jimlangley.net/aboutsite/aboutsite.html">Jim Langley's Bike
                 Maintenance</a></li>
           </ul>
           <h4>Local Bike Shops</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.thebicyclechain.com/about/bicycle-chain-raleigh-pg609.htm">Bicycle
+            <li><a href="https://www.thebicyclechain.com/about/bicycle-chain-raleigh-pg609.htm">Bicycle
                 Chain</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.thebikeguyonthegreenway.com/">The Bike Guy</a></li>
-            <!-- <li><a style="text-decoration: underline" target="_blank" href="https://carycyclesurgeon.com">Cycle
-                Surgeon</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.cycle-logic.biz/">Cycle
-                Logic</a></li> -->
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.oakcitycycling.com/">Oak City
+            <li><a href="https://www.thebikeguyonthegreenway.com/">The Bike Guy</a></li>
+            <li><a href="https://www.oakcitycycling.com/">Oak City
                 Cycling Project</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.rei.com/map/store#27601">REI</a>
+            <li><a href="https://www.rei.com/map/store#27601">REI</a>
             </li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.tlcforbikes.com/">TLC For
+            <li><a href="https://www.tlcforbikes.com/">TLC For
                 Bikes</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.trekraleigh.com/">Trek Bicycles
+            <li><a href="https://www.trekraleigh.com/">Trek Bicycles
                 of Raleigh</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://thebikelibrary.com/">The Bike
+            <li><a href="https://thebikelibrary.com/">The Bike
                 Library</a></li>
           </ul>
           <h4>Other Local Bicycle Co-ops/Collectives</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.durhambikecoop.org/">Durham Bike
+            <li><a href="https://www.durhambikecoop.org/">Durham Bike
                 Co-op - Durham, NC</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.recyclery.org/">The
+            <li><a href="https://www.recyclery.org/">The
                 ReCYCLEry NC - Carrboro, NC</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.tripsforkidscharlotte.org/re-cyclery">The
+            <li><a href="https://www.tripsforkidscharlotte.org/re-cyclery">The
                 Charlotte Re-Cyclery - Charlotte, NC</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.thepedalfactory.org/">The Pedal
+            <li><a href="https://www.thepedalfactory.org/">The Pedal
                 Factory - Salisbury, NC</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://bikesboroorg.wixsite.com/bikesboro/bikesboro-bikecoop">The
+            <li><a href="https://bikesboroorg.wixsite.com/bikesboro/bikesboro-bikecoop">The
                 Community Bike Shop at Barber Park - Greensboro, NC</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://specialpedalsinc.org/">Special
+            <li><a href="https://specialpedalsinc.org/">Special
                 Pedals - Wilmington, NC</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.instagram.com/trianglefreebikerepair/">Triangle Free Bike Repair</a></li>
+            <li><a href="https://www.instagram.com/trianglefreebikerepair/">Triangle Free Bike
+                Repair</a></li>
           </ul>
         </div>
         <div class="col-md-6">
           <h4>Our Partners</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank" href="https://oaksandspokes.com/">Oaks
+            <li><a href="https://oaksandspokes.com/">Oaks
                 and Spokes</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://oakcitycares.org/">Oak
+            <li><a href="https://oakcitycares.org/">Oak
                 City Cares</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.oakcitycycling.com/">Oak City
+            <li><a href="https://www.oakcitycycling.com/">Oak City
                 Cycling Project</a></li>
           </ul>
           <h4>Local Resources</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank" href="https://oaksandspokes.com/">Oaks
+            <li><a href="https://oaksandspokes.com/">Oaks
                 and Spokes</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://raleighnc.gov/bike-program">Bike
+            <li><a href="https://raleighnc.gov/bike-program">Bike
                 Raleigh</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://tarwheels.net/wp/">Carolina
+            <li><a href="https://tarwheels.net/wp/">Carolina
                 Tarwheels</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
+            <li><a
                 href="https://www.wakegov.com/departments-government/health-human-services/children-and-family-services/safe-routes-school-wake-county">Wake
                 County Safe Routes to School</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://bikedurham.org/">Bike Durham</a>
+            <li><a href="https://bikedurham.org/">Bike Durham</a>
             </li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.trianglebikeworks.org/">Triangle
+            <li><a href="https://www.trianglebikeworks.org/">Triangle
                 Bikeworks</a></li>
           </ul>
           <h4>State Resources</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.bikewalknc.org/">BikeWalk NC</a>
+            <li><a href="https://www.bikewalknc.org/">BikeWalk NC</a>
             </li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://www.ncdot.gov/divisions/bike-ped/Pages/default.aspx">NCDOT Division of
+            <li><a href="https://www.ncdot.gov/divisions/bike-ped/Pages/default.aspx">NCDOT Division of
                 Bicycle and Pedestrian Transportation</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.watchformenc.org/">Watch for Me
+            <li><a href="https://www.watchformenc.org/">Watch for Me
                 NC</a></li>
           </ul>
           <h4>National Resources</h4>
           <ul>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.apbp.org/">Association of
+            <li><a href="https://www.apbp.org/">Association of
                 Pedestrian and Bicycle Professionals</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://betterbikeshare.org/">Better Bike
+            <li><a href="https://betterbikeshare.org/">Better Bike
                 Share Partnership</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.greenway.org/">East
+            <li><a href="https://www.greenway.org/">East
                 Coast Greenway Alliance</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="http://www.pedbikesafe.org/">PedBikeSafe</a>
+            <li><a href="http://www.pedbikesafe.org/">PedBikeSafe</a>
             </li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.pedbikeinfo.com/">Pedestrian and
+            <li><a href="https://www.pedbikeinfo.com/">Pedestrian and
                 Bicycle Information Center</a></li>
-            <li><a style="text-decoration: underline" target="_blank"
-                href="https://peopleforbikes.org/">PeopleForBikes</a></li>
-            <li><a style="text-decoration: underline" target="_blank" href="https://www.saferoutespartnership.org/">Safe
+            <li><a href="https://peopleforbikes.org/">PeopleForBikes</a></li>
+            <li><a href="https://www.saferoutespartnership.org/">Safe
                 Routes to School National Partnership</a></li>
           </ul>
         </div>
@@ -377,129 +372,85 @@
   </section>
 
   <!-- Give section -->
-  <section id="give" class="bg-light section-padding">
+  <section id="give" class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 mx-auto">
-          <h2>Give</h2>
-          <br>
-          <h3>Donate</h3>
-          <table>
-            <tbody>
-              <tr>
-                <td class="pl-0 pr-4 pt-4 pb-4">
-                  <p class="lead">On average, we spend ~$5 in parts to get a donated bicycle repaired and back out on
-                    the road. If possible, please consider contributing $5 to allow a member of your community access to
-                    self-sufficient transportation.</p>
-                </td>
-                <td class="pl-0 pr-4"></td>
-                <td class="m-0 p-0 pb-4" style="text-align: center; vertical-align: middle;">
-                  <!-- <form id="paypal5Form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="L86SCRQYDHU2C">
-                    <input type="image" src="media/$5.png" name="submit" height="80"
-                      title="PayPal - The safer, easier way to pay online!" alt="Donate $5 with PayPal button">
-                  </form> -->
-                  <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4" target="_blank">
-                    <img src="media/$5.png" alt="$5 donate button" height="80">
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="pl-0 pr-4 pt-4 pb-4">
-                  <p class="lead">Many of the riders we support work along busy road ways. We like to
-                    provide lights when possible to keep them safe and in compliance with local bike
-                    light laws. If possible, please consider contributing $20 to
-                    ensure the safety of cyclists in our community.</p>
-                </td>
-                <td class="pl-0 pr-4"></td>
-                <td class="m-0 p-0 pb-4" style="text-align: center; vertical-align: middle;">
-                  <!-- <form id="paypal10Form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="ANCUC5XPTCZXA">
-                    <input type="image" src="media/$15.png" name="submit" height="80"
-                      title="PayPal - The safer, easier way to pay online!" alt="Donate $10 with PayPal button">
-                  </form> -->
-                  <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4" target="_blank">
-                    <img src="media/$20.png" alt="$20 donate button" height="80">
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="pl-0 pr-4 pt-4 pb-4">
-                  <p class="lead">Many of our riders stay in homeless shelters or camp in wooded areas
-                    around town. Without a safe storage place, bike theft is unfortunately a common
-                    occurrence. If possible, please consider contributing $25 to provide a lock to our
-                    riders to ensure they are able to secure their mode of transportation.</p>
-                </td>
-                <td class="pl-0 pr-4"></td>
-                <td class="m-0 p-0 pb-4" style="text-align: center; vertical-align: middle;">
-                  <!-- <form id="paypal15Form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="FTNKGPZU5BNG4">
-                    <input type="image" src="media/$20.png" name="submit" height="80"
-                      title="PayPal - The safer, easier way to pay online!" alt="Donate $15 with PayPal button">
-                  </form> -->
-                  <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4" target="_blank">
-                    <img src="media/$25.png" alt="$25 donate button" height="80">
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!--<div class="text-center">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="27D5QWWC89MCQ">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
-                            <img alt="PayPal" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                    </div>-->
-          <br>
-          <h3>Donate your bikes</h3>
-          <!-- <p class="lead">The Raleigh Community Kickstand could not serve the community without donations of
-                        bicycles and other parts. We rebuild your old bicycles and collect spare parts for repairs to
-                        make sure everyone in the community has the
-                        ability to get where they need to go. We accept fully intact, repairable adult bicycles (24"
-                        tires or larger). Our riders traverse a variety of terrains and prefer hybrid bikes or mountain
-                        bikes. We also accept components, tools, lights,
-                        locks, and pretty much anything else that is bike related.</p> -->
-          <p class="lead">The Raleigh Community Kickstand could not serve the community without bicycle
+        <div class="col-md-12">
+          <h1>Give</h1>
+          <h2>Donate your funds</h2>
+          <p>Donate via <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">PayPal</a>
+            or <a href="https://venmo.com/communitykickstand">Venmo (@communitykickstand) </a></p>
+        </div>
+      </div>
+
+      <div class="row py-3 align-items-center">
+        <div class="col-auto text-center pe-5"><a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">
+            <img src="media/$5.png" alt="$5 donate button" class="donate-img">
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            On average, we spend ~$5 in parts to get a donated bicycle repaired and back out on
+            the road. If possible, please consider contributing $5 to allow a member of your
+            community access to self-sufficient transportation.
+          </p>
+        </div>
+      </div>
+      <div class="row py-3 align-items-center">
+        <div class="col">
+          <p>
+            Many of the riders we support work along busy road ways. We like to
+            provide lights when possible to keep them safe and in compliance with local bike
+            light laws. If possible, please consider contributing $20 to
+            ensure the safety of cyclists in our community.
+          </p>
+        </div>
+        <div class="col-auto text-center ps-5"><a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">
+            <img src="media/$20.png" alt="$20 donate button" class="donate-img">
+          </a></div>
+      </div>
+      <div class="row py-3 align-items-center">
+        <div class="col-auto text-center pe-5"><a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">
+            <img src="media/$25.png" alt="$25 donate button" class="donate-img">
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            Many of our riders stay in homeless shelters or camp in wooded areas
+            around town. Without a safe storage place, bike theft is unfortunately a common
+            occurrence. Please consider contributing $25 to provide a lock to our
+            riders to ensure they are able to secure their mode of transportation.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Donate your bikes</h2>
+          <p>The Raleigh Community Kickstand could not serve the community without bicycle
             donations. We refurbish your old bicycles to make sure everyone in the community has the
             ability to get where they need to go. We accept fully-intact, repairable adult bicycles
             (24" tires or larger). Our riders traverse a variety of terrains and prefer hybrid bikes
             or mountain bikes. Donations of components, tools, and other bike related items are
             accepted on occasion as space allows and as needed. Donations of working lights and locks
             are always appreciated.</p>
-          <br>
-          <h3>Donate your time</h3>
-          <p class="lead">The Raleigh Community Kickstand is entirely volunteer operated. Without people like
+          <h2>Donate your time</h2>
+          <p>The Raleigh Community Kickstand is entirely volunteer operated. Without people like
             you, we would not be able to make these services available. We are always looking for additional
             volunteers to help repair bikes and manage
             administrative tasks. There are no prior skills required; we will teach you everything you need
             to know! Volunteering with RCK is a great way to give back to the community and learn more about
             bicycle maintenance.</p>
-          <br>
-          <h3>Donate your resources</h3>
-          <p class="lead">If you work for an organization or company that has grant funding opportunities or
+          <h2>Donate your resources</h2>
+          <p>If you work for an organization or company that has grant funding opportunities or
             discount programs for non-profits, please let us know. We are always in need of funding for consumable parts
             such as tires, tubes, brake pads, etc. as well as helmets, locks, and lights.</p>
-          <p class="lead"> Since we do not presently have a brick and mortar establishment, we are in need of
+          <p> Since we do not presently have a brick and mortar establishment, we are in need of
             public locations to host pop-up repair events or maintenance workshops. If you operate a space
             and are interested in hosting a pop-up event for the community, please contact us. Spaces can be
             indoor or outdoor and should be easily accessible via foot, bicycle, or public transportation.
             We will provide stands and tools.</p>
-          <br>
-
-          <p class="lead">If you are interested in volunteering, contact <a style="text-decoration: underline"
-              href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>.</p>
-          <p class="lead">If you are interested in participating in our adopt-a-bike program, contact <a
-              style="text-decoration: underline"
-              href="mailto:adoptabike@raleighcommunitykickstand.org">adoptabike@raleighcommunitykickstand.org</a>.</p>
-          <p class="lead">If you are interested in donating a bicycle, contact <a style="text-decoration: underline"
-              href="mailto:bikes@raleighcommunitykickstand.org">bikes@raleighcommunitykickstand.org</a>.</p>
-          <p class="lead">For all other inquiries, contact <a style="text-decoration: underline"
-              href="mailto:info@raleighcommunitykickstand.org">info@raleighcommunitykickstand.org</a>.</p>
         </div>
       </div>
     </div>
@@ -517,12 +468,12 @@
               <h4 class="m-0 text-red">Social Media</h4>
               <img class="p-3" src="media/RCK_logo-10.png" alt="RCK logo red" style="user-select: none; height: 8rem;">
               <div class="small text-black">Instagram:<br>
-                <a target="_blank" rel="noopener noreferrer"
+                <a rel="noopener noreferrer"
                   href="https://www.instagram.com/communitykickstand/">https://www.instagram.com/communitykickstand/</a>
               </div>
               <br>
               <div class="small text-black">Facebook:<br>
-                <a target="_blank" rel="noopener noreferrer"
+                <a rel="noopener noreferrer"
                   href="https://www.facebook.com/RaleighCommunityKickstand/">https://www.facebook.com/RaleighCommunityKickstand/</a>
               </div>
             </div>
@@ -557,18 +508,16 @@
               <h4 class="m-0 text-black">Donate</h4>
               <img class="p-3" src="media/RCK_logo-15.png" alt="RCK logo black"
                 style="user-select: none; height: 8rem;">
-              <div class="text-center">
-                <br>
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                  <input type="hidden" name="hosted_button_id" value="MZC359U2QVAM4" />
-                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
-                    name="submit" title="PayPal - The safer, easier way to pay online!"
-                    alt="Donate with PayPal button" />
-                  <img alt="test" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+              <div class="text-center small text-black">
+                <br>PayPal:
+                <form class="d-inline-block" action="https://www.paypal.com/donate" method="post" target="_top">
+                  <input type="hidden" name="hosted_button_id" value="MZC359U2QVAM4">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                    style="border: 0;" name="submit" title="PayPal - The safer, easier way to pay online!"
+                    alt="Donate with PayPal button">
                 </form>
               </div>
               <div class="small text-black">
-                or
                 Venmo: <a href="https://venmo.com/communitykickstand">@communitykickstand </a>
               </div>
             </div>
@@ -582,19 +531,17 @@
   <!-- Footer -->
   <footer class="py-3 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; 2025 Raleigh Community Kickstand</p>
+      <p class="m-0 text-center text-white small">Copyright &copy; 2025 Raleigh Community Kickstand</p>
     </div>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="jquery/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Plugin JavaScript -->
-  <script src="jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- scrolling javascript -->
   <script src="scrolling-nav.js"></script>
   <!-- my javascript -->
   <script src="scripts.js"></script>
+
 
 </body>
 

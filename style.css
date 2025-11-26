@@ -1,10 +1,3 @@
-/*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
-
-
 /* colors
  Yellow - #f7f573
  Teal - #148378
@@ -15,360 +8,233 @@
  dark dark grey - #161616
   */
 
+/* -----------------------------------------------
+   BRAND COLORS (Named Variables)
+------------------------------------------------ */
+:root {
+  --rck-yellow: #f7f573;
+  --rck-teal: #148378;
+  --rck-orange: #ef4036;
+
+  --rck-light-1: #fefde7;
+  --rck-light-2: #f9f89f;
+  --rck-light-3: #fcfbcf;
+
+  --rck-grey-dark: #1d2124;
+  --rck-grey-darker: #161616;
+  --rck-true-black: #000;
+}
+
+/* -----------------------------------------------
+   FONT IMPORTS
+------------------------------------------------ */
 @font-face {
-  font-family: 'HWTArtz';
-  src:
-    local('HWT-Artz-W00-Regular'),
-    url('fonts/HWT-Artz-W00-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src:
-    local('Montserrat'),
-    url('fonts/Montserrat-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat-SemiBold';
-  src:
-    local('Montserrat-SemiBold'),
-    url('fonts/Montserrat-SemiBold.ttf') format('truetype');
-}
-
-header {
-  padding: 56px 0 0;
-}
-
-section {
-  padding: 150px 0;
-}
-
-html {
-  font-family: "Montserrat-SemiBold";
-}
-
-body {
-  font-family: "Montserrat-SemiBold", "Segoe UI", Arial, sans-serif;
-  font-weight: bold !important;
-}
-
-div {
-  font-family: "Montserrat-SemiBold", "Segoe UI", Arial, sans-serif;
-}
-
-.container .navbar-brand {
-  color: #f7f573;
-}
-
-.container .nav-item .nav-link {
-  color: #f7f573;
   font-family: "HWTArtz";
+  src: local("HWT-Artz-W00-Regular"), url("fonts/HWT-Artz-W00-Regular.ttf") format("truetype");
 }
 
-/* title card */
-.w3-display-middle .container h1 {
-  font-family: "HWTArtz";
-  font-size: calc(1.5rem + 3vw);
-  color: #f7f573;
-}
-
-.w3-display-middle .container p {
+@font-face {
   font-family: "Montserrat";
-  font-size: calc(.5rem + 1vw);
+  src: local("Montserrat"), url("fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
-.bannerImg {
-  width: 100% !important;
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: local("Montserrat-SemiBold"), url("fonts/Montserrat-SemiBold.ttf") format("truetype");
 }
 
-.w3-display-container {
+/* -----------------------------------------------
+   GLOBAL TYPOGRAPHY
+------------------------------------------------ */
+html {
+  font-family: "Courier New", "Montserrat-SemiBold", "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+p,
+li,
+div {
+  font-family: "Courier New";
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a {
+  font-family: "Courier New";
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "HWTArtz";
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+h3 {
+  /* margin: 2.5rem 0 1.5rem 0; */
+}
+
+a {
+  color: var(--rck-teal);
+}
+
+/* -----------------------------------------------
+  Layout
+------------------------------------------------ */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* -----------------------------------------------
+  NAVBAR
+------------------------------------------------ */
+nav,
+a.navbar-brand,
+.nav-item .nav-link {
+  font-family: "HWTArtz";
+  color: var(--rck-yellow);
+  letter-spacing: 0.05em;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+/* -----------------------------------------------
+   BANNER HEADER
+------------------------------------------------ */
+.banner-wrapper {
   width: 100%;
   min-height: 200px;
   max-height: 360px;
   overflow: hidden;
-  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-
-/* section headers */
-.container h2 {
-  font-family: "HWTArtz";
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.container h3 {
-  font-family: "Montserrat-SemiBold";
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.container h4 {
-  font-family: "Montserrat-SemiBold";
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-/*.tumblr-post {
-  overflow: hidden;
-  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
-  padding-top: 56.25%;
+  align-items: center;
   position: relative;
 }
 
-.tumblr-post iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
-}*/
-
-.embeddable-posts {
-  width: 80% !important;
-  max-width: 80% !important;
-  background-color: #fcfbcf;
+.bannerImg {
   width: 100%;
-  font-family: Montserrat;
+  display: block;
 }
 
-.tumblr-post .post-wrapper {
-  background-color: #fcfbcf;
-  width: 100%;
+.banner-overlay {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
-.tumblr-post body {
-  font-family: Montserrat;
+.banner-overlay-content h1 {
+  font-size: calc(1.5rem + 3vw);
+  color: var(--rck-yellow);
 }
 
-.container p {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  font-weight: bold;
+.banner-overlay-content p {
+  font-family: "Courier New";
+  font-size: calc(0.5rem + 0.8vw);
 }
 
-.container li {
-  font-family: "Montserrat";
-  font-size: 1rem;
-  font-weight: bold;
+/* -----------------------------------------------
+  IMAGE SPACING
+------------------------------------------------ */
+.donate-img {
+  height: 80px;
+  display: block;
+  margin-bottom: 2em;
 }
 
-.section-padding {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-}
-
-
-/* about section */
-.about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
-}
-
-.about-section p {
-  margin-bottom: 5rem;
-}
-
-.contact-section {
-  padding: 5rem 0 0;
-}
-
-.contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #ef4036;
-}
-
-.contact-section .card h4 {
-  font-size: 1.2rem;
-  font-family: 'HWTArtz';
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-
-.contact-section .card hr {
-  border-color: #ef4036;
-  border-width: 0.25rem;
-  width: 3rem;
-  text-align: center;
-  margin: auto;
-}
-
-.contact-section .social {
-  margin-top: 5rem;
-}
-
-.contact-section .social a {
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-section .social a:active {
-  color: #fff;
-}
-
-.card .card-body .small a {
-  font-family: "Montserrat";
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-/* footer */
-/*footer {
-	font-size: 1.2rem;
-	font-family: "HWTArtz", "Segoe UI";
-	letter-spacing: .05rem;
-}
-.py-3 .container .text-center {
-	font-size: 1.2rem;
-	font-family: "HWTArtz", "Segoe UI";
-	letter-spacing: .05rem;
-}*/
-
-/* font colors */
-.text-green {
-  color: #148378 !important;
-}
-
-.text-red {
-  color: #ef4036 !important;
-}
-
-.text-black {
-  color: black !important;
-}
-
-
-/* background colors */
-.bg-green {
-  background-color: #fefde7 !important;
-}
-
+/* -----------------------------------------------
+  BACKGROUND COLORS
+------------------------------------------------ */
 .bg-primary {
-  background-color: #f9f89f !important;
+  background-color: var(--rck-light-2) !important;
 }
-
 .bg-light {
-  background-color: #fcfbcf !important;
+  background-color: var(--rck-light-3) !important;
 }
-
-a.bg-primary:hover,
-a.bg-primary:focus,
-button.bg-primary:hover,
-button.bg-primary:focus {
-  background-color: #0062cc !important;
+.bg-green {
+  background-color: var(--rck-light-1) !important;
 }
-
-.bg-secondary {
-  background-color: #6c757d !important;
-}
-
-a.bg-secondary:hover,
-a.bg-secondary:focus,
-button.bg-secondary:hover,
-button.bg-secondary:focus {
-  background-color: #545b62 !important;
-}
-
-.bg-success {
-  background-color: #28a745 !important;
-}
-
-a.bg-success:hover,
-a.bg-success:focus,
-button.bg-success:hover,
-button.bg-success:focus {
-  background-color: #1e7e34 !important;
-}
-
-.bg-info {
-  background-color: #17a2b8 !important;
-}
-
-a.bg-info:hover,
-a.bg-info:focus,
-button.bg-info:hover,
-button.bg-info:focus {
-  background-color: #117a8b !important;
-}
-
-.bg-warning {
-  background-color: #ffc107 !important;
-}
-
-a.bg-warning:hover,
-a.bg-warning:focus,
-button.bg-warning:hover,
-button.bg-warning:focus {
-  background-color: #d39e00 !important;
-}
-
-.bg-danger {
-  background-color: #dc3545 !important;
-}
-
-a.bg-danger:hover,
-a.bg-danger:focus,
-button.bg-danger:hover,
-button.bg-danger:focus {
-  background-color: #bd2130 !important;
-}
-
-a.bg-light:hover,
-a.bg-light:focus,
-button.bg-light:hover,
-button.bg-light:focus {
-  background-color: #dae0e5 !important;
-}
-
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: var(--rck-grey-dark) !important;
 }
-
-a.bg-dark:hover,
-a.bg-dark:focus,
-button.bg-dark:hover,
-button.bg-dark:focus {
-  background-color: #1d2124 !important;
-}
-
-.bg-white {
-  background-color: #fff !important;
-}
-
-.bg-transparent {
-  background-color: transparent !important;
-}
-
 .bg-black {
-  background-color: #161616 !important;
+  background-color: var(--rck-grey-darker) !important;
 }
-
 .bg-trueblack {
-  background-color: #000 !important;
+  background-color: var(--rck-true-black) !important;
 }
 
-/* tumblr */
+/* -----------------------------------------------
+  TEXT COLORS
+------------------------------------------------ */
+.text-green {
+  color: var(--rck-teal) !important;
+}
+.text-red {
+  color: var(--rck-orange) !important;
+}
+.text-black {
+  color: #000 !important;
+}
 
+/* -----------------------------------------------
+  ABOUT SECTION
+------------------------------------------------ */
+#about {
+  scroll-margin-top: 100px; /* keep this */
+  margin-top: 0;
+}
+body {
+  padding-top: 56px; /* or whatever your navbar height actually is */
+}
 
-/* calendar */
+/* -----------------------------------------------
+  TICKER
+------------------------------------------------ */
+#ticker-container {
+  font-family: "HWTArtz";
+  text-align: center;
+}
+
+#ticker-container h3 {
+  font-family: "HWTArtz";
+  margin: 1rem;
+}
+
+.ticker-value {
+  font-family: "HWTArtz";
+  font-size: 8em;
+  margin: -3rem;
+  letter-spacing: 0.1em;
+  color: var(--rck-teal);
+}
+
+/* -----------------------------------------------
+  CALENDAR (Embedded Google Calendar)
+------------------------------------------------ */
 .responsiveCal {
   margin: 0 auto;
-  position: relative;
   max-width: 640px;
   width: 100%;
   overflow: hidden;
@@ -378,43 +244,21 @@ button.bg-dark:focus {
   width: 100%;
 }
 
-/* ticker */
-#ticker-container {
-  font-family: "HWTArtz";
-  color: #000;
-  text-align: center;
+/* -----------------------------------------------
+  CONTACT SECTION
+------------------------------------------------ */
+.contact-section {
+  padding-top: 5rem;
 }
 
-.ticker-value {
-  /* font-size: 120px; */
-  font-family: "HWTArtz";
-  font-size: 8em;
-  /* font-size: 10vw; */
-  letter-spacing: 0.1em;
-  margin: -20px;
-  padding: 0;
-  color: #148378;
-
+.contact-section .card {
+  border: 0;
+  border-bottom: 4px solid var(--rck-orange);
 }
 
-#ticker-container h3 {
-  /* font-size: 2vw; */
+.contact-section .card h4 {
   font-family: "HWTArtz";
-  color: #000;
-}
-
-.pp-9KY8WZKZXDZQU {
-  text-align: center;
-  border: none;
-  border-radius: 1.5rem;
-  min-width: 11.625rem;
-  padding: 0 2rem;
-  height: 2rem;
-  font-weight: bold;
-  background-color: #FFD140;
-  color: #000000;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
