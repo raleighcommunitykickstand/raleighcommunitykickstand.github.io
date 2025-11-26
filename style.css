@@ -117,7 +117,7 @@ a.navbar-brand,
 .nav-item .nav-link {
   font-family: "HWTArtz";
   color: var(--rck-yellow);
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
@@ -128,6 +128,8 @@ a.navbar-brand,
   height: 40px;
   display: flex;
   align-items: center;
+  font-size: clamp(0.9rem, 5vw, 1.25rem);
+  white-space: nowrap;
 }
 
 .brand-logo {
@@ -135,6 +137,18 @@ a.navbar-brand,
   max-height: 40px;
   width: auto;
   user-select: none;
+}
+
+/* shrink the button hitbox */
+.navbar-toggler {
+  line-height: 1;
+}
+
+/* shrink the icon inside */
+.navbar-toggler-icon {
+  width: 18px; /* default ~24px */
+  height: 18px; /* default ~24px */
+  background-size: 18px 18px;
 }
 
 /* -----------------------------------------------
