@@ -7,10 +7,12 @@
   <meta name="description" content="An all-volunteer, community bicycle cooperative.">
   <title>Raleigh Community Kickstand</title>
   <link rel="stylesheet" href="links.css">
-  <link rel="icon" href="./media/RCK_logo-by.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="media/RCK_by.png">
+  <link rel="preload" as="image" href="media/RCK_logo-by.png">
+  <link rel="preload" as="image" href="media/linktree_opt.svg" importance="high">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print"
+    onload="this.media='all'">
+
 </head>
 
 
@@ -22,10 +24,10 @@
     self-sufficient transportation for all!</p>
 
   <main>
-    <a href="https://raleighcommunitykickstand.org/" target="_blank">
+    <a href="https://raleighcommunitykickstand.org/">
       <i class="fas fa-globe">&nbsp;</i> Website
     </a>
-    <a href="https://www.instagram.com/communitykickstand/" target="_blank">
+    <a href="https://www.instagram.com/communitykickstand/">
       <i class="fab fa-instagram">&nbsp;</i> Instagram
     </a>
     <a href="mailto:volunteer@raleighcommunitykickstand.org?subject=Interested%20in%20Volunteering">
@@ -40,14 +42,20 @@
     <a href="mailto:info@raleighcommunitykickstand.org?subject=General%20Inquiry">
       <i class="fas fa-envelope">&nbsp;</i> General Inquiries Contact
     </a>
-    <a href="https://venmo.com/communitykickstand" target="_blank">
-      <i class="fab fa-paypal">&nbsp;</i> Donate via Venmo
-    </a>
-    <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4" target="_blank">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">
       <i class="fab fa-paypal">&nbsp;</i> Donate via PayPal
     </a>
-    <br><br>
+    <a href="https://venmo.com/communitykickstand">
+      <i class="fa-solid fa-money-bill">&nbsp;</i> Donate via Venmo
+    </a>
   </main>
+
+  <script>
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    });
+  </script>
 
 </body>
 
