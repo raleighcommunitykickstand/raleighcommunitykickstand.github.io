@@ -124,8 +124,15 @@ a.navbar-brand,
   color: #fff !important;
 }
 
-/* Default desktop/tablet size */
+.navbar-brand {
+  height: 40px; /* or 48px, 50px, whatever you want the navbar height to be */
+  display: flex;
+  align-items: center;
+}
+
 .brand-logo {
+  height: 100%;
+  width: auto;
   user-select: none;
 }
 
