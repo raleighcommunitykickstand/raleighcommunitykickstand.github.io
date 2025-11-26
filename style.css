@@ -167,27 +167,30 @@ a.navbar-brand,
 }
 
 .banner-img {
-  width: 100%;
+  width: min(100%, 2000px);
   display: block;
 }
 
 .banner-overlay {
-  width: min(70%, 1000px); /* responsive max width */
-  padding: 1.5rem 2rem; /* natural height */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  text-align: center;
 }
 
 .banner-overlay-content h1 {
-  font-size: calc(1.5rem + 3vw);
+  width: min(60%, 1000px);
+  font-size: clamp(2rem, 1.5rem + 3vw, 4.5rem);
   color: var(--rck-yellow);
   background-color: rgba(0, 0, 0, 0.65);
+  margin: auto;
 }
 
 .banner-overlay-content p {
   font-family: "Courier New";
-  font-size: calc(0.5rem + 0.8vw);
+  font-size: clamp(1rem, 0.5rem + 0.8vw, 1.75rem);
 }
 
 /* -----------------------------------------------
