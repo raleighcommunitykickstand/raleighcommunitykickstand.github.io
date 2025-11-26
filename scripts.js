@@ -68,6 +68,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.getElementById("mainNav");
+  const spacer = document.getElementById("navbar-spacer");
+  spacer.style.height = nav.offsetHeight + "px";
+});
+
+// Update on window resize too
+window.addEventListener("resize", () => {
+  const nav = document.getElementById("mainNav");
+  const spacer = document.getElementById("navbar-spacer");
+  spacer.style.height = nav.offsetHeight + "px";
+});
+
+
 // function facebookCardClick() {
 //   window.open('https://www.facebook.com/RaleighCommunityKickstand/', '_blank');
 // }

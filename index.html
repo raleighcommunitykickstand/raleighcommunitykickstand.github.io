@@ -24,16 +24,16 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container px-4">
+    <div class="container-fluid px-3">
       <a class="navbar-brand js-scroll-trigger m-0 p-0" href="#page-top">
-        <img class="m-0 p-0" src="media/RCK_by.png" alt="RCK logo" style="user-select: none; height: 2.75rem;">
-        &ensp;
-        Raleigh Community Kickstand</a>
+        <img class="brand-logo pe-2" src="media/RCK_by.png" alt="RCK logo">
+        Raleigh Community Kickstand
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
           class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto align-items-end align-items-lg-center text-end">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#fix">Fix</a></li>
           <li class="nav-item"><a class="nav-link" href="#teach">Teach</a></li>
@@ -44,15 +44,19 @@
     </div>
   </nav>
 
+  <div id="navbar-spacer"></div>
+
   <!-- Banner Header -->
   <header class="bg-trueblack">
     <div class="banner-wrapper position-relative">
-      <img class="bannerImg" src="media/rck.gif" alt="Animated Bicycle Banner">
+      <img class="banner-img" src="media/rck.gif" alt="Animated Bicycle Banner">
 
       <div class="banner-overlay position-absolute top-50 start-50 translate-middle text-white">
-        <div class="banner-overlay-content text-center px-4 py-3">
-          <h1>Raleigh Community Kickstand</h1>
-          <p class="mb-0">a volunteer, community bicycle collective</p>
+        <div class="banner-overlay-content text-center mx-4 pt-0 pb-3">
+          <h1 class="mb-0">Raleigh</h1>
+          <h1 class="mb-0">Community</h1>
+          <h1 class="mb-2">Kickstand</h1>
+          <p class="m-0 p-0">a volunteer, community bicycle collective</p>
         </div>
       </div>
     </div>
@@ -61,16 +65,16 @@
 
   <!-- About Section -->
   <section id="about" class="bg-primary">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <h1>About</h1>
         </div>
       </div>
 
-      <!-- <div class="row align-items-center my-5">
-        <div class="col-5 text-center">
-          <img src="media/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-sm">
+      <!-- <div class="row my-3 align-items-stretch">
+        <div class="col-5 d-flex pe-5 image-col">
+          <img src="photos/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
         </div>
         <div class="col-7">
           <h2>Image Left</h2>
@@ -78,20 +82,20 @@
         </div>
       </div>
 
-      <div class="row align-items-center my-5">
+      <div class="row my-3 align-items-stretch">
         <div class="col-7">
           <h2>Image Right</h2>
           <p>Text here…</p>
         </div>
-        <div class="col-5 text-center">
-          <img src="media/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-sm">
+        <div class="col-5 d-flex ps-5 image-col">
+          <img src="photos/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
         </div>
-      </div>
+      </div> -->
 
 
-      <div class="row align-items-center my-5">
-        <div class="col-5 text-center">
-          <img src="media/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-sm">
+      <div class="row my-3 align-items-stretch">
+        <div class="col-5 d-flex pe-5 image-col">
+          <img src="photos/IMG_3451.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
         </div>
         <div class="col-7">
           <h2>Who We Are</h2>
@@ -102,22 +106,10 @@
             community for safe, reliable, self-sufficient transportation. Our motto is: fix, teach, give.
           </p>
         </div>
-      </div> -->
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Who We Are</h2>
-          <p>
-            Raleigh Community Kickstand is an all-volunteer community bicycle collective founded in 2017 and
-            based in Raleigh, NC. We work with the city, the county, local cycling shops, cycling non-profits,
-            other organizations, and individuals to collect resources and skills to address a need in our
-            community for safe, reliable, self-sufficient transportation. Our motto is: fix, teach, give.
-          </p>
-        </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row my-3 align-items-stretch">
+        <div class="col-8">
           <h2>Our Mission</h2>
           <p>
             We are volunteers who repair and distribute bicycles, teach bicycle maintenance, and connect community
@@ -133,11 +125,14 @@
             Raleigh. For more information about Oaks & Spokes, you can visit their website <a
               href="https://oaksandspokes.com/">here</a>.</p>
         </div>
+        <div class="col-4 d-flex ps-5 image-col">
+          <img src="photos/IMG_9429.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
+        </div>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <h2>Our Impact</h2>
+          <h2 class="text-center">Our Impact</h2>
         </div>
       </div>
       <div class="row" id="ticker-container">
@@ -161,23 +156,21 @@
         <div class="col-md-6">
           <h2>Upcoming Events</h2>
           <div style="margin: 0 auto; text-align: center;">
-            <div style="display: inline-block;" class="responsiveCal">
+            <div class="responsiveCal">
               <iframe
-                src="https://calendar.google.com/calendar/embed?height=220&wkst=1&ctz=America%2FNew_York&showPrint=0&showTabs=0&mode=AGENDA&showTz=0&src=aHEwNWFtbmJhYTVwcjB1N3VsYzJ2MmljNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5"
-                style="border:solid 1px #777; overflow: hidden;" width="800" height="380"></iframe>
+                src="https://calendar.google.com/calendar/embed?height=220&wkst=1&ctz=America%2FNew_York&showPrint=0&showTabs=0&mode=AGENDA&showTz=0&src=aHEwNWFtbmJhYTVwcjB1N3VsYzJ2MmljNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5"></iframe>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <h2>Contact</h2>
-          <p>If you are interested in volunteering, contact <a style="text-decoration: underline"
+          <p>If you are interested in volunteering, contact <a
               href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>.</p>
           <p>If you are interested in participating in our adopt-a-bike program, contact <a
-              style="text-decoration: underline"
               href="mailto:adoptabike@raleighcommunitykickstand.org">adoptabike@raleighcommunitykickstand.org</a>.</p>
-          <p>If you are interested in donating a bicycle, contact <a style="text-decoration: underline"
+          <p>If you are interested in donating a bicycle, contact <a
               href="mailto:bikes@raleighcommunitykickstand.org">bikes@raleighcommunitykickstand.org</a>.</p>
-          <p>For all other inquiries, contact <a style="text-decoration: underline"
+          <p>For all other inquiries, contact <a
               href="mailto:info@raleighcommunitykickstand.org">info@raleighcommunitykickstand.org</a>.</p>
         </div>
       </div>
@@ -186,10 +179,18 @@
 
   <!-- Fix section -->
   <section id="fix" class="bg-light">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <h1>Fix</h1>
+        </div>
+      </div>
+
+      <div class="row my-3 align-items-stretch">
+        <div class="col-5 d-flex pe-5 image-col">
+          <img src="photos/IMG_3464.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
+        </div>
+        <div class="col-7">
           <h2>Monthly Repair & Distribution Event</h2>
           <p>We provide repair services, maintenance training, and distribute bikes on a first-come, first-served basis
             on the 2nd Saturday of each month at Oak City Cares from 1-3pm.
@@ -198,49 +199,78 @@
             Wilmington Street.
           </p>
           <p>If you're in need our services, please roll by one of our events. If you're interested in getting
-            involved, contact <a style="text-decoration: underline"
+            involved, contact <a
               href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>.</p>
 
+        </div>
+      </div>
+
+      <div class="row my-3 align-items-stretch">
+        <div class="col-7">
           <h2>Pop-up Repair Events</h2>
           <p>In addition to our second Saturday event, we host additional pop-up repair events around Raleigh throughout
             the year. See our calendar for more
             details.</p>
           <p>If you're in need our services, please roll by one of our events. If you're interested in getting
-            involved, contact <a style="text-decoration: underline"
+            involved, contact <a
               href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>.</p>
+        </div>
+        <div class="col-5 d-flex ps-5 image-col">
+          <img src="photos/IMG_3466.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img-left">
+        </div>
+      </div>
 
+      <div class="row my-3 align-items-stretch">
+        <div class="col-5 d-flex pe-5 image-col">
+          <img src="photos/rck-5.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img-right">
+        </div>
+        <div class="col-7">
           <h2>Community Shop Hours</h2>
           <p>Curious about bike repair? Need a space to tune up your bike? Join us for community shop hours at our
             storage space! It's a great way to learn bike maintenance. Bring your bike to tune up or help refurbish one
             for our next distribution event. We have tools, tunes, and a ParkTools BBB!</p>
-          <p>Contact <a style="text-decoration: underline"
-              href="mailto:michael@raleighcommunitykickstand.org">michael@raleighcommunitykickstand.org</a> for more
+          <p>Contact <a href="mailto:michael@raleighcommunitykickstand.org">michael@raleighcommunitykickstand.org</a>
+            for more
             info on shop hours.</p>
+        </div>
+      </div>
 
+      <div class="row my-3 align-items-stretch">
+        <div class="col-7">
           <h2>Adopt-A-Bike Program</h2>
           <p>Want to help someone in need get a bike? Join our adopt-a-bike program! The Adopt-A-Bike program is a great
             way for beginners and veterans alike to tune up bikes to give community members reliable, self-sufficient
             transportation. We'll give you a project that matches your skill level, and we're here to help when you need
             it. Take your time and tinker when you can. When you are done, we will distribute the bikes you repair to
             folks in need.</p>
-          <div>We provide:</div>
-          <ul>
-            <li>the donated bike</li>
-            <li>the necessary parts</li>
-            <li>a list of needed fixes</li>
-            <li>resources and help</li>
-          </ul>
-          <div>You provide:</div>
-          <ul>
-            <li>the tools</li>
-            <li>the time and effort</li>
-          </ul>
+
+          <div class="row">
+            <div class="col-6">
+              <div>We provide:</div>
+              <ul>
+                <li>the donated bike</li>
+                <li>the necessary parts</li>
+                <li>a list of needed fixes</li>
+                <li>resources and help</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <div>You provide:</div>
+              <ul>
+                <li>the tools</li>
+                <li>the time and effort</li>
+              </ul>
+            </div>
+          </div>
           <p>Since launching, this program has helped us get more bikes to people who need them than ever before. Of the
             377 bikes distributed in 2024, 270 were fixed via Adopt-a-Bike. This work wouldn't be possible without
             volunteers stepping up.</p>
-          <p>Contact <a style="text-decoration: underline"
+          <p>Contact <a
               href="mailto:adoptabike@raleighcommunitykickstand.org">adoptabike@raleighcommunitykickstand.org</a> to
             get involved.</p>
+        </div>
+        <div class="col-5 d-flex ps-5 image-col">
+          <img src="photos/IMG_3444.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
         </div>
       </div>
     </div>
@@ -248,11 +278,11 @@
 
   <!-- Teach section -->
   <section id="teach" class="bg-primary">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <h1>Teach</h1>
-          <p>At our pop-up repair events, we not only offer mechanical repairs but also the
+          <p>At our pop-up repair events and shop hours, we not only offer mechanical repairs but also the
             opportunity for people to learn general bicycle maintenance. We provide all of the necessary
             tools and work with riders to teach them how to diagnose and repair common issues. We strive
             to put our riders on a path towards self-sufficiency.</p>
@@ -373,7 +403,8 @@
 
   <!-- Give section -->
   <section id="give" class="bg-light">
-    <div class="container">
+    <div class="container-fluid">
+
       <div class="row">
         <div class="col-md-12">
           <h1>Give</h1>
@@ -422,11 +453,13 @@
             riders to ensure they are able to secure their mode of transportation.
           </p>
         </div>
-
       </div>
 
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row my-3 align-items-stretch">
+        <div class="col-5 d-flex pe-5 image-col">
+          <img src="photos/IMG_7516.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
+        </div>
+        <div class="col-7">
           <h2>Donate your bikes</h2>
           <p>The Raleigh Community Kickstand could not serve the community without bicycle
             donations. We refurbish your old bicycles to make sure everyone in the community has the
@@ -435,13 +468,32 @@
             or mountain bikes. Donations of components, tools, and other bike related items are
             accepted on occasion as space allows and as needed. Donations of working lights and locks
             are always appreciated.</p>
+        </div>
+      </div>
+
+      <div class="row my-3 align-items-stretch">
+        <div class="col-7">
           <h2>Donate your time</h2>
-          <p>The Raleigh Community Kickstand is entirely volunteer operated. Without people like
-            you, we would not be able to make these services available. We are always looking for additional
-            volunteers to help repair bikes and manage
-            administrative tasks. There are no prior skills required; we will teach you everything you need
-            to know! Volunteering with RCK is a great way to give back to the community and learn more about
-            bicycle maintenance.</p>
+          <p>The Raleigh Community Kickstand is entirely volunteer operated. Without people like you,
+            we would not be able to make these services available. We are always looking for additional
+            volunteers to help repair bikes and manage administrative tasks. There are no prior skills
+            required; we will teach you everything you need to know! Volunteering is a great
+            way to give back to the community and learn more about bicycle maintenance! Contact
+            <a href="mailto:volunteer@raleighcommunitykickstand.org">
+              volunteer@raleighcommunitykickstand.org</a> to get involved.
+          </p>
+        </div>
+        <div class="col-5 d-flex ps-5 image-col">
+          <img src="photos/IMG_8847.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
+        </div>
+      </div>
+
+
+      <div class="row my-3 align-items-stretch">
+        <div class="col-5 d-flex pe-5 image-col">
+          <img src="photos/IMG_9418.jpg" alt="Example" class="img-fluid rounded shadow-rck-depth side-img">
+        </div>
+        <div class="col-7">
           <h2>Donate your resources</h2>
           <p>If you work for an organization or company that has grant funding opportunities or
             discount programs for non-profits, please let us know. We are always in need of funding for consumable parts
@@ -453,12 +505,13 @@
             We will provide stands and tools.</p>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section bg-dark pb-5">
-    <div class="container">
+    <div class="container-fluid">
 
       <div class="row">
 
@@ -468,12 +521,12 @@
               <h4 class="m-0 text-red">Social Media</h4>
               <img class="p-3" src="media/RCK_logo-10.png" alt="RCK logo red" style="user-select: none; height: 8rem;">
               <div class="small text-black">Instagram:<br>
-                <a rel="noopener noreferrer"
+                <a
                   href="https://www.instagram.com/communitykickstand/">https://www.instagram.com/communitykickstand/</a>
               </div>
               <br>
               <div class="small text-black">Facebook:<br>
-                <a rel="noopener noreferrer"
+                <a
                   href="https://www.facebook.com/RaleighCommunityKickstand/">https://www.facebook.com/RaleighCommunityKickstand/</a>
               </div>
             </div>
@@ -487,16 +540,15 @@
               <img class="p-3" src="media/RCK_logo-21.png" alt="RCK logo green"
                 style="user-select: none; height: 8rem;">
 
-              <div class="small text-black">Volunteering: <br><a style="text-decoration: underline"
+              <div class="small text-black">Volunteering: <br><a
                   href="mailto:volunteer@raleighcommunitykickstand.org">volunteer@raleighcommunitykickstand.org</a>
               </div>
               <div class="small text-black">Adopt-A-Bike:<br>
-                <a style="text-decoration: underline"
-                  href="mailto:adoptabike@raleighcommunitykickstand.org">adoptabike@raleighcommunitykickstand.org</a>
+                <a href="mailto:adoptabike@raleighcommunitykickstand.org">adoptabike@raleighcommunitykickstand.org</a>
               </div>
-              <div class="small text-black">Bike Donations: <br><a style="text-decoration: underline"
+              <div class="small text-black">Bike Donations: <br><a
                   href="mailto:bikes@raleighcommunitykickstand.org">bikes@raleighcommunitykickstand.org</a></div>
-              <div class="small text-black">Other Inquiries: <br><a style="text-decoration: underline"
+              <div class="small text-black">Other Inquiries: <br><a
                   href="mailto:info@raleighcommunitykickstand.org">info@raleighcommunitykickstand.org</a></div>
             </div>
           </div>
@@ -530,7 +582,7 @@
 
   <!-- Footer -->
   <footer class="py-3 bg-dark">
-    <div class="container">
+    <div class="container-fluid">
       <p class="m-0 text-center text-white small">Copyright &copy; 2025 Raleigh Community Kickstand</p>
     </div>
   </footer>

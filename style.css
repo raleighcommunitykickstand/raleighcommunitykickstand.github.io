@@ -46,9 +46,13 @@
 /* -----------------------------------------------
    GLOBAL TYPOGRAPHY
 ------------------------------------------------ */
-html {
-  font-family: "Courier New", "Montserrat-SemiBold", "Montserrat", Arial, sans-serif;
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Courier New", monospace;
   font-weight: bold;
+  background-color: var(--rck-true-black);
 }
 
 h1,
@@ -73,6 +77,9 @@ a {
   font-family: "Courier New";
   font-weight: bold;
   text-decoration: underline;
+  color: var(--rck-teal);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 h1 {
@@ -89,10 +96,6 @@ h3 {
   /* margin: 2.5rem 0 1.5rem 0; */
 }
 
-a {
-  color: var(--rck-teal);
-}
-
 /* -----------------------------------------------
   Layout
 ------------------------------------------------ */
@@ -104,6 +107,11 @@ section {
 /* -----------------------------------------------
   NAVBAR
 ------------------------------------------------ */
+#navbar-spacer {
+  /* height: var(--navbar-height); */
+  width: 100%;
+}
+
 nav,
 a.navbar-brand,
 .nav-item .nav-link {
@@ -114,6 +122,32 @@ a.navbar-brand,
 
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff !important;
+}
+
+/* Default desktop/tablet size */
+.brand-logo {
+  height: 2.75rem;
+  user-select: none;
+}
+
+/* Medium screens (like small laptops or big phones sideways) */
+@media (max-width: 992px) {
+  .brand-logo {
+    height: 2.25rem;
+  }
+  .navbar-brand {
+    font-size: 1.15rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+  .brand-logo {
+    height: 1.75rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
 }
 
 /* -----------------------------------------------
@@ -128,25 +162,26 @@ a.navbar-brand,
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: var(--rck-true-black);
 }
 
-.bannerImg {
+.banner-img {
   width: 100%;
   display: block;
 }
 
 .banner-overlay {
-  width: 50%;
-  height: 100%;
+  width: min(70%, 1000px); /* responsive max width */
+  padding: 1.5rem 2rem; /* natural height */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .banner-overlay-content h1 {
   font-size: calc(1.5rem + 3vw);
   color: var(--rck-yellow);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .banner-overlay-content p {
@@ -163,6 +198,72 @@ a.navbar-brand,
   margin-bottom: 2em;
 }
 
+.image-col {
+  display: flex;
+  align-items: center;
+}
+
+.side-img {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: center;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-left {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: left;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-right {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: right;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-triple {
+  flex: 1; /* each image takes equal height */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+
+  min-height: 120px; /* stop shrinking too much */
+  max-height: 250px; /* stop growing too much on huge screens */
+}
+
+.shadow-bold {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9) !important;
+}
+
+.shadow-rck-orange {
+  box-shadow: 0 10px 25px rgba(239, 64, 54, 0.45) !important; /* #ef4036 */
+}
+
+.shadow-rck-teal {
+  box-shadow: 0 10px 25px rgba(20, 131, 120, 0.45) !important; /* #148378 */
+}
+
+.shadow-rck-yellow {
+  box-shadow: 0 10px 25px rgba(247, 245, 115, 0.35) !important; /* #f7f573 */
+}
+
+.shadow-rck-retro {
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8) !important;
+}
+
+.shadow-rck-depth {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(20, 131, 120, 0.35) !important;
+}
+
 /* -----------------------------------------------
   BACKGROUND COLORS
 ------------------------------------------------ */
@@ -172,7 +273,7 @@ a.navbar-brand,
 .bg-light {
   background-color: var(--rck-light-3) !important;
 }
-.bg-green {
+.bg-lighter {
   background-color: var(--rck-light-1) !important;
 }
 .bg-dark {
@@ -202,11 +303,8 @@ a.navbar-brand,
   ABOUT SECTION
 ------------------------------------------------ */
 #about {
-  scroll-margin-top: 100px; /* keep this */
+  scroll-margin-top: 100px;
   margin-top: 0;
-}
-body {
-  padding-top: 56px; /* or whatever your navbar height actually is */
 }
 
 /* -----------------------------------------------
@@ -219,13 +317,14 @@ body {
 
 #ticker-container h3 {
   font-family: "HWTArtz";
-  margin: 1rem;
+  font-size: clamp(1rem, 10vw, 1.5rem);
+  margin: clamp(0.5rem, 10vw, 1rem);
 }
 
 .ticker-value {
   font-family: "HWTArtz";
-  font-size: 8em;
-  margin: -3rem;
+  font-size: clamp(3rem, 10vw, 8rem);
+  margin: calc(-0.4 * clamp(3rem, 10vw, 8rem));
   letter-spacing: 0.1em;
   color: var(--rck-teal);
 }
@@ -234,6 +333,7 @@ body {
   CALENDAR (Embedded Google Calendar)
 ------------------------------------------------ */
 .responsiveCal {
+  /* display: inline-block; */
   margin: 0 auto;
   max-width: 640px;
   width: 100%;
@@ -242,6 +342,7 @@ body {
 
 .responsiveCal iframe {
   width: 100%;
+  border: solid 1px #777;
 }
 
 /* -----------------------------------------------
