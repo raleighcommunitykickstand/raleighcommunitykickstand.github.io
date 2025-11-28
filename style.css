@@ -100,8 +100,43 @@ h3 {
   Layout
 ------------------------------------------------ */
 section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
+}
+
+/* make container wider before it clamps */
+.my-wide-container {
+  width: 100 percent; /* FULL WIDTH ALWAYS */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0; /* wrapper should NOT add gutters */
+  padding-right: 0;
+  background-color: black; /* your desired gutter color */
+}
+
+/* Below 1920px: FORCE no max-width */
+@media (max-width: 1919px) {
+  .my-wide-container {
+    max-width: none !important; /* THIS fixes your issue */
+  }
+}
+
+/* Your custom widths above 1920px */
+@media (min-width: 1920px) {
+  .my-wide-container {
+    max-width: 1800px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .my-wide-container {
+    max-width: 2000px;
+  }
+}
+
+@media (min-width: 2800px) {
+  .my-wide-container {
+    max-width: 2200px;
+  }
 }
 
 /* -----------------------------------------------
@@ -154,43 +189,23 @@ a.navbar-brand,
 /* -----------------------------------------------
    BANNER HEADER
 ------------------------------------------------ */
-.banner-wrapper {
-  width: 100%;
-  min-height: 200px;
-  max-height: 360px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: var(--rck-true-black);
-}
-
-.banner-img {
-  width: min(100%, 2000px);
-  display: block;
-}
-
-.banner-overlay {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-}
-
-.banner-overlay-content h1 {
-  width: min(60%, 1000px);
+header h1 {
   font-size: clamp(2rem, 1.5rem + 3vw, 4.5rem);
   color: var(--rck-yellow);
-  background-color: rgba(0, 0, 0, 0.65);
   margin: auto;
 }
 
-.banner-overlay-content p {
+header p {
   font-family: "Courier New";
   font-size: clamp(1rem, 0.5rem + 0.8vw, 1.75rem);
+  color: white;
+}
+
+.header-icon {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 /* -----------------------------------------------
@@ -289,6 +304,9 @@ a.navbar-brand,
 .bg-trueblack {
   background-color: var(--rck-true-black) !important;
 }
+.bg-teal {
+  background-color: var(--rck-teal) !important;
+}
 
 /* -----------------------------------------------
   TEXT COLORS
@@ -309,6 +327,7 @@ a.navbar-brand,
 #about {
   scroll-margin-top: 100px;
   margin-top: 0;
+  padding-top: 0;
 }
 
 /* -----------------------------------------------
