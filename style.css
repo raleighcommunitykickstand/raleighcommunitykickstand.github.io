@@ -390,3 +390,8 @@ header p {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
 }
+
+.contact-section .card img {
+  user-select: none;
+  height: 8rem;
+}
