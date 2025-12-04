@@ -361,11 +361,15 @@ header p {
   max-width: 640px;
   width: 100%;
   overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .responsiveCal iframe {
   width: 100%;
   border: solid 1px #777;
+  height: 300px;
+  display: block;
 }
 
 /* -----------------------------------------------
