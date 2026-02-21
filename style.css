@@ -30,17 +30,23 @@
 ------------------------------------------------ */
 @font-face {
   font-family: "HWTArtz";
-  src: local("HWT-Artz-W00-Regular"), url("fonts/HWT-Artz-W00-Regular.ttf") format("truetype");
+  src:
+    local("HWT-Artz-W00-Regular"),
+    url("fonts/HWT-Artz-W00-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url("fonts/Montserrat-Regular.ttf") format("truetype");
+  src:
+    local("Montserrat"),
+    url("fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
-  src: local("Montserrat-SemiBold"), url("fonts/Montserrat-SemiBold.ttf") format("truetype");
+  src:
+    local("Montserrat-SemiBold"),
+    url("fonts/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 /* -----------------------------------------------
@@ -105,22 +111,22 @@ section {
 
 /* make container wider before it clamps */
 .my-wide-container {
-  width: 100 percent; /* FULL WIDTH ALWAYS */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0; /* wrapper should NOT add gutters */
   padding-right: 0;
-  background-color: black; /* your desired gutter color */
+  background-color: black;
 }
 
 /* Below 1920px: FORCE no max-width */
 @media (max-width: 1919px) {
   .my-wide-container {
-    max-width: none !important; /* THIS fixes your issue */
+    max-width: none !important;
   }
 }
 
-/* Your custom widths above 1920px */
+/* custom widths above 1920px */
 @media (min-width: 1920px) {
   .my-wide-container {
     max-width: 1800px;
@@ -280,7 +286,9 @@ header p {
 }
 
 .shadow-rck-depth {
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(20, 131, 120, 0.35) !important;
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(20, 131, 120, 0.35) !important;
 }
 
 /* -----------------------------------------------
