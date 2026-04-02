@@ -1,21 +1,24 @@
 <mjml>
   <mj-head>
+    <mj-raw>
+      <meta name="color-scheme" content="light dark"> <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
     <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/hwtartz.css" />
     <mj-attributes>
       <mj-all font-family="'Courier New', Courier, monospace" />
-      <mj-body background-color="#000000" width="700px" />
+      <mj-body background-color="#010101" width="700px" />
       <mj-section padding="12px 16px" />
-      <mj-column background-color="#1d2124" padding="28px" border="2px solid #f7f573" />
-      <mj-text padding="0px" color="#ffffff" font-size="16px" line-height="1.6" />
+      <mj-column padding="28px" border="2px solid #f7f573" />
+      <mj-text padding="0px" font-size="16px" line-height="1.6" />
       <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
     </mj-attributes>
   </mj-head>
 
-  <mj-body>
+  <mj-body background-color="#010101">
     <!-- TROUBLE_VIEWING -->
     <mj-section padding="8px 16px 0px 16px">
-      <mj-column border="2px solid #148378">
-        <mj-text align="center" font-size="12px" line-height="1.4">
+      <mj-column background-color="#1d2124" padding="28px" border="2px solid #148378">
+        <mj-text color="#ffffff" align="center" font-size="12px" line-height="1.4">
           Having trouble viewing this email?
           <a href="https://raleighcommunitykickstand.org/newsletter/2026_03.html" style="color: #148378; text-decoration: underline">View it in your browser</a
           >.
@@ -50,7 +53,7 @@
     </mj-section>
 
     <mj-section>
-      <mj-column>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
         <mj-text
           font-family="'Courier New', Courier, monospace"
           color="#148378"
@@ -70,23 +73,23 @@
           align="center"
           padding="0 0 16px 0"
         />
-        <mj-text padding-bottom="16px" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
+        <mj-text color="#ffffff" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
           Photo by Sammy
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           After our biggest month yet, we had a quieter month in February. It was kinda nice. Sometimes, it can feel like there is this imperative to do more and more every month and every year. It&#x27;s nice to remind ourselves that we don&#x27;t have to. While helping our neighbors is important, it is a good reminder that we are all neighbors and need to take care of ourselves. Since 2017, it&#x27;s been a rotating, ragtag crew of a couple dozen volunteers making this happen. The work will only continue if it&#x27;s sustainable. If we want to keep showing up for one another, we need to remember that caring for ourselves is not separate from caring for our neighbors.
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           With that being said, there were some moments to highlight. We had some great, new faces helping out at events this month and the return of a day one (hi Kyle!). The 2nd Saturday event at Oak City Cares was bustling with 6 walk-up repairs, as others worked on some real fixer-uppers to distribute to folks there and at the South Wilmington Street Men&#x27;s Shelter. Our shop hour folks were not deterred by the cold rain or the cramped conditions. The vibes were high as they stripped some damaged bikes for parts and fixed up others for distribution.
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           That&#x27;s all for now. Thanks to everyone who helped out and hope to see you at an event in March!
         </mj-text>
       </mj-column>
     </mj-section>
 
 <mj-section>
-      <mj-column>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
         <mj-text
           font-family="'Courier New', Courier, monospace"
           color="#148378"
@@ -106,23 +109,23 @@
           align="center"
           padding="0 0 16px 0"
         />
-        <mj-text padding-bottom="16px" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
+        <mj-text color="#ffffff" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
           Flyer by Jared Harber
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>Bike Repair &amp; Distribution - Volunteers needed!</strong><br /><strong>Note:</strong> I have a school conflict and will be unable to make it to this event. I need someone to volunteer to pick up 4 repair stands, tool kits, pumps, and some components to bring to the event and take back to the storage unit.<br />Where: Oak City Cares - 1430 S Wilmington Street<br />When: Saturday, March 14 | 1-3p<br />We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. I bring 4 sets of tools / stands, but we often have more volunteers than stations, so feel free to bring your own tools and/or stands. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>Community Shop Hours</strong><br />Where: SecurCare Storage - 4615 Beryl Rd<br />When: Sunday, March 8 12-4p | Wednesday, March 18 5-8p | Sunday, March 29 12-4p<br />Our open shop hours at our storage space. Folks can come use our tools to learn about bike repair, work on their bike, and/or work on a bike for distribution. It&#x27;s a great time to work on bikes in good company. Reach out in advance, so we can coordinate gate access.
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>Pop-up Bike Repair with Oaks &amp; Spokes - Volunteers needed!</strong><br />Where: Peach Road Park - 911 Ileagnes Rd<br />When: Thursday, March 26 5-7p<br />Pop-up free bike repair event with Oaks &amp; Spokes. We provide free bike repairs on a first-come, first-served basis. This event is targeted towards adults, but the neighborhood kids come by for some help and to help out as well. I bring 3 sets of tools / stands, but feel free to bring your own tools and/or stands if you&#x27;d prefer. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=924164712#gid=924164712" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=924164712#gid=924164712</a>
         </mj-text>
       </mj-column>
     </mj-section>
 
 <mj-section>
-      <mj-column>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
         <mj-text
           font-family="'Courier New', Courier, monospace"
           color="#148378"
@@ -134,10 +137,10 @@
         >
           VOLUNTEER RECOGNITION
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           In the sprit of quieter, contemplative month, I want to take a moment to highlight the many people who make this work possible. I tried my hardest not to leave anyone out, but so many people have helped out in so many capacities that I know I am inadvertently leaving out a few folks.
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           I have some gifts for volunteers that I still need to get many of you. First, I have some RCK-branded top caps for your stem made by Charles of <a href="https://finebikes.co/" style="color:#148378; text-decoration:underline;">Fine Bikes</a>. We also have some RCK bike bottles designed by Jared. I will continue to try to bring them to events, but please reach out if you need one and I haven&#x27;t gotten you one.
         </mj-text>
         <mj-image
@@ -156,73 +159,73 @@
           align="center"
           padding="0 0 16px 0"
         />
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           John Y - touched just about every one of the over 2,000 bikes we have put back out there, coordinates the huge adopt-a-bike program with almost 500 bikes last year, hauls bikes to every event. His truck, yard, commitment, and personality are the only reason this org exists.
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Liz - head of HR, excellent hub packer, benevolent landlord
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Sam - coordinates donation of every bike, definitive 1st place on adopt-a-bike leaderboard
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Ian - runs FoH every event and when he&#x27;s not there, everyone notices
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Alex - part of the original crew, perennial event volunteer
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Jon W - perennial event volunteer, adopt-a-bike veteran, coordinated workshops last year
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Keith - perennial event volunteer, adopt-a-bike veteran, mechanic listserv mainstay
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Jeff - perennial event volunteer, adopt-a-bike veteran, bike ferrier
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Steve - big-time adopt-a-bike veteran, event volunteer
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Mac - perennial event volunteer, veteran adopt-a-biker, fan donor
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Brian - 1st place event attender in Orange County, 2nd place all around event attender
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Ron - monthly partner bike deliverer, avid adopt-a-biker, event volunteer
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Sonya T - partner organization and delivery coordinator
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Sadie - cooks the books and helps with donations and financial reporting
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Jonathon - adopt-a-bike app developer, helps with unglamorous backend logistics, event volunteer
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Diego - adopt-a-bike rookie of the year, event volunteer
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Colin - event rookie of the year, shop hour regular
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           Jared - supports behind-the-scenes to secure grants/funds, complete the boring reports, and other tasks to keep this thing moving and free us up to do repairs, despite the fact he&#x27;s one of the most veteran mechanics in the triangle
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>Shout out to the new recruits</strong>: Bill, Brady, Chris, Elijah, Jonathan, Nathan, Nicolas, Rachel Erin, Theo, Thom, Nabil, Stephanie
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>Shout out to some older volunteers that helped us get here:</strong> Athena, Blythe, Eric, Jeff C, Joy, Kevin, Kurt, Kyle, Meg, Natalie, Natalie, Pat, Ralph, Ryan, Stephen
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>2025 event volunteers</strong>: Alex, Benton, Bill, Brady, Brian, Cam, Colin, Diego, Elijah, Emmanuel, Fahad, Greg, Ian, Isaac, Jared, Jeff, John K, Jon, Jonathan, Jonathon, Keith, Kelly, Kurt, Liz, Mac, Maurizio, Myles, Nabil (sry your daughter&#x27;s name is presently escaping me!), Natalie, Nate, Nathan, Nicolas, Paul, Ron, Sam, Sarah, Sonya, Steve, Tam, Theo
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>2025 Adopt-a-bikers</strong>: Ari, Bill, Dan, Diego, Jason, Jeff, Jonathan, Jon, Keith, Kevin, Mac, Matthew, Natalie, Nathan, Noah, Ron, Sam, Steve
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           <strong>2025 Adopt-A-Bike Leaderboard</strong>
         </mj-text>
         <mj-image
@@ -233,7 +236,7 @@
           align="center"
           padding="0 0 16px 0"
         />
-        <mj-text padding-bottom="16px" align="left">
+        <mj-text color="#ffffff" align="left">
           *****This data is not fully accurate! We started recording Adopt-a-Bikes through this system in March/April 2025. There were some issues with emails, so John had to assign a bunch to himself and they didn&#x27;t get tallied for the correct person. Those issues should now be fixed thanks to Jonathon!
         </mj-text>
       </mj-column>
@@ -242,35 +245,31 @@
     <!-- FOOTER -->
     <mj-section padding="12px 16px 24px 16px">
       <mj-column background-color="#161616" padding="20px" border="2px solid #148378">
-        <mj-text align="center" font-size="20px">
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center" font-size="20px">
           <strong>Raleigh Community Kickstand</strong>
         </mj-text>
 
-        <mj-text align="center"> Fix. Teach. Give. </mj-text>
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center"> Fix. Teach. Give. </mj-text>
 
-        <mj-text align="center">
-          <mj-text align="center">
-            <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline"
-              >Website</a
-            >
-            |
-            <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
-              >Instagram</a
-            >
-            |
-            <a
-              href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
-              style="color: #148378; text-decoration: underline"
-              >Paypal</a
-            >
-            |
-            <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
-          </mj-text>
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center">
+          <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline">Website</a>
+          |
+          <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
+            style="color: #148378; text-decoration: underline"
+            >Paypal</a
+          >
+          |
+          <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
         </mj-text>
 
-        <mj-divider />
+        <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
 
-        <mj-text align="center" font-size="10px">
+        <mj-text color="#ffffff" align="center" font-size="10px">
           You're receiving this email because you signed up for updates or attended a Kickstand event. If you don't want
           to receive these emails anymore, just let me know.
         </mj-text>

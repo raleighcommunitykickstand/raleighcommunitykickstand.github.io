@@ -137,7 +137,7 @@ def paragraph_is_caption_only(text: str) -> bool:
 
 
 def mj_text_block(content: str, align: str = "left", extra_attrs: str = "") -> str:
-    attrs = f' padding-bottom="16px" align="{align}"'
+    attrs = f' color="#ffffff" align="{align}"'
     if extra_attrs:
         attrs += f" {extra_attrs.strip()}"
 
@@ -348,7 +348,7 @@ def section_body_to_mjml(body: str) -> str:
 def render_section(title: str, body: str) -> str:
     return f"""
     <mj-section>
-      <mj-column>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
         <mj-text
           font-family="'Courier New', Courier, monospace"
           color="#148378"

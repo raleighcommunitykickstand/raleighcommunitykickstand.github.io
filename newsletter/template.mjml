@@ -1,21 +1,24 @@
 <mjml>
   <mj-head>
+    <mj-raw>
+      <meta name="color-scheme" content="light dark"> <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
     <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/hwtartz.css" />
     <mj-attributes>
       <mj-all font-family="'Courier New', Courier, monospace" />
-      <mj-body background-color="#000000" width="700px" />
+      <mj-body background-color="#010101" width="700px" />
       <mj-section padding="12px 16px" />
-      <mj-column background-color="#1d2124" padding="28px" border="2px solid #f7f573" />
-      <mj-text padding="0px" color="#ffffff" font-size="16px" line-height="1.6" />
+      <mj-column padding="28px" border="2px solid #f7f573" />
+      <mj-text padding="0px" font-size="16px" line-height="1.6" />
       <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
     </mj-attributes>
   </mj-head>
 
-  <mj-body>
+  <mj-body background-color="#010101">
     <!-- TROUBLE_VIEWING -->
     <mj-section padding="8px 16px 0px 16px">
-      <mj-column border="2px solid #148378">
-        <mj-text align="center" font-size="12px" line-height="1.4">
+      <mj-column background-color="#1d2124" padding="28px" border="2px solid #148378">
+        <mj-text color="#ffffff" align="center" font-size="12px" line-height="1.4">
           Having trouble viewing this email?
           <a href="{{ VIEW_IN_BROWSER }}" style="color: #148378; text-decoration: underline">View it in your browser</a
           >.
@@ -54,35 +57,31 @@
     <!-- FOOTER -->
     <mj-section padding="12px 16px 24px 16px">
       <mj-column background-color="#161616" padding="20px" border="2px solid #148378">
-        <mj-text align="center" font-size="20px">
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center" font-size="20px">
           <strong>Raleigh Community Kickstand</strong>
         </mj-text>
 
-        <mj-text align="center"> Fix. Teach. Give. </mj-text>
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center"> Fix. Teach. Give. </mj-text>
 
-        <mj-text align="center">
-          <mj-text align="center">
-            <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline"
-              >Website</a
-            >
-            |
-            <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
-              >Instagram</a
-            >
-            |
-            <a
-              href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
-              style="color: #148378; text-decoration: underline"
-              >Paypal</a
-            >
-            |
-            <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
-          </mj-text>
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center">
+          <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline">Website</a>
+          |
+          <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
+            style="color: #148378; text-decoration: underline"
+            >Paypal</a
+          >
+          |
+          <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
         </mj-text>
 
-        <mj-divider />
+        <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
 
-        <mj-text align="center" font-size="10px">
+        <mj-text color="#ffffff" align="center" font-size="10px">
           You're receiving this email because you signed up for updates or attended a Kickstand event. If you don't want
           to receive these emails anymore, just let me know.
         </mj-text>
