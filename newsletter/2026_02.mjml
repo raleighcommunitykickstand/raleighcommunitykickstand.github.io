@@ -1,7 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/HWTArtz.woff" />
-
+    <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/hwtartz.css" />
     <mj-attributes>
       <mj-all font-family="'Courier New', Courier, monospace" />
       <mj-body background-color="#000000" width="700px" />
