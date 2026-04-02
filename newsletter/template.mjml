@@ -1,0 +1,104 @@
+<mjml>
+  <mj-head>
+    <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/HWTArtz.woff" />
+
+    <mj-attributes>
+      <mj-all font-family="'Courier New', Courier, monospace" />
+      <mj-body background-color="#000000" width="700px" />
+      <mj-section padding="12px 16px" />
+      <mj-column background-color="#1d2124" padding="28px" border="2px solid #f7f573" />
+      <mj-text padding="0px" color="#ffffff" font-size="16px" line-height="1.6" />
+      <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body>
+    <!-- HEADER -->
+    <mj-section padding="16px 16px 8px 16px">
+      <mj-column background-color="#000000" border="2px solid #f7f573" padding="20px">
+        <mj-image
+          src="https://raleighcommunitykickstand.org/media/RCK_logo-by.png"
+          alt="Kickstand Logo"
+          width="220px"
+          align="center"
+          padding="0 0 16px 0"
+        />
+
+        <mj-text
+          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          color="#f7f573"
+          font-size="36px"
+          font-weight="700"
+          align="center"
+          letter-spacing="1px"
+          line-height="1.1"
+        >
+          {{ NEWSLETTER_TITLE }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- SUMMARY -->
+    <mj-section>
+      <mj-column>
+        <mj-text
+          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          {{ SECTION_1_TITLE }}
+        </mj-text>
+        {{ SECTION_1_IMAGE }}
+        {{ SECTION_1_BODY }}
+      </mj-column>
+    </mj-section>
+
+    <!-- EVENTS NEXT MONTH -->
+    <mj-section>
+      <mj-column>
+        <mj-text
+          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          {{ SECTION_2_TITLE }}
+        </mj-text>
+        {{ SECTION_2_IMAGE }}
+        {{ SECTION_2_BODY }}
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section padding="12px 16px 24px 16px">
+      <mj-column background-color="#161616" padding="20px" border="2px solid #148378">
+        <mj-text align="center" font-size="20px">
+          <strong>Raleigh Community Kickstand</strong>
+        </mj-text>
+
+        <mj-text align="center"> Fix. Teach. Give. </mj-text>
+
+        <mj-text align="center">
+          <a href="https://raleighcommunitykickstand.org">Website</a> |
+          <a href="https://www.instagram.com/communitykickstand">Instagram</a> |
+          <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">Paypal</a> |
+          <a href="https://venmo.com/communitykickstand">Venmo</a>
+        </mj-text>
+
+        <mj-divider />
+
+        <mj-text align="center" font-size="10px">
+          You're receiving this email because you signed up for updates or attended a Kickstand event. If you don't want
+          to receive these emails anymore, just let me know.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
