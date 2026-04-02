@@ -13,6 +13,17 @@
   </mj-head>
 
   <mj-body>
+    <!-- TROUBLE_VIEWING -->
+    <mj-section padding="8px 16px 0px 16px">
+      <mj-column border="2px solid #148378">
+        <mj-text align="center" font-size="12px" line-height="1.4">
+          Having trouble viewing this email?
+          <a href="https://raleighcommunitykickstand.org/newsletter/2026_04.html" style="color: #148378; text-decoration: underline">View it in your browser</a
+          >.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
     <!-- HEADER -->
     <mj-section padding="16px 16px 8px 16px">
       <mj-column background-color="#000000" border="2px solid #f7f573" padding="20px">
@@ -33,12 +44,11 @@
           letter-spacing="1px"
           line-height="1.1"
         >
-          APRIL NEWSLETTER
+          APRIL 2026 NEWSLETTER
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- SUMMARY -->
     <mj-section>
       <mj-column>
         <mj-text
@@ -71,8 +81,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- EVENTS NEXT MONTH -->
-    <mj-section>
+<mj-section>
       <mj-column>
         <mj-text
           font-family="HWTArtz, 'Courier New', Courier, monospace"
@@ -87,7 +96,7 @@
         </mj-text>
         <mj-image
           src="https://raleighcommunitykickstand.org/newsletter/images/2026_04_flyer.png"
-          alt="Event Flyer"
+          alt="April Events"
           width="220px"
           align="center"
           padding="0 0 16px 0"

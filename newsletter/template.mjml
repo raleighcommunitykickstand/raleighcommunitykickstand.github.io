@@ -13,6 +13,17 @@
   </mj-head>
 
   <mj-body>
+    <!-- TROUBLE_VIEWING -->
+    <mj-section padding="8px 16px 0px 16px">
+      <mj-column border="2px solid #148378">
+        <mj-text align="center" font-size="12px" line-height="1.4">
+          Having trouble viewing this email?
+          <a href="{{ VIEW_IN_BROWSER }}" style="color: #148378; text-decoration: underline">View it in your browser</a
+          >.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
     <!-- HEADER -->
     <mj-section padding="16px 16px 8px 16px">
       <mj-column background-color="#000000" border="2px solid #f7f573" padding="20px">
@@ -38,43 +49,7 @@
       </mj-column>
     </mj-section>
 
-    <!-- SUMMARY -->
-    <mj-section>
-      <mj-column>
-        <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
-          color="#148378"
-          font-size="32px"
-          line-height="1.05"
-          font-weight="700"
-          align="center"
-          padding-bottom="14px"
-        >
-          {{ SECTION_1_TITLE }}
-        </mj-text>
-        {{ SECTION_1_IMAGE }}
-        {{ SECTION_1_BODY }}
-      </mj-column>
-    </mj-section>
-
-    <!-- EVENTS NEXT MONTH -->
-    <mj-section>
-      <mj-column>
-        <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
-          color="#148378"
-          font-size="32px"
-          line-height="1.05"
-          font-weight="700"
-          align="center"
-          padding-bottom="14px"
-        >
-          {{ SECTION_2_TITLE }}
-        </mj-text>
-        {{ SECTION_2_IMAGE }}
-        {{ SECTION_2_BODY }}
-      </mj-column>
-    </mj-section>
+    {{ CONTENT_SECTIONS }}
 
     <!-- FOOTER -->
     <mj-section padding="12px 16px 24px 16px">
