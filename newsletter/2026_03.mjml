@@ -70,11 +70,14 @@
           align="center"
           padding="0 0 16px 0"
         />
-        <mj-text padding-bottom="16px" align="left">
-          After our biggest month yet, we had a quieter month in February. It was kinda nice. Sometimes, it can feel like there is this imperative to do more and more every month and every year. It’s nice to remind ourselves that we don’t have to. While helping our neighbors is important, it is a good reminder that we are all neighbors and need to take care of ourselves. Since 2017, it’s been a rotating, ragtag crew of a couple dozen volunteers making this happen. The work will only continue if it’s sustainable. If we want to keep showing up for one another, we need to remember that caring for ourselves is not separate from caring for our neighbors.
+        <mj-text padding-bottom="16px" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
+          Photo by Sammy
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          With that being said, there were some moments to highlight. We had some great, new faces helping out at events this month and the return of a day one (hi Kyle!). The 2nd Saturday event at Oak City Cares was bustling with 6 walk-up repairs, as others worked on some real fixer-uppers to distribute to folks there and at the South Wilmington Street Men’s Shelter. Our shop hour folks were not deterred by the cold rain or the cramped conditions. The vibes were high as they stripped some damaged bikes for parts and fixed up others for distribution.
+          After our biggest month yet, we had a quieter month in February. It was kinda nice. Sometimes, it can feel like there is this imperative to do more and more every month and every year. It&#x27;s nice to remind ourselves that we don&#x27;t have to. While helping our neighbors is important, it is a good reminder that we are all neighbors and need to take care of ourselves. Since 2017, it&#x27;s been a rotating, ragtag crew of a couple dozen volunteers making this happen. The work will only continue if it&#x27;s sustainable. If we want to keep showing up for one another, we need to remember that caring for ourselves is not separate from caring for our neighbors.
+        </mj-text>
+        <mj-text padding-bottom="16px" align="left">
+          With that being said, there were some moments to highlight. We had some great, new faces helping out at events this month and the return of a day one (hi Kyle!). The 2nd Saturday event at Oak City Cares was bustling with 6 walk-up repairs, as others worked on some real fixer-uppers to distribute to folks there and at the South Wilmington Street Men&#x27;s Shelter. Our shop hour folks were not deterred by the cold rain or the cramped conditions. The vibes were high as they stripped some damaged bikes for parts and fixed up others for distribution.
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
           That&#x27;s all for now. Thanks to everyone who helped out and hope to see you at an event in March!
@@ -95,32 +98,25 @@
         >
           MARCH EVENTS
         </mj-text>
-        <mj-text padding-bottom="16px" align="left">
-          ![March 2026 Flyer](images/2026_03_flyer.png)
-        </mj-text>
-        <mj-text padding-bottom="16px" align="left">
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_flyer.jpg"
+          alt="March 2026 Flyer"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text padding-bottom="16px" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
           Flyer by Jared Harber
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          <strong>Bike Repair &amp; Distribution - Volunteers needed!</strong><br />
-          <strong>Note:</strong> I have a school conflict and will be unable to make it to this event. I need someone to volunteer to pick up 4 repair stands, tool kits, pumps, and some components to bring to the event and take back to the storage unit.<br />
-          Where: Oak City Cares - 1430 S Wilmington Street<br />
-          When: Saturday, March 14 | 1-3p<br />
-          We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. I bring 4 sets of tools / stands, but we often have more volunteers than stations, so feel free to bring your own tools and/or stands. Please fill out the sheet below letting us know you are coming and how you’d like to help with the event.<br />
-          <a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
+          <strong>Bike Repair &amp; Distribution - Volunteers needed!</strong><br /><strong>Note:</strong> I have a school conflict and will be unable to make it to this event. I need someone to volunteer to pick up 4 repair stands, tool kits, pumps, and some components to bring to the event and take back to the storage unit.<br />Where: Oak City Cares - 1430 S Wilmington Street<br />When: Saturday, March 14 | 1-3p<br />We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. I bring 4 sets of tools / stands, but we often have more volunteers than stations, so feel free to bring your own tools and/or stands. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          <strong>Community Shop Hours</strong><br />
-          Where: SecurCare Storage - 4615 Beryl Rd<br />
-          When: Sunday, March 8 12-4p | Wednesday, March 18 5-8p | Sunday, March 29 12-4p<br />
-          Our open shop hours at our storage space. Folks can come use our tools to learn about bike repair, work on their bike, and/or work on a bike for distribution. It’s a great time to work on bikes in good company. Reach out in advance, so we can coordinate gate access.
+          <strong>Community Shop Hours</strong><br />Where: SecurCare Storage - 4615 Beryl Rd<br />When: Sunday, March 8 12-4p | Wednesday, March 18 5-8p | Sunday, March 29 12-4p<br />Our open shop hours at our storage space. Folks can come use our tools to learn about bike repair, work on their bike, and/or work on a bike for distribution. It&#x27;s a great time to work on bikes in good company. Reach out in advance, so we can coordinate gate access.
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          <strong>Pop-up Bike Repair with Oaks &amp; Spokes - Volunteers needed!</strong><br />
-          Where: Peach Road Park - 911 Ileagnes Rd<br />
-          When: Thursday, March 26 5-7p<br />
-          Pop-up free bike repair event with Oaks &amp; Spokes. We provide free bike repairs on a first-come, first-served basis. This event is targeted towards adults, but the neighborhood kids come by for some help and to help out as well. I bring 3 sets of tools / stands, but feel free to bring your own tools and/or stands if you’d prefer. Please fill out the sheet below letting us know you are coming and how you’d like to help with the event.<br />
-          <a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=924164712#gid=924164712" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=924164712#gid=924164712</a>
+          <strong>Pop-up Bike Repair with Oaks &amp; Spokes - Volunteers needed!</strong><br />Where: Peach Road Park - 911 Ileagnes Rd<br />When: Thursday, March 26 5-7p<br />Pop-up free bike repair event with Oaks &amp; Spokes. We provide free bike repairs on a first-come, first-served basis. This event is targeted towards adults, but the neighborhood kids come by for some help and to help out as well. I bring 3 sets of tools / stands, but feel free to bring your own tools and/or stands if you&#x27;d prefer. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=924164712#gid=924164712" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=924164712#gid=924164712</a>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -142,7 +138,7 @@
           In the sprit of quieter, contemplative month, I want to take a moment to highlight the many people who make this work possible. I tried my hardest not to leave anyone out, but so many people have helped out in so many capacities that I know I am inadvertently leaving out a few folks.
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          I have some gifts for volunteers that I still need to get many of you. First, I have some RCK-branded top caps for your stem made by Charles of <a href="https://finebikes.co/" style="color:#148378; text-decoration:underline;">Fine Bikes</a>. We also have some RCK bike bottles designed by Jared. I will continue to try to bring them to events, but please reach out if you need one and I haven’t gotten you one.
+          I have some gifts for volunteers that I still need to get many of you. First, I have some RCK-branded top caps for your stem made by Charles of <a href="https://finebikes.co/" style="color:#148378; text-decoration:underline;">Fine Bikes</a>. We also have some RCK bike bottles designed by Jared. I will continue to try to bring them to events, but please reach out if you need one and I haven&#x27;t gotten you one.
         </mj-text>
         <mj-image
           src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_bottles.gif"
@@ -153,7 +149,7 @@
           padding="0 0 16px 0"
         />
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_flyer.jpg"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_caps.jpg"
           alt="Kickstand Top Caps"
           width="400px"
           fluid-on-mobile="true"
@@ -170,7 +166,7 @@
           Sam - coordinates donation of every bike, definitive 1st place on adopt-a-bike leaderboard
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          Ian - runs FoH every event and when he’s not there, everyone notices
+          Ian - runs FoH every event and when he&#x27;s not there, everyone notices
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
           Alex - part of the original crew, perennial event volunteer
@@ -212,7 +208,7 @@
           Colin - event rookie of the year, shop hour regular
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          Jared - supports behind-the-scenes to secure grants/funds, complete the boring reports, and other tasks to keep this thing moving and free us up to do repairs, despite the fact he’s one of the most veteran mechanics in the triangle
+          Jared - supports behind-the-scenes to secure grants/funds, complete the boring reports, and other tasks to keep this thing moving and free us up to do repairs, despite the fact he&#x27;s one of the most veteran mechanics in the triangle
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
           <strong>Shout out to the new recruits</strong>: Bill, Brady, Chris, Elijah, Jonathan, Nathan, Nicolas, Rachel Erin, Theo, Thom, Nabil, Stephanie
@@ -221,7 +217,7 @@
           <strong>Shout out to some older volunteers that helped us get here:</strong> Athena, Blythe, Eric, Jeff C, Joy, Kevin, Kurt, Kyle, Meg, Natalie, Natalie, Pat, Ralph, Ryan, Stephen
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          <strong>2025 event volunteers</strong>: Alex, Benton, Bill, Brady, Brian, Cam, Colin, Diego, Elijah, Emmanuel, Fahad, Greg, Ian, Isaac, Jared, Jeff, John K, Jon, Jonathan, Jonathon, Keith, Kelly, Kurt, Liz, Mac, Maurizio, Myles, Nabil (sry your daughter’s name is presently escaping me!), Natalie, Nate, Nathan, Nicolas, Paul, Ron, Sam, Sarah, Sonya, Steve, Tam, Theo
+          <strong>2025 event volunteers</strong>: Alex, Benton, Bill, Brady, Brian, Cam, Colin, Diego, Elijah, Emmanuel, Fahad, Greg, Ian, Isaac, Jared, Jeff, John K, Jon, Jonathan, Jonathon, Keith, Kelly, Kurt, Liz, Mac, Maurizio, Myles, Nabil (sry your daughter&#x27;s name is presently escaping me!), Natalie, Nate, Nathan, Nicolas, Paul, Ron, Sam, Sarah, Sonya, Steve, Tam, Theo
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
           <strong>2025 Adopt-a-bikers</strong>: Ari, Bill, Dan, Diego, Jason, Jeff, Jonathan, Jon, Keith, Kevin, Mac, Matthew, Natalie, Nathan, Noah, Ron, Sam, Steve
@@ -238,7 +234,7 @@
           padding="0 0 16px 0"
         />
         <mj-text padding-bottom="16px" align="left">
-          <strong>*</strong>This data is not fully accurate! We started recording Adopt-a-Bikes through this system in March/April 2025. There were some issues with emails, so John had to assign a bunch to himself and they didn’t get tallied for the correct person. Those issues should now be fixed thanks to Jonathon!
+          *****This data is not fully accurate! We started recording Adopt-a-Bikes through this system in March/April 2025. There were some issues with emails, so John had to assign a bunch to himself and they didn&#x27;t get tallied for the correct person. Those issues should now be fixed thanks to Jonathon!
         </mj-text>
       </mj-column>
     </mj-section>

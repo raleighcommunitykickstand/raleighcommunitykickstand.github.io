@@ -63,21 +63,22 @@
           MARCH SUMMARY
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          We’ll start this month with a haiku:
+          We&#x27;ll start this month&#x27;s summary with a haiku:
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          spring’s started to sprung<br />
-          the pollen is in my lungs<br />
-          but the weather’s nice
+          <pre style="margin:0; white-space:pre-wrap; background:#111; color:#f5f5f5; padding:12px; border-radius:4px; font-family:Courier New, Courier, monospace; font-size:14px; line-height:1.5;">spring&#x27;s started to sprung
+the pollen is in my lungs
+but the weather&#x27;s nice
+</pre>
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          We’ve officially hit the equinox and the start of daylight savings time. The weather is getting nicer, and we have light until almost 8pm. There’s been a big uptick in both volunteers and folks seeking services, as we all emerge from hibernation and want to get back out on the bike. We tuned up 31 bikes in total this month across 5 different events, including 17(!) at Peach Road Community Center with Oaks &amp; Spokes, 6 at Oak City Cares, and 8 at community shop hours.
+          We&#x27;ve officially hit the equinox and the start of daylight savings time. The weather is getting nicer, and we have light until almost 8pm. There&#x27;s been a big uptick in both volunteers and folks seeking services, as we all emerge from hibernation and want to get back out on the bike. We tuned up 31 bikes in total this month across 5 different events, including 17(!) at Peach Road Community Center with Oaks &amp; Spokes, 6 at Oak City Cares, and 8 at community shop hours.
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          In addition to the walk-up repairs, we refurbished and distributed 34 bikes to folks experiencing housing insecurity. We placed 5 through our second Saturday event at Oak City Cares, 4 through Peach Road Community Center, 5 through direct mutual aid, and 20 through our deliveries with the TAM Food Pantry truck. Our delivery route this month included partner organizations Feed the Pack Pantry, Raleigh Rescue Mission, Healing Transitions, and Kirk of Kildaire Church. Please reach out if you know other orgs or aid groups we could partner with to get refurbished bikes to folks in our community who wouldn’t otherwise have a means to get around.
+          In addition to the walk-up repairs, we refurbished and distributed 34 bikes to folks experiencing housing insecurity. We placed 5 through our second Saturday event at Oak City Cares, 4 through Peach Road Community Center, 5 through direct mutual aid, and 20 through our deliveries with the TAM Food Pantry truck. Our delivery route this month included partner organizations Feed the Pack Pantry, Raleigh Rescue Mission, Healing Transitions, and Kirk of Kildaire Church. Please reach out if you know other orgs or aid groups we could partner with to get refurbished bikes to folks in our community who wouldn&#x27;t otherwise have a means to get around.
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          Thanks so much to everyone who makes this work possible. Hope to see you out at an event this month. Remember, anyone and everyone is always welcome! No experience necessary. There are many ways to get involved that don’t involve turning wrenches, and you can always learn by doing!
+          Thanks so much to everyone who makes this work possible. Hope to see you out at an event this month. Remember, anyone and everyone is always welcome! No experience necessary. There are many ways to get involved that don&#x27;t involve turning wrenches, and you can always learn by doing!
         </mj-text>
       </mj-column>
     </mj-section>
@@ -95,32 +96,25 @@
         >
           APRIL EVENTS
         </mj-text>
-        <mj-text
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_04_flyer.png"
+          alt="April 2026 Flyer"
+          width="400px"
+          fluid-on-mobile="true"
           align="center"
-          font-size="13px"
-          color="#dae0e5"
-          padding-bottom="12px"
-        >
+          padding="0 0 16px 0"
+        />
+        <mj-text padding-bottom="16px" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
           Flyer by Eva Bowe
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          <strong>Bike Repair &amp; Distribution - Volunteers needed!</strong><br />
-          Where: Oak City Cares - 1430 S Wilmington Street<br />
-          When: Saturday, April 11 | 1-3p<br />
-          We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. I bring 4 sets of tools / stands, but we often have more volunteers than stations, so feel free to bring your own tools and/or stands. Please fill out the sheet below letting us know you are coming and how you’d like to help with the event.<br />
-          <a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
+          <strong>Bike Repair &amp; Distribution - Volunteers needed!</strong><br />Where: Oak City Cares - 1430 S Wilmington Street<br />When: Saturday, April 11 | 1-3p<br />We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. I bring 4 sets of tools / stands, but we often have more volunteers than stations, so feel free to bring your own tools and/or stands. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          <strong>Basic Tune-Ups &amp; Skill Share - Volunteer needed!</strong><br />
-          Where: Raleigh Really, Really Free Market @ Eliza Pool Park - 1600 Fayetteville St<br />
-          When: Sunday, April 12 | 11-1p<br />
-          A pop-up repair clinic at the Raleigh Really, Really Free Market where we will be performing basic adjustments and safety checks with a paired down tool set. We also do a basic maintenance skill share covering fix-a-flat, chain maintenance, and more if folks want. I could use at least one other set of hands. Reach out if you can help!
+          <strong>Basic Tune-Ups &amp; Skill Share - Volunteer needed!</strong><br />Where: Raleigh Really, Really Free Market @ Eliza Pool Park - 1600 Fayetteville St<br />When: Sunday, April 12 | 11-1p<br />A pop-up repair clinic at the Raleigh Really, Really Free Market where we will be performing basic adjustments and safety checks with a paired down tool set. We also do a basic maintenance skill share covering fix-a-flat, chain maintenance, and more if folks want. I could use at least one other set of hands. Reach out if you can help!
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
-          <strong>Community Shop Hours</strong><br />
-          Where: SecurCare Storage - 4615 Beryl Rd<br />
-          When: Wednesday, April 22 5-8p | Sunday, April 26 11-3p<br />
-          Our open shop hours at our storage space. Folks can come use our tools to learn about bike repair, work on their bike, and/or work on a bike for distribution. It’s a great time to work on bikes in good company. Contact me if you&#x27;re coming in advance so I can send you the gate access info.
+          <strong>Community Shop Hours</strong><br />Where: SecurCare Storage - 4615 Beryl Rd<br />When: Wednesday, April 22 5-8p | Sunday, April 26 11-3p<br />Our open shop hours at our storage space. Folks can come use our tools to learn about bike repair, work on their bike, and/or work on a bike for distribution. It&#x27;s a great time to work on bikes in good company. Contact me if you&#x27;re coming in advance so I can send you the gate access info.
         </mj-text>
       </mj-column>
     </mj-section>
