@@ -30,6 +30,7 @@
           src="https://raleighcommunitykickstand.org/media/RCK_logo-by.png"
           alt="Kickstand Logo"
           width="220px"
+          fluid-on-mobile="true"
           align="center"
           padding="0 0 16px 0"
         />
@@ -51,7 +52,7 @@
     <mj-section>
       <mj-column>
         <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          font-family="'Courier New', Courier, monospace"
           color="#148378"
           font-size="32px"
           line-height="1.05"
@@ -61,7 +62,14 @@
         >
           DECEMBER SUMMARY
         </mj-text>
-        
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2025_12_summary.png"
+          alt="December 2025 Summary"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
         <mj-text padding-bottom="16px" align="left">
           In December, we hosted a free bike repair and distribution clinic and two community shop hour sessions. We completed 5 walk-up repairs during those events. Our adopt-a-bike and event volunteers refurbished 52 donated bikes for our neighbors facing housing and transportation barriers. We distributed 31 bikes at our second Saturday event at Oak City Cares and 21 through our partner organizations including Fernandez Community Center, South Wilmington Street Men’s Shelter, Raleigh Rescue Mission, Step Up Ministry, and Healing Transitions.
         </mj-text>
@@ -74,7 +82,7 @@
 <mj-section>
       <mj-column>
         <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          font-family="'Courier New', Courier, monospace"
           color="#148378"
           font-size="32px"
           line-height="1.05"
@@ -84,7 +92,14 @@
         >
           2025 SUMMARY
         </mj-text>
-        
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2025_annual.png"
+          alt="2025 Summary"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
         <mj-text padding-bottom="16px" align="left">
           In 2025, we hosted 59 events including 27 pop-up repair events, 29 shop hour sessions, and 3 free maintenance workshops. We repaired 732 bikes, including 175 free walk-up repairs at our events and 557 bikes refurbished and distributed for free to folks in need through our events and partner organizations. This work has grown steadily each year, reflecting the sustained demand for reliable, self-sufficient transportation and our commitment to expand our capacity to meet it.
         </mj-text>
@@ -100,7 +115,7 @@
 <mj-section>
       <mj-column>
         <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          font-family="'Courier New', Courier, monospace"
           color="#148378"
           font-size="32px"
           line-height="1.05"
@@ -112,23 +127,27 @@
         </mj-text>
         <mj-image
           src="https://raleighcommunitykickstand.org/newsletter/images/2026_01_flyer.png"
-          alt="January Events"
-          width="220px"
+          alt="January 2026 Flyer"
+          width="400px"
+          fluid-on-mobile="true"
           align="center"
           padding="0 0 16px 0"
         />
+        <mj-text padding-bottom="16px" align="left">
+          Flyer by Michael D&#x27;Argenio
+        </mj-text>
         <mj-text padding-bottom="16px" align="left">
           <strong>Bike Repair &amp; Distribution - Volunteers needed!</strong><br />
           Where: Oak City Cares - 1430 S Wilmington Street<br />
           When: Saturday, January 10 | 1-3p<br />
           We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. Please fill out the sheet below letting us know you are coming and how you’d like to help with the event.<br />
-          <a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
+          <a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
           <strong>Kickstand Annual Volunteer Party - Come socialize!</strong><br />
           Where: Bend Bar (853 W Morgan St)<br />
           When: Saturday, January 10 | 4-7pm<br />
-          You are cordially invited to the annual Kickstand party. Come celebrate and socialize! Roll up after the second Saturday repair event and bring your significant others. We will get pizzas from Trophy on the company dime around 5\. You are welcome to snag drinks and/or other snacks from Bend Bar. Hope to see you there!
+          You are cordially invited to the annual Kickstand party. Come celebrate and socialize! Roll up after the second Saturday repair event and bring your significant others. We will get pizzas from Trophy on the company dime around 5. You are welcome to snag drinks and/or other snacks from Bend Bar. Hope to see you there!
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
           <strong>Community Shop Hours</strong><br />
@@ -146,7 +165,7 @@
           <strong>Oaks &amp; Spokes Member Party</strong><br />
           Where: Transfer Co Ballroom - 500 E Davie St, Suite 160<br />
           When: Friday, January 23 | 5:30-8:30p<br />
-          Annual member party for Oaks &amp; Spokes. It&#x27;s a festive vibe with drinks and mingling. There are also some updates delivered about the previous year and looking forward to the new year. We will also provide an update about RCK. O\&amp;S is our fiscal sponsor and supports us through grants and direct funding.
+          Annual member party for Oaks &amp; Spokes. It&#x27;s a festive vibe with drinks and mingling. There are also some updates delivered about the previous year and looking forward to the new year. We will also provide an update about RCK. O&amp;S is our fiscal sponsor and supports us through grants and direct funding.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -161,10 +180,23 @@
         <mj-text align="center"> Fix. Teach. Give. </mj-text>
 
         <mj-text align="center">
-          <a href="https://raleighcommunitykickstand.org">Website</a> |
-          <a href="https://www.instagram.com/communitykickstand">Instagram</a> |
-          <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">Paypal</a> |
-          <a href="https://venmo.com/communitykickstand">Venmo</a>
+          <mj-text align="center">
+            <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline"
+              >Website</a
+            >
+            |
+            <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
+              >Instagram</a
+            >
+            |
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
+              style="color: #148378; text-decoration: underline"
+              >Paypal</a
+            >
+            |
+            <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
+          </mj-text>
         </mj-text>
 
         <mj-divider />

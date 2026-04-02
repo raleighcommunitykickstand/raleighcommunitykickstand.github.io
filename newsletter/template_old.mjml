@@ -96,10 +96,19 @@
         <mj-text align="center"> Fix. Teach. Give. </mj-text>
 
         <mj-text align="center">
-          <a href="https://raleighcommunitykickstand.org">Website</a> |
-          <a href="https://www.instagram.com/communitykickstand">Instagram</a> |
-          <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">Paypal</a> |
-          <a href="https://venmo.com/communitykickstand">Venmo</a>
+          <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline">Website</a>
+          |
+          <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
+            style="color: #148378; text-decoration: underline"
+            >Paypal</a
+          >
+          |
+          <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
         </mj-text>
 
         <mj-divider />

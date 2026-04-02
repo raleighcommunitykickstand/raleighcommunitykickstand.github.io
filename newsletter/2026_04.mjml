@@ -30,6 +30,7 @@
           src="https://raleighcommunitykickstand.org/media/RCK_logo-by.png"
           alt="Kickstand Logo"
           width="220px"
+          fluid-on-mobile="true"
           align="center"
           padding="0 0 16px 0"
         />
@@ -51,7 +52,7 @@
     <mj-section>
       <mj-column>
         <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          font-family="'Courier New', Courier, monospace"
           color="#148378"
           font-size="32px"
           line-height="1.05"
@@ -61,9 +62,10 @@
         >
           MARCH SUMMARY
         </mj-text>
-        
         <mj-text padding-bottom="16px" align="left">
-          We’ll start this month with a haiku:<br />
+          We’ll start this month with a haiku:
+        </mj-text>
+        <mj-text padding-bottom="16px" align="left">
           spring’s started to sprung<br />
           the pollen is in my lungs<br />
           but the weather’s nice
@@ -83,7 +85,7 @@
 <mj-section>
       <mj-column>
         <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          font-family="'Courier New', Courier, monospace"
           color="#148378"
           font-size="32px"
           line-height="1.05"
@@ -93,19 +95,20 @@
         >
           APRIL EVENTS
         </mj-text>
-        <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_04_flyer.png"
-          alt="April Events"
-          width="220px"
+        <mj-text
           align="center"
-          padding="0 0 16px 0"
-        />
+          font-size="13px"
+          color="#dae0e5"
+          padding-bottom="12px"
+        >
+          Flyer by Eva Bowe
+        </mj-text>
         <mj-text padding-bottom="16px" align="left">
           <strong>Bike Repair &amp; Distribution - Volunteers needed!</strong><br />
           Where: Oak City Cares - 1430 S Wilmington Street<br />
           When: Saturday, April 11 | 1-3p<br />
           We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. I bring 4 sets of tools / stands, but we often have more volunteers than stations, so feel free to bring your own tools and/or stands. Please fill out the sheet below letting us know you are coming and how you’d like to help with the event.<br />
-          <a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
+          <a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
         </mj-text>
         <mj-text padding-bottom="16px" align="left">
           <strong>Basic Tune-Ups &amp; Skill Share - Volunteer needed!</strong><br />
@@ -132,10 +135,23 @@
         <mj-text align="center"> Fix. Teach. Give. </mj-text>
 
         <mj-text align="center">
-          <a href="https://raleighcommunitykickstand.org">Website</a> |
-          <a href="https://www.instagram.com/communitykickstand">Instagram</a> |
-          <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">Paypal</a> |
-          <a href="https://venmo.com/communitykickstand">Venmo</a>
+          <mj-text align="center">
+            <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline"
+              >Website</a
+            >
+            |
+            <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
+              >Instagram</a
+            >
+            |
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
+              style="color: #148378; text-decoration: underline"
+              >Paypal</a
+            >
+            |
+            <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
+          </mj-text>
         </mj-text>
 
         <mj-divider />

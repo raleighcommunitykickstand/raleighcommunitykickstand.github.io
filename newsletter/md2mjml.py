@@ -2,6 +2,7 @@ from pathlib import Path
 import re
 import html
 import subprocess
+import shutil
 
 
 NEWSLETTERS_DIR = Path("newsletter")
@@ -11,7 +12,7 @@ BASE_HTML_URL = "https://raleighcommunitykickstand.org/newsletter/"
 BASE_IMAGE_URL = "https://raleighcommunitykickstand.org/newsletter/images/"
 LOCAL_IMAGE_DIR = NEWSLETTERS_DIR / "images"
 
-IMAGE_EXTENSIONS = [".png", ".jpg", ".jpeg"]
+IMAGE_EXTENSIONS = [".png", ".jpg", ".jpeg", ".gif"]
 
 
 def escape_text(text: str) -> str:
@@ -20,8 +21,12 @@ def escape_text(text: str) -> str:
 
 def inline_markdown_to_html(text: str) -> str:
     text = escape_text(text)
-    text = re.sub(r"\\([!#\-\\()])", r"\1", text)
-    text = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', text)
+    text = re.sub(r"\\([^\w\s])", r"\1", text)
+    text = re.sub(
+        r"(?<!!)\[(.+?)\]\((.+?)\)",
+        r'<a href="\2" style="color:#148378; text-decoration:underline;">\1</a>',
+        text,
+    )
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
     return text
@@ -48,18 +53,6 @@ def parse_markdown(md: str):
     return newsletter_title, sections
 
 
-def image_stem_for_section(month_slug: str, section_title: str) -> str:
-    title = section_title.lower()
-
-    if "summary" in title:
-        return f"{month_slug}_summary"
-
-    if "event" in title or "flyer" in title:
-        return f"{month_slug}_flyer"
-
-    return ""
-
-
 def find_image_filename(image_stem: str) -> str:
     if not image_stem:
         return ""
@@ -73,52 +66,122 @@ def find_image_filename(image_stem: str) -> str:
     return ""
 
 
-def image_tag_or_empty(image_stem: str, alt: str) -> str:
-    filename = find_image_filename(image_stem)
-
-    if not filename:
-        return ""
-
+def image_tag_from_filename(filename: str, alt: str) -> str:
     return f"""
         <mj-image
           src="{BASE_IMAGE_URL}{filename}"
           alt="{escape_text(alt)}"
-          width="220px"
+          width="400px"
+          fluid-on-mobile="true"
           align="center"
           padding="0 0 16px 0"
         />
         """.strip()
 
 
+def image_tag_or_empty(image_stem: str, alt: str) -> str:
+    filename = find_image_filename(image_stem)
+    if not filename:
+        return ""
+    return image_tag_from_filename(filename, alt)
+
+
+def markdown_image_to_mjml(block: str) -> str:
+    lines = [line.strip() for line in block.splitlines() if line.strip()]
+    if len(lines) != 1:
+        return ""
+
+    m = re.fullmatch(r"!\[(.*?)\]\((images/[^)]+)\)", lines[0])
+    if not m:
+        return ""
+
+    alt_text = m.group(1).strip()
+    rel_path = m.group(2).strip()
+
+    filename = Path(rel_path).name
+    local_path = LOCAL_IMAGE_DIR / filename
+
+    if not local_path.exists():
+        return ""
+
+    return image_tag_from_filename(filename, alt_text or filename)
+
+
 def section_body_to_mjml(body: str) -> str:
     blocks = [b.strip() for b in re.split(r"\n\s*\n", body) if b.strip()]
     rendered = []
 
-    for block in blocks:
-        lines = [line.rstrip() for line in block.splitlines()]
+    image_line_re = re.compile(r"!\[(.*?)\]\((images/[^)]+)\)")
 
-        if len(lines) > 1:
+    for i, block in enumerate(blocks):
+        lines = [line.rstrip() for line in block.splitlines() if line.strip()]
+
+        # special case: first block starts with "Flyer by"
+        if i == 0 and lines and lines[0].lower().startswith("flyer by"):
             content = "<br />\n          ".join(inline_markdown_to_html(line) for line in lines)
-        else:
-            content = inline_markdown_to_html(lines[0])
-
-        rendered.append(
-            f"""<mj-text padding-bottom="16px" align="left">
+            rendered.append(
+                f"""<mj-text
+          align="center"
+          font-size="13px"
+          color="#dae0e5"
+          padding-bottom="12px"
+        >
           {content}
         </mj-text>"""
-        )
+            )
+            continue
+
+        text_buffer = []
+
+        def flush_text_buffer():
+            nonlocal text_buffer
+            if not text_buffer:
+                return
+            content = "<br />\n          ".join(inline_markdown_to_html(line) for line in text_buffer)
+            rendered.append(
+                f"""<mj-text padding-bottom="16px" align="left">
+          {content}
+        </mj-text>"""
+            )
+            text_buffer = []
+
+        for line in lines:
+            m = image_line_re.fullmatch(line.strip())
+
+            if m:
+                # flush any text collected before the image
+                flush_text_buffer()
+
+                alt_text = m.group(1).strip()
+                rel_path = m.group(2).strip()
+                filename = Path(rel_path).name
+                local_path = LOCAL_IMAGE_DIR / filename
+
+                if local_path.exists():
+                    rendered.append(image_tag_from_filename(filename, alt_text or filename))
+                else:
+                    # if missing, just keep original markdown visible
+                    rendered.append(
+                        f"""<mj-text padding-bottom="16px" align="left">
+          {inline_markdown_to_html(line)}
+        </mj-text>"""
+                    )
+            else:
+                text_buffer.append(line)
+
+        # flush trailing text after any image lines
+        flush_text_buffer()
 
     return "\n        ".join(rendered)
 
 
-def render_section(title: str, body: str, image_stem: str = "") -> str:
-    image_block = image_tag_or_empty(image_stem, title)
+def render_section(title: str, body: str) -> str:
 
     return f"""
     <mj-section>
       <mj-column>
         <mj-text
-          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          font-family="'Courier New', Courier, monospace"
           color="#148378"
           font-size="32px"
           line-height="1.05"
@@ -128,7 +191,6 @@ def render_section(title: str, body: str, image_stem: str = "") -> str:
         >
           {escape_text(title.upper())}
         </mj-text>
-        {image_block}
         {section_body_to_mjml(body)}
       </mj-column>
     </mj-section>
@@ -137,15 +199,16 @@ def render_section(title: str, body: str, image_stem: str = "") -> str:
 
 def compile_mjml_to_html(mjml_path: Path):
     html_path = mjml_path.with_suffix(".html")
+    npx_exe = shutil.which("npx.cmd") or shutil.which("npx")
+    if not npx_exe:
+        raise FileNotFoundError("Could not find npx or npx.cmd on PATH")
 
-    try:
-        subprocess.run(
-            ["npx.cmd", "mjml", str(mjml_path), "-o", str(html_path)],
-            check=True,
-        )
-        print(f"Compiled {html_path}")
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to compile {mjml_path}: {e}")
+    subprocess.run(
+        [npx_exe, "mjml", str(mjml_path), "-o", str(html_path)],
+        check=True,
+    )
+    print(f"Compiled {html_path}")
+
 
 def create_mjml(month_slug: str) -> Path:
     markdown_file = NEWSLETTERS_DIR / f"{month_slug}.md"
@@ -159,9 +222,10 @@ def create_mjml(month_slug: str) -> Path:
 
     rendered_sections = []
     for section_title, section_body in sections:
-        image_stem = image_stem_for_section(month_slug, section_title)
+        # image_stem = image_stem_for_section(month_slug, section_title)
         rendered_sections.append(
-            render_section(section_title, section_body, image_stem)
+            # render_section(section_title, section_body, image_stem)
+            render_section(section_title, section_body)
         )
 
     content_sections = "\n\n".join(rendered_sections)
@@ -173,8 +237,22 @@ def create_mjml(month_slug: str) -> Path:
 
     output_file.write_text(result, encoding="utf-8")
     print(f"Wrote {output_file}")
+
     compile_mjml_to_html(output_file)
     return output_file
+
+
+def write_newsletters_js(slugs: list[str]):
+    js_path = NEWSLETTERS_DIR / "newsletters.js"
+    slugs = sorted(slugs)
+
+    js_content = "const newsletters = [\n"
+    for slug in slugs:
+        js_content += f'  "{slug}",\n'
+    js_content += "];\n"
+
+    js_path.write_text(js_content, encoding="utf-8")
+    print(f"Wrote {js_path}")
 
 
 def main():
@@ -187,6 +265,8 @@ def main():
         print(f"No markdown files found in {NEWSLETTERS_DIR}")
         return
 
+    slugs = []
+
     for md_file in md_files:
         month_slug = md_file.stem
 
@@ -194,10 +274,14 @@ def main():
             print(f"Skipping {md_file.name} (expected format YYYY_MM.md)")
             continue
 
+        slugs.append(month_slug)
+
         try:
             create_mjml(month_slug)
         except Exception as e:
             print(f"Failed for {md_file.name}: {e}")
+
+    write_newsletters_js(slugs)
 
 
 if __name__ == "__main__":
