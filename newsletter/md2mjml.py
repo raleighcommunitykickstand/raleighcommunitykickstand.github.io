@@ -37,16 +37,20 @@ def read_markdown_file(path: Path) -> str:
             pass
     raise ValueError(f"Could not decode {path}")
 
+
 def clean_markdown_text(path: Path) -> str:
     text = read_markdown_file(path)
     return fix_text(text)
 
+
 def escape_text(text: str) -> str:
     return html.escape(text, quote=True)
+
 
 def paragraph_is_caption_only(text: str) -> bool:
     t = text.strip().lower()
     return t.startswith("flyer by") or t.startswith("photo by")
+
 
 def parse_markdown(md: str) -> tuple[str, list[tuple[str, str]]]:
     title_match = re.search(r"^#\s+(.+)$", md, flags=re.MULTILINE)
@@ -102,11 +106,7 @@ def resolve_and_validate_image(src: str) -> tuple[str, str]:
     local_path = LOCAL_IMAGE_DIR / filename
 
     if not local_path.exists():
-        raise FileNotFoundError(
-            f"Image not found: {filename}\n"
-            f"Expected at: {local_path}\n"
-            f"Original src: {src}"
-        )
+        raise FileNotFoundError(f"Image not found: {filename}\n" f"Expected at: {local_path}\n" f"Original src: {src}")
 
     return BASE_IMAGE_URL + filename, filename
 
@@ -177,13 +177,13 @@ def render_inline_html(node) -> str:
 
     if name == "code":
         return (
-            "<code style=\""
+            '<code style="'
             "background:#111;"
             "color:#f5f5f5;"
             "padding:2px 4px;"
             "border-radius:3px;"
             "font-family:Courier New, Courier, monospace;"
-            "\">"
+            '">'
             f"{inner}"
             "</code>"
         )
@@ -226,15 +226,15 @@ def render_pre_block(node: Tag) -> str:
     code_text = node.get_text()
     content = (
         '<pre style="'
-        'margin:0; '
-        'white-space:pre-wrap; '
-        'background:#111; '
-        'color:#f5f5f5; '
-        'padding:12px; '
-        'border-radius:4px; '
-        'font-family:Courier New, Courier, monospace; '
-        'font-size:14px; '
-        'line-height:1.5;'
+        "margin:0; "
+        "white-space:pre-wrap; "
+        "background:#111; "
+        "color:#f5f5f5; "
+        "padding:12px; "
+        "border-radius:4px; "
+        "font-family:Courier New, Courier, monospace; "
+        "font-size:14px; "
+        "line-height:1.5;"
         '">'
         f"{escape_text(code_text)}"
         "</pre>"
@@ -257,9 +257,9 @@ def render_blockquote_block(node: Tag) -> str:
     content = "".join(render_inline_html(child) for child in node.children).strip()
     block = (
         '<div style="'
-        'border-left:4px solid #148378; '
-        'padding-left:12px; '
-        'color:#dae0e5;'
+        "border-left:4px solid #148378; "
+        "padding-left:12px; "
+        "color:#dae0e5;"
         '">'
         f"{content}"
         "</div>"
@@ -274,10 +274,7 @@ def render_heading_block(node: Tag) -> str:
     return mj_text_block(
         content,
         extra_attrs=(
-            f'font-size="{HEADING_SIZES[name]}" '
-            'font-weight="700" '
-            'line-height="1.2" '
-            'padding-bottom="10px"'
+            f'font-size="{HEADING_SIZES[name]}" ' 'font-weight="700" ' 'line-height="1.2" ' 'padding-bottom="10px"'
         ),
     )
 
@@ -373,10 +370,8 @@ def compile_mjml_to_html(mjml_path: Path):
     if not npx_exe:
         raise FileNotFoundError("Could not find npx or npx.cmd on PATH")
 
-    subprocess.run(
-        [npx_exe, "mjml", str(mjml_path), "-o", str(html_path)],
-        check=True,
-    )
+    cmd = f'npx mjml "{mjml_path.as_posix()}" -o "{html_path.as_posix()}"'
+    subprocess.run(cmd, shell=True, check=True)
     print(f"Compiled {html_path}")
 
 
@@ -390,10 +385,7 @@ def create_mjml(month_slug: str) -> Path:
 
     newsletter_title, sections = parse_markdown(markdown)
 
-    rendered_sections = [
-        render_section(section_title, section_body)
-        for section_title, section_body in sections
-    ]
+    rendered_sections = [render_section(section_title, section_body) for section_title, section_body in sections]
     content_sections = "\n\n".join(rendered_sections)
 
     result = template
@@ -422,11 +414,7 @@ def write_newsletters_js(slugs: list[str]):
 
 
 def iter_newsletter_markdown_files():
-    return sorted(
-        path
-        for path in NEWSLETTERS_DIR.glob("*.md")
-        if path.name.lower() != "template.md"
-    )
+    return sorted(path for path in NEWSLETTERS_DIR.glob("*.md") if path.name.lower() != "template.md")
 
 
 def main():

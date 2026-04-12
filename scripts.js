@@ -1,64 +1,62 @@
-// ticker
-document.addEventListener("DOMContentLoaded", function () {
-  // Select the target element
+const TICKER_VALUES = [
+  197, // events
+  914, // repairs
+  2163, // distributed
+];
+
+const TICKER_SPEED = 100;
+
+function animateTicker() {
   const tickerContainer = document.getElementById("ticker-container");
+  if (!tickerContainer) return;
 
-  // Create a new Intersection Observer instance
+  const counters = tickerContainer.querySelectorAll(".ticker-value");
+
   const observer = new IntersectionObserver(
-    (entries, observer) => {
+    (entries, observerInstance) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Perform an action
-          tickerContainer.classList.add("visible");
-          const counters = document.querySelectorAll(".ticker-value");
-          const speed = 100;
+        if (!entry.isIntersecting) return;
 
-          counters.forEach((counter) => {
-            const animate = () => {
-              const value = +counter.getAttribute("targetValue");
-              const data = +counter.innerText;
+        tickerContainer.classList.add("visible");
 
-              const time = value / speed;
-              if (data < value) {
-                counter.innerText = Math.ceil(data + time);
-                requestAnimationFrame(animate);
-              } else {
-                counter.innerText = value;
-              }
-            };
+        counters.forEach((counter, index) => {
+          const target = TICKER_VALUES[index] ?? 0;
 
-            animate();
-          });
+          function animate() {
+            const current = +counter.innerText;
+            const step = target / TICKER_SPEED;
 
-          // Unobserve the element if the action should happen only once
-          observer.unobserve(entry.target);
-        }
+            if (current < target) {
+              counter.innerText = Math.ceil(current + step);
+              requestAnimationFrame(animate);
+            } else {
+              counter.innerText = target;
+            }
+          }
+
+          animate();
+        });
+
+        observerInstance.unobserve(entry.target);
       });
     },
     {
       threshold: 0.1,
-    }
+    },
   );
 
-  // Start observing the ticker-container div
   observer.observe(tickerContainer);
-});
+}
 
-// Make external links open in a new tab
-document.addEventListener("DOMContentLoaded", function () {
+function setupExternalLinks() {
   document.querySelectorAll("a[href]").forEach((a) => {
     const href = a.getAttribute("href");
+    if (!href) return;
 
-    // Skip anchors (#about, #fix, etc.)
     if (href.startsWith("#")) return;
-
-    // Skip mailto:
     if (href.startsWith("mailto:")) return;
-
-    // Skip JavaScript links (just in case)
     if (href.startsWith("javascript:")) return;
 
-    // Detect external: begins with http AND not your own domain
     const isExternal = href.startsWith("http");
 
     if (isExternal) {
@@ -66,31 +64,45 @@ document.addEventListener("DOMContentLoaded", function () {
       a.setAttribute("rel", "noopener noreferrer");
     }
   });
-});
+}
 
+function updateNavbarSpacer() {
+  const nav = document.getElementById("mainNav");
+  const spacer = document.getElementById("navbar-spacer");
+
+  if (!nav || !spacer) return;
+
+  spacer.style.height = nav.offsetHeight + "px";
+}
+
+function setupScrollSpyAndNavbar() {
+  const mainNav = document.body.querySelector("#mainNav");
+
+  if (mainNav) {
+    new bootstrap.ScrollSpy(document.body, {
+      target: "#mainNav",
+      rootMargin: "0px 0px -40%",
+    });
+  }
+
+  const navbarToggler = document.body.querySelector(".navbar-toggler");
+
+  const responsiveNavItems = document.querySelectorAll("#navbarResponsive .nav-link");
+
+  responsiveNavItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      if (window.getComputedStyle(navbarToggler).display !== "none") {
+        navbarToggler.click();
+      }
+    });
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  const nav = document.getElementById("mainNav");
-  const spacer = document.getElementById("navbar-spacer");
-  spacer.style.height = nav.offsetHeight + "px";
+  animateTicker();
+  setupExternalLinks();
+  updateNavbarSpacer();
+  setupScrollSpyAndNavbar();
 });
 
-// Update on window resize too
-window.addEventListener("resize", () => {
-  const nav = document.getElementById("mainNav");
-  const spacer = document.getElementById("navbar-spacer");
-  spacer.style.height = nav.offsetHeight + "px";
-});
-
-
-// function facebookCardClick() {
-//   window.open('https://www.facebook.com/RaleighCommunityKickstand/', '_blank');
-// }
-
-// function emailCardClick() {
-//   location.href = "mailto:raleighcommunitykickstand@gmail.com";
-// }
-
-// function paypalCardClick() {
-//   var x = document.getElementById("paypalForm").submit();
-// }
+window.addEventListener("resize", updateNavbarSpacer);
