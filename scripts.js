@@ -1,6 +1,6 @@
 const TICKER_VALUES = [
-  197, // events
-  914, // repairs
+  199, // events
+  920, // repairs
   2163, // distributed
 ];
 
