@@ -1,0 +1,179 @@
+<mjml>
+  <mj-head>
+    <mj-raw>
+      <meta name="color-scheme" content="light dark"> <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
+    <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/hwtartz.css" />
+    <mj-attributes>
+      <mj-all font-family="'Courier New', Courier, monospace" />
+      <mj-body background-color="#010101" width="700px" />
+      <mj-section padding="12px 16px" />
+      <mj-column padding="28px" border="2px solid #f7f573" />
+      <mj-text padding="0px" font-size="16px" line-height="1.6" />
+      <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#010101">
+    <!-- TROUBLE_VIEWING -->
+    <mj-section padding="8px 16px 0px 16px">
+      <mj-column background-color="#1d2124" padding="28px" border="2px solid #148378">
+        <mj-text color="#ffffff" align="center" font-size="12px" line-height="1.4">
+          Having trouble viewing this email?
+          <a href="https://raleighcommunitykickstand.org/newsletter/2026_05.html" style="color: #148378; text-decoration: underline">View it in your browser</a
+          >.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- HEADER -->
+    <mj-section padding="16px 16px 8px 16px">
+      <mj-column background-color="#000000" border="2px solid #f7f573" padding="20px">
+        <mj-image
+          src="https://raleighcommunitykickstand.org/media/RCK_logo-by.png"
+          alt="Kickstand Logo"
+          width="220px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+
+        <mj-text
+          font-family="HWTArtz, 'Courier New', Courier, monospace"
+          color="#f7f573"
+          font-size="36px"
+          font-weight="700"
+          align="center"
+          letter-spacing="1px"
+          line-height="1.1"
+        >
+          MAY 2026 NEWSLETTER
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          MONTHLY DISPATCH
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_04_summary.png"
+          alt="April 2026 Flyer"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left">
+          Happy bike month to all those who celebrate! We are privileged to have such a vibrant bike community that there is an almost overwhelming amount of opportunities to get on your bike in different ways with good people. Check out <a href="https://bikemonthraleigh.org/" style="color:#148378; text-decoration:underline;">Bike Month Raleigh</a> to see everything happening this month. (I will shamelessly plug that I made the website if it gets you to click through and check something out something cool this month.)
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          As for Kickstand happenings this last month, we hosted a couple shop hour sessions, our monthly second Saturday Oak City Cares repair event, and a pop-up at the Raleigh Really, Really Free Market. We performed 12 walk-up repairs and refurbished and gave away 12 donated bikes at these events. Adopt-a-bike program mechanics have been busy fixing up bikes to prepare for more deliveries to our partner organizations this month. We also won the Commute Smart Award as part of the City of Raleigh&#x27;s 2026 Environmental Awards! Almost unbelievably, this is our second time winning this award in its four years of existence. Let me know if you want to arrange a sleepover with the oak leaf trophy to impress your dinner party guests.
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_05_award.jpg"
+          alt="Major Award"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left">
+          We also hosted a large meeting of the minds this past month to reflect on how things have been going and where we want things to go in the future. There are some big ideas, but we need help to make them happen. Which begs the question: who is Community Kickstand? You are! Everyone reading this email, everyone who has ever showed up to an event or donated a bike or slapped a Kickstand sticker on a bottle or a street sign. You are all Kickstand! You can all help out in any capacity. There are so many ways to get involved for everyone that aren&#x27;t just turning wrenches. Here are the biggest ways you can help out right now:
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          For folks who want to turn a wrench or learn how to turn a wrench:
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          <ul><li>Show up to an event, particularly on May 17th</li><li>Become a shop hour volunteer or even a shop hour manager</li><li>Join the adopt-a-bike program</li><li>Host other repair events</li></ul>
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          For folks who have no interest in wrenching or learning to wrench:
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          <ul><li>Identify more orgs and collectives working with folks in need of reliable, self-sufficient transportation</li><li>Help us outfit the containers (anybody know any solar energy connections?)</li><li>Help us identify grants and other funding sources to keep this thing moving</li><li>Plan and coordinate other events (maybe even fun social events?)</li></ul>
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          That&#x27;s all for now. Hope to see you out there at an event this bike month!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+<mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          MAY (BIKE MONTH) EVENTS
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          ![May 2026 Flyer](images/2026_06_flyer.jpg)
+        </mj-text>
+        <mj-text color="#ffffff" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
+          Flyer by Kylie Robinsun
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          <strong>Bike Month Raleigh Kickoff</strong><br />Where: The Bend Bar - 853 W Morgan St<br />When: Saturday, May 2nd @ 4-7pm<br />Celebrate the start of Bike Month with a casual social headed up by Oaks &amp; Spokes. Be sure to pick up your Bike Month passport, grab a slice of pizza, and pick up some free swag! This is a drop-in event, so swing by anytime!
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          <strong>Bike Repair &amp; Distribution - volunteers needed!</strong><br />Where: Oak City Cares - 1430 S Wilmington Street<br />When: Saturday, May 9 | 1-3p<br />We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. I bring 4 sets of tools / stands, but we often have more volunteers than stations, so feel free to bring your own tools and/or stands. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          <strong>Volunteer Work Session: Container Clean-Out - volunteers needed!</strong><br />Where: Gravel Lot off Hunt Drive at Dix Park | 35.774059, -78.660315<br />When: Sunday, May 17 | 10-2p<br />Did you know that Oaks &amp; Spokes / RCK was gifted a shipping container full of bikes from Trips for Kids RDU? Our new (old) container is now living at Dix Park and needs some TLC! Come help clean out the container and learn about bike repair as we tune up kids&#x27; bikes to give away. Snacks and bevs provided. Meet in the gravel lot off the Dix Park entrance at Hunt Dr. Near &quot;Sunflower Field #1&quot; or 35.774059, -78.660315. Need help with coordination and volunteers day of, so please fill out the sheet if you can help out.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=337949020#gid=337949020" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=337949020#gid=337949020</a>
+        </mj-text>
+        <mj-text color="#ffffff" align="left">
+          <strong>Community Shop Hours - everyone welcome!</strong><br />Where: SecurCare Storage - 4615 Beryl Rd<br />When: Thursday, May 7 5-8p | Sunday, May 24 11-3p<br />Our open shop hours at our storage space. Folks can come use our tools to learn about bike repair, work on their bike, and/or work on a bike for distribution. It&#x27;s a great time to work on bikes in good company. Contact me if you&#x27;re coming in advance so I can send you the gate access info.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section padding="12px 16px 24px 16px">
+      <mj-column background-color="#161616" padding="20px" border="2px solid #148378">
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center" font-size="20px">
+          <strong>Raleigh Community Kickstand</strong>
+        </mj-text>
+
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center"> Fix. Teach. Give. </mj-text>
+
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center">
+          <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline">Website</a>
+          |
+          <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4"
+            style="color: #148378; text-decoration: underline"
+            >Paypal</a
+          >
+          |
+          <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
+        </mj-text>
+
+        <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
+
+        <mj-text color="#ffffff" align="center" font-size="10px">
+          You're receiving this email because you signed up for updates or attended a Kickstand event. If you don't want
+          to receive these emails anymore, just let me know.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
