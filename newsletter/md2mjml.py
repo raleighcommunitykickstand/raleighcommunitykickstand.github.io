@@ -4,9 +4,8 @@ import re
 import shutil
 import subprocess
 from ftfy import fix_text
-
-
-from bs4 import BeautifulSoup, NavigableString, Tag
+from bs4 import BeautifulSoup
+from bs4.element import NavigableString, Tag
 
 NEWSLETTERS_DIR = Path("newsletter")
 TEMPLATE_FILE = NEWSLETTERS_DIR / "template.mjml"
