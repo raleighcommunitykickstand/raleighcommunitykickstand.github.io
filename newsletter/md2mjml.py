@@ -8,7 +8,6 @@ from ftfy import fix_text
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 
-
 NEWSLETTERS_DIR = Path("newsletter")
 TEMPLATE_FILE = NEWSLETTERS_DIR / "template.mjml"
 LOCAL_IMAGE_DIR = NEWSLETTERS_DIR / "images"
@@ -45,11 +44,6 @@ def clean_markdown_text(path: Path) -> str:
 
 def escape_text(text: str) -> str:
     return html.escape(text, quote=True)
-
-
-def paragraph_is_caption_only(text: str) -> bool:
-    t = text.strip().lower()
-    return t.startswith("flyer by") or t.startswith("photo by")
 
 
 def parse_markdown(md: str) -> tuple[str, list[tuple[str, str]]]:

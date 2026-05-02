@@ -66,7 +66,7 @@
           FEBRUARY SUMMARY
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_02_summary.png"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_02_summary.webp"
           alt="February 2026 Flyer"
           width="400px"
           fluid-on-mobile="true"
@@ -102,7 +102,7 @@
           MARCH EVENTS
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_flyer.jpg"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_flyer.webp"
           alt="March 2026 Flyer"
           width="400px"
           fluid-on-mobile="true"
@@ -152,7 +152,7 @@
           padding="0 0 16px 0"
         />
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_caps.jpg"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_caps.webp"
           alt="Kickstand Top Caps"
           width="400px"
           fluid-on-mobile="true"
@@ -229,7 +229,7 @@
           <strong>2025 Adopt-A-Bike Leaderboard</strong>
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_aab.png"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_aab.webp"
           alt="AAB Leaderboard"
           width="400px"
           fluid-on-mobile="true"

@@ -66,7 +66,7 @@
           DECEMBER SUMMARY
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2025_12_summary.png"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2025_12_summary.webp"
           alt="December 2025 Summary"
           width="400px"
           fluid-on-mobile="true"
@@ -96,7 +96,7 @@
           2025 SUMMARY
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2025_annual.png"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2025_annual.webp"
           alt="2025 Summary"
           width="400px"
           fluid-on-mobile="true"
@@ -129,7 +129,7 @@
           JANUARY EVENTS
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_01_flyer.png"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_01_flyer.webp"
           alt="January 2026 Flyer"
           width="400px"
           fluid-on-mobile="true"

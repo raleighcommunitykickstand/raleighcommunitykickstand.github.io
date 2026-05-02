@@ -66,7 +66,7 @@
           MONTHLY DISPATCH
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_04_summary.png"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_04_summary.webp"
           alt="April 2026 Flyer"
           width="400px"
           fluid-on-mobile="true"
@@ -80,7 +80,7 @@
           As for Kickstand happenings this last month, we hosted a couple shop hour sessions, our monthly second Saturday Oak City Cares repair event, and a pop-up at the Raleigh Really, Really Free Market. We performed 12 walk-up repairs and refurbished and gave away 12 donated bikes at these events. Adopt-a-bike program mechanics have been busy fixing up bikes to prepare for more deliveries to our partner organizations this month. We also won the Commute Smart Award as part of the City of Raleigh&#x27;s 2026 Environmental Awards! Almost unbelievably, this is our second time winning this award in its four years of existence. Let me know if you want to arrange a sleepover with the oak leaf trophy to impress your dinner party guests.
         </mj-text>
         <mj-image
-          src="https://raleighcommunitykickstand.org/newsletter/images/2026_05_award.jpg"
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_05_award.webp"
           alt="Major Award"
           width="400px"
           fluid-on-mobile="true"
@@ -121,11 +121,16 @@
         >
           MAY (BIKE MONTH) EVENTS
         </mj-text>
-        <mj-text color="#ffffff" align="left">
-          ![May 2026 Flyer](images/2026_06_flyer.jpg)
-        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_05_flyer.webp"
+          alt="May 2026 Flyer"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
         <mj-text color="#ffffff" align="center" font-size="13px" color="#dae0e5" padding-bottom="12px">
-          Flyer by Kylie Robinsun
+          Flyer by Kylie Robinson
         </mj-text>
         <mj-text color="#ffffff" align="left">
           <strong>Bike Month Raleigh Kickoff</strong><br />Where: The Bend Bar - 853 W Morgan St<br />When: Saturday, May 2nd @ 4-7pm<br />Celebrate the start of Bike Month with a casual social headed up by Oaks &amp; Spokes. Be sure to pick up your Bike Month passport, grab a slice of pizza, and pick up some free swag! This is a drop-in event, so swing by anytime!
