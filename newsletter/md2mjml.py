@@ -152,6 +152,15 @@ def mj_image_block(src: str, alt: str) -> str:
         """.strip()
 
 
+def get_attr_text(node: Tag, attr: str, default: str = "") -> str:
+    value = node.get(attr)
+    if value is None:
+        return default
+    if isinstance(value, list):
+        return " ".join(str(item) for item in value)
+    return str(value)
+
+
 def render_inline_html(node) -> str:
     if isinstance(node, NavigableString):
         return escape_text(str(node))
@@ -182,7 +191,7 @@ def render_inline_html(node) -> str:
         )
 
     if name == "a":
-        href = escape_text(node.get("href", ""))
+        href = escape_text(get_attr_text(node, "href"))
         return f'<a href="{href}" style="color:#148378; text-decoration:underline;">{inner}</a>'
 
     if name == "br":
@@ -197,8 +206,9 @@ def render_inline_html(node) -> str:
 def render_paragraph_block(node: Tag) -> str:
     image = paragraph_is_only_image(node)
     if image is not None:
-        src, filename = resolve_and_validate_image(image.get("src", ""))
-        alt = image.get("alt", "") or filename
+        # src, filename = resolve_and_validate_image(image.get("src", ""))
+        src, filename = resolve_and_validate_image(get_attr_text(image, "src"))
+        alt = get_attr_text(image, "alt") or filename
         return mj_image_block(src, alt)
 
     content = "".join(render_inline_html(child) for child in node.children).strip()
@@ -240,6 +250,8 @@ def render_list_block(node: Tag) -> str:
     items = []
 
     for li in node.find_all("li", recursive=False):
+        if not isinstance(li, Tag):
+            continue
         li_html = "".join(render_inline_html(child) for child in li.children).strip()
         items.append(f"<li>{li_html}</li>")
 
@@ -273,8 +285,8 @@ def render_heading_block(node: Tag) -> str:
 
 
 def render_image_block(node: Tag) -> str:
-    src, filename = resolve_and_validate_image(node.get("src", ""))
-    alt = node.get("alt", "") or filename
+    src, filename = resolve_and_validate_image(get_attr_text(node, "src"))
+    alt = get_attr_text(node, "alt") or filename
     return mj_image_block(src, alt)
 
 
