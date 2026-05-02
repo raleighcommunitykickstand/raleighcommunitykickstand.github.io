@@ -131,7 +131,7 @@ def paragraph_is_caption_only(text: str) -> bool:
 
 
 def mj_text_block(content: str, align: str = "left", extra_attrs: str = "") -> str:
-    attrs = f' color="#ffffff" align="{align}"'
+    attrs = f' color="#ffffff" align="{align}" padding="0 0 16px 0"'
     if extra_attrs:
         attrs += f" {extra_attrs.strip()}"
 
