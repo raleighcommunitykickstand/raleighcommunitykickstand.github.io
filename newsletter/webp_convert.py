@@ -18,7 +18,7 @@ def convert_to_webp(input_path, output_path):
             img = img.convert("RGB")
 
         if MAX_SIZE:
-            img.thumbnail(MAX_SIZE, Image.LANCZOS)
+            img.thumbnail(MAX_SIZE, Image.Resampling.LANCZOS)
 
         img.save(output_path, "WEBP", quality=QUALITY, method=6, optimize=True)
 
