@@ -336,6 +336,16 @@ header p {
   scroll-margin-top: 100px;
 }
 
+.motto-logo {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .motto-logo {
+    width: 80px;
+  }
+}
+
 /* -----------------------------------------------
   TICKER
 ------------------------------------------------ */
