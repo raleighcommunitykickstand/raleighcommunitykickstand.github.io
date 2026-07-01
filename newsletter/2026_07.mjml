@@ -1,0 +1,184 @@
+<mjml>
+  <mj-head>
+    <mj-raw> <meta name="color-scheme" content="light dark"> <meta name="supported-color-schemes" content="light dark"> </mj-raw>
+    <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/hwtartz.css" />
+    <mj-attributes>
+      <mj-all font-family="'Courier New', Courier, monospace" />
+      <mj-body background-color="#010101" width="700px" />
+      <mj-section padding="12px 16px" />
+      <mj-column padding="28px" border="2px solid #f7f573" />
+      <mj-text padding="0px" font-size="16px" line-height="1.6" />
+      <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#010101">
+    <!-- TROUBLE_VIEWING -->
+    <mj-section padding="8px 16px 0px 16px">
+      <mj-column background-color="#1d2124" padding="28px" border="2px solid #148378">
+        <mj-text color="#ffffff" align="center" font-size="12px" line-height="1.4">Having trouble viewing this email? <a href="https://raleighcommunitykickstand.org/newsletter/2026_07.html" style="color: #148378; text-decoration: underline">View it in your browser.</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- HEADER -->
+    <mj-section padding="16px 16px 8px 16px">
+      <mj-column background-color="#000000" border="2px solid #f7f573" padding="20px">
+        <mj-image src="https://raleighcommunitykickstand.org/media/RCK_logo-by.png" alt="Kickstand Logo" width="220px" fluid-on-mobile="true" align="center" padding="0 0 16px 0" />
+
+        <mj-text font-family="HWTArtz, 'Courier New', Courier, monospace" color="#f7f573" font-size="36px" font-weight="700" align="center" letter-spacing="1px" line-height="1.1">
+          JULY 2026 NEWSLETTER
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          MONTHLY DISPATCH
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Welp, the Canes did it. They brought the Stanley Cup back home to Raleigh. And while Rod won&#x27;t respond to my emails asking about bringing the trophy to shop hours, Brian unearthed <a href="https://www.youtube.com/watch?v=B38FKZtK5ww&amp;t=1181s" style="color:#148378; text-decoration:underline;">this other sports gem of the time a major cycling stage race came to Raleigh</a> featuring internationally renowned cyclists and a pre-doping (?) Lance Armstrong. While this race pre-dated my time in NC by 8 years, it was very cool to see the pros ride down the same streets I ride every day!
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_07_dupont.webp"
+          alt="N&amp;O Tour Dupont Coverage"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Speaking of pro cycling, the Tour de France kicks off on July 4th followed by the Tour de Femmes on August 1st. I figured it would be fun to do a Kickstand friends &amp; family fantasy league. You don&#x27;t need to know anything about pro cycling to join, just pick a team of riders based on whatever metric you want (most fun names, only youngins&#x27;, only Belgians). Even if you don&#x27;t know much (like me), you&#x27;re still liable to win because the tour is long and chaotic. Info to join is below.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          In more Kickstand related news, we hosted three shop hours sessions where we did some long overdue spring-cleaning, taught some folks how to repair their bikes, and tuned up a lot of good bikes to give away. At Oak City Cares, our volunteers braved the heat to tune up and distribute 9 bikes while also performing 5 walk-up repairs including our first rollator. We also tuned up a couple bikes and taught a few folks some tips on bike repair at the Raleigh Really, Really Free Market.
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_06_summary.webp"
+          alt="June 2026 Summary"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Our adopt-a-bike mechanics were busy tuning up bikes to distribute to our partner organizations. We delivered 17 refurbished bikes to Raleigh Rescue Mission, Feed the Pack Pantry, Healing Transitions, SWS Men&#x27;s Shelter, Raleigh&#x27;s Housing and Community Development, Cornerstone Center, and Fernandez Community Center. Southeast Raleigh Promise also came by our shipping containers at Dix Park to pick up the remaining 17 kids&#x27; bikes that were tuned up last month.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Last, but certainly not least, I am happy to announce our second Melted Crayon Benefit Alleycat &amp; Cookout is happening on August 8th! Does doing it two years in a row make it annual? All the info is below, but basically, think of this as our corporate summer cookout, featuring a fun scavenger hunt on bikes. Hope to see you there!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+<mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          JULY EVENTS
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <strong>Bike Repair with Oaks &amp; Spokes - volunteers needed!</strong><br />When: Thursday, July 2 | 6-8p<br />Where: Peach Road Park - 911 Ileagnes Rd<br />Pop-up free bike repair event with Oaks &amp; Spokes. This event is targeted towards adults, but the neighborhood kids come by for some help and to help out as well. We will have some tools and stands, but feel free to bring your own if you&#x27;d prefer. The community center will be broadcasting some World Cup games and hosting an early 4th of July celebration. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=712399713#gid=712399713" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=712399713#gid=712399713</a>
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <strong>Community Shop Hours - everyone welcome!</strong><br />When: Tuesdays, July 7, 14, 21 | 5-8p<br />Where: SecurCare Storage - 4615 Beryl Rd<br />Our open shop hours at our storage space. Folks can come use our tools to learn about bike repair, work on their bike, and/or work on bikes for distribution. It&#x27;s a great time working with good company. Contact <a href="mailto:volunteer@raleighcommunitykickstand.org" style="color:#148378; text-decoration:underline;">volunteer@raleighcommunitykickstand.org</a> in advance for the gate access info.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <strong>Bike Repair &amp; Distribution - volunteers needed!</strong><br />When: Saturday, July 11 | 1-3p<br />Where: Oak City Cares - 1430 S Wilmington Street<br />We repair and distribute bikes on a first-come, first-served basis the 2nd Saturday of each month at Oak City Cares, a multiservice center for folks experiencing housing insecurity. We will have some tools and stands, but we often have more volunteers than stations, so feel free to bring your own. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=302512647#gid=302512647</a>
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <strong>Bike Valet at Dix Park Sunflowers - come hang!</strong><br />When: TBD - working with Dix to figure out dates<br />Where: Gravel Lot off Hunt Drive at Dix Park | 35.774059, -78.660315<br />Our new shipping containers, Sherri and Larry, are located right next to the Dix Park Sunflower Field! Come hang out with us at the new containers as we provide bike valet service, provide safety checks, and get the word out about Oaks &amp; Spokes and Raleigh Community Kickstand.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+<mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          SAVE THE DATE\!
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <strong>Melted Crayon Benefit Alleycat &amp; Cookout</strong><br />Join us for our second annual alleycat &amp; cookout! Alleycats are fun, choose-your-own-adventure rides inspired by bike couriers. You&#x27;ll get a list of stops, plan a route, and hit as many stops as you can (or want to) before the cutoff. Each stop earns you a random crayon. At the end, use them to color in a drawing. Best ones win prizes!
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Ride solo or party-pace with a group. Perfect for beginners, newcomers, veteran townies, and everyone in between. Featuring a post-ride cookout with hot dogs (veggie and meat), drinks, and snacks. Proceeds go to us! $10 Suggested Donation. Think of it as our summer corporate gathering. Hope to see you there!
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Where: Jaycee Park Picnic Shelter | 2405 Wade Ave<br />When: Saturday, August 8 | Registration: 5pm | Start: 6pm | Cutoff + Cookout: 8pm
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+<mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          JOIN OUR FANTASY LEAGUE
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Join the Kickstand Tour de France and Tour de Femmes fantasy league. You don&#x27;t need to know anything about pro-cycling (like me) to join. You can just pick a team, learn as you go, and see what happens. The winner will win a 1 of 1 sticker that says, &quot;I am the best at selecting an arbitrary group of riders to do well in the Tour de France 2026 out of all the volunteer Raleigh bike mechanics&quot; printed in black and white on a 4x6&quot; UPS label. There will be a similar one awarded for the Tour de Femmes.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Go to the link below. Click &quot;Enter now&quot; and create an account. Choose your team then join with our league code. Deadline is 10am on July 4th! Pro-tip: write down your picks so if you need more time or if it doesn&#x27;t go through, you don&#x27;t have to start all over. Here are the <a href="https://www.velogames.com/velogame/2026/rules.php" style="color:#148378; text-decoration:underline;">rules</a> and <a href="https://www.velogames.com/velogame/2026/scores.php" style="color:#148378; text-decoration:underline;">scoring system</a>. The rules can feel overwhelming at first. You can either read them or just do what I do and ignore them and pick a random team of 9 riders. The scoring will make sense as the tour goes on. See you at Velogames 2026!
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Sign-Up: <a href="https://www.velogames.com/velogame/2026/" style="color:#148378; text-decoration:underline;">https://www.velogames.com/velogame/2026/</a><br />League Name: Community Kickstand &amp; Company<br />League Code: 686569629<br />Deadline: July 4 @ 10am<br />Tour de Femmes Deadline: August 1 (link won&#x27;t go live until closer to the date)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section padding="12px 16px 24px 16px">
+      <mj-column background-color="#161616" padding="20px" border="2px solid #148378">
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center" font-size="20px">
+          <strong>Raleigh Community Kickstand</strong>
+        </mj-text>
+
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center"> Fix. Teach. Give. </mj-text>
+
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center">
+          <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline">Website</a>
+          |
+          <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline">Instagram</a>
+          |
+          <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4" style="color: #148378; text-decoration: underline">Paypal</a>
+          |
+          <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
+        </mj-text>
+
+        <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
+
+        <mj-text color="#ffffff" align="center" font-size="10px"> You're receiving this email because you signed up for updates or attended a Kickstand event. If you don't want to receive these emails anymore, just let me know. </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
