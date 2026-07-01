@@ -91,6 +91,17 @@
         >
           JULY EVENTS
         </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_07_flyer.webp"
+          alt="July 2026 Flyer"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="center" padding="0 0 16px 0" font-size="13px" color="#dae0e5" padding-bottom="12px">
+          Flyer by jazzybageldesign
+        </mj-text>
         <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
           <strong>Bike Repair with Oaks &amp; Spokes - volunteers needed!</strong><br />When: Thursday, July 2 | 6-8p<br />Where: Peach Road Park - 911 Ileagnes Rd<br />Pop-up free bike repair event with Oaks &amp; Spokes. This event is targeted towards adults, but the neighborhood kids come by for some help and to help out as well. We will have some tools and stands, but feel free to bring your own if you&#x27;d prefer. The community center will be broadcasting some World Cup games and hosting an early 4th of July celebration. Please fill out the sheet below letting us know you are coming and how you&#x27;d like to help with the event.<br /><a href="https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=712399713#gid=712399713" style="color:#148378; text-decoration:underline;">https://docs.google.com/spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=712399713#gid=712399713</a>
         </mj-text>
