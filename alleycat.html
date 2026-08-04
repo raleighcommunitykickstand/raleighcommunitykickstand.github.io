@@ -89,6 +89,40 @@
             font-weight: bold;
         }
 
+        .faq {
+            margin-top: 35px;
+        }
+
+        .faq h2 {
+            margin-bottom: 18px;
+            font-size: 1.8rem;
+        }
+
+        .faq details {
+            margin-bottom: 10px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+        }
+
+        .faq summary {
+            padding: 14px 18px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .faq details[open] summary {
+            border-bottom: 1px solid #d5d5d5;
+        }
+
+        .faq .answer {
+            padding: 14px 18px 16px;
+        }
+
+        .faq .answer p {
+            margin: 0;
+        }
+
         @media (max-width: 600px) {
             main {
                 margin: 0;
@@ -160,6 +194,153 @@
             Proceeds benefit Raleigh Community Kickstand, a collective providing
             free bicycle repairs, bikes, and training for people in need. See you there!
         </p>
+
+        <section class="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+            <details open>
+                <summary>What is an alleycat?</summary>
+                <div class="answer">
+                    <p>An alleycat is a type of bike ride modeled after bike couriers. At the start, you receive a
+                        manifest (list of stops). You then create a route, navigate to some or all the stops, and return
+                        before the cut-off time. Think choose-your-own-adventure scavenger hunt or a laid-back
+                        <em>Amazing Race</em> on bikes.
+                    </p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>Do I need to be fast?</summary>
+                <div class="answer">
+                    <p>No! In fact, party-pace is strongly encouraged. The Melted Crayon has a coloring twist to make
+                        it less about being fast and more about having fun. Each stop earns you a crayon that you use to
+                        color in the flyer. Best drawings win prizes.</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>When is it?</summary>
+                <div class="answer">
+                    <p>Saturday, August 8th! Registration begins at 5pm and the alleycat kicks off promptly at 6pm.
+                        Ride for as little or as much as you want, but make it back before the cutoff at 8pm. Once you
+                        get back, the coloring contest will begin followed by grilling and chilling post ride!</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>Where is it?</summary>
+                <div class="answer">
+                    <p>The picnic shelter at Jaycee Park &mdash; 2405 Wade Avenue!</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>Do I need a team?</summary>
+                <div class="answer">
+                    <p>No, but alleycats are way more fun with a team. You don&rsquo;t need to make one in advance, just
+                        show up, make new friends, and ride together! The bike scene is filled with cool and very
+                        approachable folks.</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>How far will I ride?</summary>
+                <div class="answer">
+                    <p>There is no fixed route! You decide which stops to visit and in what order. Ride to a couple of
+                        stops or try to reach them all. Depending on how many stops you visit and the route you choose,
+                        you could ride anywhere from about 8 to 20 miles.</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>Do I need to know the area?</summary>
+                <div class="answer">
+                    <p>Not necessarily! You will be given specific addresses to navigate to using whatever analog or
+                        digital means you&rsquo;d like, so intimate knowledge of the area is not required.</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>How can I navigate safely?</summary>
+                <div class="answer">
+                    <p>The stops were chosen intentionally to be accessible via safer roads and greenways. We will have
+                        Raleigh greenway/cycle maps for folks to use. If you are of the digital persuasion, the Cyclers
+                        app is better at finding safe routes than Google cycle mode. For a full guide, check out the
+                        <a href="https://raleighcommunitykickstand.org/spokecity">&ldquo;Navigating the Spoke
+                            City&rdquo; zine by Jared Harber</a>.
+                    </p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>How do I get to the event?</summary>
+                <div class="answer">
+                    <p>We encourage you to ride or take public transit to the event! In fact, you get one point already
+                        based on how you got to the event. To ride GoRaleigh/GoTriangle buses for free, you can download
+                        the Umo Mobility app and redeem the Oaks &amp; Spokes benefit code:
+                        <strong>GO-4MN4-9SNU</strong>.
+                        Consider contributing to O&amp;S by becoming a member if you aren&rsquo;t already!
+                    </p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>Can someone check my bike before I ride?</summary>
+                <div class="answer">
+                    <p>We will have a couple of mechanics with pumps and lube to help top off your bike and perform
+                        quick
+                        safety checks to make sure everything is in good working order. If you need some more in-depth
+                        repairs, come by community shop hours and we will help you get your bike sorted.</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>What happens if I get a mechanical issue while riding?</summary>
+                <div class="answer">
+                    <p>It happens sometimes! You can take a bus back to Jaycee Park, call a friend, or call one of us.
+                        To ride GoRaleigh/GoTriangle buses for free, you can download the Umo Mobility app and redeem
+                        the
+                        Oaks &amp; Spokes benefit code: <strong>GO-4MN4-9SNU</strong>. Consider contributing to O&amp;S
+                        by
+                        becoming a member if you aren&rsquo;t already!</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>What do I need?</summary>
+                <div class="answer">
+                    <p>A bike, a helmet, a water bottle, lights, and a way to carry your manifest and a couple of small
+                        items.</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>You said there&rsquo;s a cookout?</summary>
+                <div class="answer">
+                    <p>Yes! We will have hot dogs, veggie dogs, watermelon, snacks, and drinks. Everything a growing
+                        cyclist needs!</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>What about this coloring contest and prizes?</summary>
+                <div class="answer">
+                    <p>Prizes will go to the best drawings and some special rider categories. After those are selected,
+                        we raffle off the remaining prizes. We always try to get a ton of prizes, so almost everyone who
+                        participates can leave with something.</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>What if I can&rsquo;t afford the suggested donation?</summary>
+                <div class="answer">
+                    <p>Then don&rsquo;t worry about it! That&rsquo;s why it&rsquo;s suggested. No doggy turned away for
+                        lack of funds.
+                        But if you can donate $10-20, all proceeds after the cost of the cookout go to Raleigh Community
+                        Kickstand to support free bike repair.</p>
+                </div>
+            </details>
+        </section>
     </main>
 </body>
 
