@@ -1,0 +1,1779 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Raleigh Community Kickstand Public Events
+X-WR-TIMEZONE:America/New_York
+X-WR-CALDESC:Details about upcoming community bike repair events and mainte
+ nance workshops.
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART:20181110T180000Z
+DTEND:20181110T200000Z
+DTSTAMP:20260815T181228Z
+UID:69csuhcn8of3bfmsfqsunfdoaj@google.com
+CREATED:20181101T201137Z
+LAST-MODIFIED:20181101T201137Z
+LOCATION:Oak City Outreach Center\, 215 S Person St\, Raleigh\, NC 27601\, 
+ USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair @ OCOC
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20190914T140000Z
+DTEND:20190914T180000Z
+DTSTAMP:20260815T181228Z
+UID:3t5df4qtjm2g2hj1el6mlj8d89@google.com
+CREATED:20190904T205052Z
+DESCRIPTION:Raleigh Community Kickstand will be repairing 20 used bicycles\
+ , making them ready to be placed with people in the homeless and at-risk co
+ mmunity.\n\nWe are looking for volunteers of all skill levels.\n\nWe will p
+ rovide bikes\, parts\, bike stands\, some tools\, and some knowledge. If yo
+ u have your own tools\, feel free to bring your own hand tools.\n\nThis is 
+ a great opportunity for anyone who would like to learn how to repair their 
+ own bikes\, as we will be performing a wide range of repairs and you can le
+ arn from many of our talented volunteers.\n\nPlease do not bring bicycles t
+ o donate at this event\, as we will have very limited ability to transport 
+ bikes from this event.
+LAST-MODIFIED:20190904T205052Z
+LOCATION:Humble Pie Parking Lot\, 311 S Harrington St\, Raleigh\, NC 27601
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Repair Clinic @ SparkCon
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250601T140000Z
+DTEND:20250601T180000Z
+DTSTAMP:20260815T181228Z
+UID:0fdbo3ejtc5psk1bgfjc2kg5pf@google.com
+CREATED:20250530T192550Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250616T224113Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251221T170000Z
+DTEND:20251221T210000Z
+DTSTAMP:20260815T181228Z
+UID:6uh4uiqsrbeke4kidj0i6ddps7@google.com
+CREATED:20251204T124915Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260103T033548Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251130T170000Z
+DTEND:20251130T210000Z
+DTSTAMP:20260815T181228Z
+UID:4o6b0fc4cqi77sjat1crsndp25@google.com
+CREATED:20251106T202424Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20251106T202424Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260215T170000Z
+DTEND:20260215T210000Z
+DTSTAMP:20260815T181228Z
+UID:5n2beoduujegodh9nuscptf1i2@google.com
+CREATED:20260202T121755Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260202T121755Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260329T160000Z
+DTEND:20260329T200000Z
+DTSTAMP:20260815T181228Z
+UID:48ptolte0tt29vfs76likck6t7@google.com
+CREATED:20260228T161104Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260228T161104Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250628T150000Z
+DTEND:20250628T180000Z
+DTSTAMP:20260815T181228Z
+UID:3snqo2u0o11o97d6qg5fi4derq@google.com
+CREATED:20250530T192959Z
+DESCRIPTION:<span>Free basic bike repair skill-share workshop at the </span
+ >Green Road Community Center<span> for the Resource Fair. We will also be o
+ ffering free adult bike <span>safety checks</span> and tune-ups. <span>Firs
+ t come\, first served. </span></span>
+LAST-MODIFIED:20250616T224113Z
+LOCATION:Green Road Community Center\, 4201 Green Rd\, Raleigh\, NC 27604\,
+  USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Repair Skill Share & Basic Tune-Ups @ Resource Fair
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20181208T180000Z
+DTEND:20181208T200000Z
+DTSTAMP:20260815T181228Z
+UID:2akspd0ppjkop2gtqt1agd63gh@google.com
+CREATED:20181128T170136Z
+LAST-MODIFIED:20181128T170136Z
+LOCATION:Oak City Outreach Center\, 215 S Person St\, Raleigh\, NC 27601\, 
+ USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair @ OCOC
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251216T190000Z
+DTEND:20251216T230000Z
+DTSTAMP:20260815T181228Z
+UID:60f2p6m08klf825jqm4n8fvdal@google.com
+CREATED:20251204T124951Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20251204T124951Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20250511T110000
+DTEND;TZID=America/New_York:20250511T130000
+RRULE:FREQ=MONTHLY;UNTIL=20250713T035959Z;BYDAY=2SU
+DTSTAMP:20260815T181228Z
+UID:poctttc1p4r7jjcq3avhag1bvh@google.com
+CREATED:20250224T133801Z
+DESCRIPTION:<span>Free basic bike repair skill-share workshop at Eliza Pool
+  Park for the Raleigh Really\, Really Free Market (RRFM). We will also be o
+ ffering free adult bike <span>safety checks</span> and tune-ups. <span>Firs
+ t come\, first served. </span></span>
+LAST-MODIFIED:20250731T180554Z
+LOCATION:Eliza Pool Park\, 1600 Fayetteville St\, Raleigh\, NC 27603\, USA
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Repair Skill Share & Basic Tune-Ups @ Raleigh RRFM in Eliza Pool Pa
+ rk
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260806T210000Z
+DTEND:20260807T000000Z
+DTSTAMP:20260815T181228Z
+UID:43qdant34ukkue3q5cpns07ivh@google.com
+CREATED:20260729T193750Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260806T210256Z
+LOCATION:Public Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Kickstand Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260827T210000Z
+DTEND:20260828T000000Z
+DTSTAMP:20260815T181228Z
+UID:7r2epb0u383g3v6nkhl9v300ab@google.com
+CREATED:20260729T193816Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260806T210355Z
+LOCATION:Public Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Kickstand Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20250208T130000
+DTEND;TZID=America/New_York:20250208T150000
+RRULE:FREQ=MONTHLY;UNTIL=20250809T035959Z;BYDAY=2SA
+DTSTAMP:20260815T181228Z
+UID:4f0c5jfubqnia0bsgguu97dvhl_R20250208T180000@google.com
+CREATED:20240603T162450Z
+DESCRIPTION:Our monthly free community bike repair event! Hosted the second
+  Saturday of each month from 1-3pm at Oak City Cares\, a multiservice cente
+ r for folks experiencing housing insecurity. We fix/replace brakes\, clean 
+ chains/drivetrains\, tune shifters\, fix flats\, and make other minor adjus
+ tments. First come\, first served.<br> <br><a href="https://docs.google.com
+ /spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=30251
+ 2647#gid=302512647" class="pastedDriveLink-0">RCK Volunteer Signup</a>
+LAST-MODIFIED:20260507T120504Z
+LOCATION:Oak City Cares\, 1430 S Wilmington St\, Raleigh\, NC 27603\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Repair & Distribution @ Oak City Cares
+TRANSP:OPAQUE
+ATTACH;FILENAME=RCK Flyer 25_0710.png;FMTTYPE=image/png:https://drive.googl
+ e.com/open?id=1adwdYGzmzIANt72BRDPROmlYSPNraoe3
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20241103T140000
+DTEND;TZID=America/New_York:20241103T160000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20241201T045959Z
+EXDATE;TZID=America/New_York:20241124T140000
+DTSTAMP:20260815T181228Z
+UID:s5sfoergtlg3l17gba2t5ct2d8@google.com
+CREATED:20241101T004532Z
+LAST-MODIFIED:20241125T204511Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Repair-A-Bike / Repair-Your-Bike
+TRANSP:OPAQUE
+ATTACH;FILENAME=fixabike fixyourbike.png;FMTTYPE=image/png:https://drive.go
+ ogle.com/open?id=1-YRmmGjzHgCWg488viZoWfu1NzZprAUc
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260222T170000Z
+DTEND:20260222T210000Z
+DTSTAMP:20260815T181228Z
+UID:3gd6hq327vqrmegb8h8dt8a9uu@google.com
+CREATED:20260202T121807Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260202T121807Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20241201T140000
+DTEND;TZID=America/New_York:20241201T160000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20241225T045959Z
+EXDATE;TZID=America/New_York:20241215T140000
+DTSTAMP:20260815T181228Z
+UID:gkdhi2v435tgpkkkgmtiud014n@google.com
+CREATED:20241101T004532Z
+LAST-MODIFIED:20241126T174426Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Fix-A-Bike / Fix-Your-Bike
+TRANSP:OPAQUE
+ATTACH;FILENAME=fixabike fixyourbike.png;FMTTYPE=image/png:https://drive.go
+ ogle.com/open?id=1-YRmmGjzHgCWg488viZoWfu1NzZprAUc
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250406T170000Z
+DTEND:20250406T210000Z
+DTSTAMP:20260815T181228Z
+UID:1dqtunhsm4lsu5gb700utf3s9q@google.com
+CREATED:20250328T110041Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250328T110041Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20180217T163000Z
+DTEND:20180217T193000Z
+DTSTAMP:20260815T181228Z
+UID:4n95vsjunphfpjjl3sshlefqqo@google.com
+CREATED:20180208T004930Z
+DESCRIPTION:\nLearn bicycle maintenance skills\, help out some people in ne
+ ed and drink some great beer. \n\nWe will be fixing some donated bikes\, ma
+ king them ready to be placed with folks in need in Raleigh. Since May we ha
+ ve placed 3 dozen bikes with people who need them for basic transportation.
+ \n\nNo skills needed. We will have experienced people there to work with an
+ d learn from.\n\nWe will have some bike stands and tools\, but if your own 
+ tools you may want to bring them.\n\nWe can really use lights and locks. Li
+ ghts are required by law. Locks are a necessity. Most of the people we plac
+ e bikes with live in a shelter or in encampments around the city so without
+  a lock any bike we give them gets gone in a hurry.  \n\nhttps://www.facebo
+ ok.com/events/299158993943717/
+LAST-MODIFIED:20180208T004952Z
+LOCATION:Oak & Dagger Public House (18 Seaboard Ave\, Ste 150\, Raleigh\, N
+ orth Carolina 27604)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Repair-Mania - Fix Up Bikes to Give Away
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20190810T170000Z
+DTEND:20190810T190000Z
+DTSTAMP:20260815T181228Z
+UID:0atba2ou1rkc8s4rh2fl1gsls3@google.com
+CREATED:20190802T180433Z
+LAST-MODIFIED:20190802T180433Z
+LOCATION:Oak City Cares 1430 S. Wilmington Street\, Raleigh\, NC 27603
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250525T170000Z
+DTEND:20250525T210000Z
+DTSTAMP:20260815T181228Z
+UID:4lam33pt2p6g4l0hphvfql9ilf@google.com
+CREATED:20250427T132537Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250427T132537Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251026T140000Z
+DTEND:20251026T180000Z
+DTSTAMP:20260815T181228Z
+UID:790tgsbau66bl48vl66q8dq3hl@google.com
+CREATED:20251004T143533Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20251004T143533Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250610T200000Z
+DTEND:20250611T000000Z
+DTSTAMP:20260815T181228Z
+UID:24f23dlcnuvup3m81nmmacdm0a@google.com
+CREATED:20250530T192700Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250616T224113Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250629T140000Z
+DTEND:20250629T180000Z
+DTSTAMP:20260815T181228Z
+UID:2nbs5m7jnjqnojnugjn871uhv2@google.com
+CREATED:20250530T192621Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250616T224113Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20210109T130000
+DTEND;TZID=America/New_York:20210109T150000
+RRULE:FREQ=MONTHLY;UNTIL=20250208T045959Z;BYDAY=2SA
+DTSTAMP:20260815T181228Z
+UID:4f0c5jfubqnia0bsgguu97dvhl@google.com
+CREATED:20240603T162450Z
+DESCRIPTION:Our monthly free community bike repair event! Hosted the second
+  Saturday of each month from 1-3pm at Oak City Cares\, a multiservice cente
+ r for folks experiencing housing insecurity. We fix/replace brakes\, clean 
+ chains/drivetrains\, tune shifters\, fix flats\, and make other minor adjus
+ tments. First come\, first served.<br> <br><a href="https://docs.google.com
+ /spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=30251
+ 2647#gid=302512647" class="pastedDriveLink-0">RCK Volunteer Signup</a>
+LAST-MODIFIED:20260507T120504Z
+LOCATION:Oak City Cares\, 1430 S Wilmington St\, Raleigh\, NC 27603\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair @ Oak City Cares
+TRANSP:OPAQUE
+ATTACH;FILENAME=RCK Flyer 25_0710.png;FMTTYPE=image/png:https://drive.googl
+ e.com/open?id=1adwdYGzmzIANt72BRDPROmlYSPNraoe3
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260711T140000Z
+DTEND:20260711T170000Z
+DTSTAMP:20260815T181228Z
+UID:5k3b3kmhq1u572p0il5d6ur92n@google.com
+CREATED:20260708T185320Z
+DESCRIPTION:Going to see the Dix Park sunflowers in full bloom this weekend
+ ? Ride your bike! Oaks & Spokes and Raleigh Community Kickstand will be off
+ ering free bike valet at their shipping container bike shop in the back of 
+ the gravel lot off the Hunt Drive entrance\, just north of the sunflowers. 
+ Skip searching for a tree to lock up to and leave your bike with us instead
+ . While you're there\, grab some stickers\, get a free safety check\, and l
+ earn a bit about bike maintenance and what we do.
+LAST-MODIFIED:20260708T185500Z
+LOCATION:35°46'26.6"N 78°39'37.1"W
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Valet @ Dix Park Sunflowers!
+TRANSP:OPAQUE
+ATTACH;FILENAME=20260708_154415685_iOS.jpg;FMTTYPE=image/jpeg:https://drive
+ .google.com/open?id=1tJkhXeExij5mBNZciecNkSc5T0oOts46
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250325T210000Z
+DTEND:20250325T230000Z
+DTSTAMP:20260815T181228Z
+UID:537lu55sc8thh4n7m1ulo5vom1@google.com
+CREATED:20250223T140828Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250223T140828Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250504T170000Z
+DTEND:20250504T210000Z
+DTSTAMP:20260815T181228Z
+UID:2dr02lpjmhb1p8drhqpd0ahfoi@google.com
+CREATED:20250427T132443Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250427T132443Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20190601T170000Z
+DTEND:20190601T190000Z
+DTSTAMP:20260815T181228Z
+UID:33nml1d55aasu38g0vt2egrsh3@google.com
+CREATED:20190530T173109Z
+LAST-MODIFIED:20190530T173109Z
+LOCATION:Oak City Cares 1430 S. Wilmington Street\, Raleigh\, NC 27603
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260426T150000Z
+DTEND:20260426T190000Z
+DTSTAMP:20260815T181228Z
+UID:10rli2nkfpb5cc3nc7rbi95ioa@google.com
+CREATED:20260401T152721Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260401T152721Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260118T170000Z
+DTEND:20260118T210000Z
+DTSTAMP:20260815T181228Z
+UID:002pq5tk7e8lv02sviv6vjbu32@google.com
+CREATED:20260103T033532Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260103T033532Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260507T210000Z
+DTEND:20260508T000000Z
+DTSTAMP:20260815T181228Z
+UID:0gsbl2sh2sae1bqavs8m2lgpnu@google.com
+CREATED:20260430T164514Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260430T164514Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241102T180000Z
+DTEND:20241102T200000Z
+DTSTAMP:20260815T181228Z
+UID:0si65u7scdkubb4230mqk4tu4t@google.com
+CREATED:20241023T175006Z
+DESCRIPTION:First come\, first served. Free adult bike repairs\, safety che
+ cks\, and tune-ups.
+LAST-MODIFIED:20241023T175006Z
+LOCATION:Peach Road Cultural Center\, 911 Ileagnes Rd\, Raleigh\, NC 27603\
+ , USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Free Bike Repairs
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250316T180000Z
+DTEND:20250316T210000Z
+DTSTAMP:20260815T181228Z
+UID:5c1e3pu7agbnkthvnk24f6lian@google.com
+CREATED:20250223T140603Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  volunteer@raleighcommunitykickstand.org for gate code access.</span>
+LAST-MODIFIED:20250223T140712Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20190420T170000Z
+DTEND:20190420T190000Z
+DTSTAMP:20260815T181228Z
+UID:73gsd9hh2r7cjat1t5dd7pob2h@google.com
+CREATED:20190420T011412Z
+LAST-MODIFIED:20190420T011412Z
+LOCATION:Oak City Cares 1430 S. Wilmington Street\, Raleigh\, NC 27603
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250527T220000Z
+DTEND:20250528T000000Z
+DTSTAMP:20260815T181228Z
+UID:1javc9nlvcmanbaj36fap3lgft@google.com
+CREATED:20250409T151521Z
+DESCRIPTION:Raleigh Community Kickstand is offering a series of free bike r
+ epair workshops. These workshops are intended for folks of all skill levels
+ \, whether you want to learn how to maintain your own bike or volunteer wit
+ h us in the future to tune up a bike for folks in the community. All are we
+ lcome!\n\nYou can come to either or both of the sessions. On May 6th\, we w
+ ill cover basic bike maintenance including flat fixing\, chain maintenance\
+ , brake adjustments\, and more. On May 27th\, we will cover drivetrain main
+ tenance\, including derailleur adjustments and shifting overhauls. Bring yo
+ ur own bike or learn using one of ours. Come ready to get your hands a bit 
+ greasy and throw back a Raleigh Brewing Company beer\, cider\, kombucha\, o
+ r seltzer!
+LAST-MODIFIED:20250409T151521Z
+LOCATION:Raleigh Brewing Company\, 3709 Neil St\, Raleigh\, NC 27607\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Free Bike Repair Workshop: Drivetrain Maintenance
+TRANSP:OPAQUE
+ATTACH;FILENAME=repair workshop.png;FMTTYPE=image/png:https://drive.google.
+ com/open?id=1qUQhepO4_OglUgaT-mQMxgDRLkaHK07M
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250531T130000Z
+DTEND:20250531T150000Z
+DTSTAMP:20260815T181228Z
+UID:20seaqsvf0p6q2tkg36strj9gn@google.com
+CREATED:20250409T151218Z
+DESCRIPTION:We will be working with Step Up Ministry again to distribute bi
+ kes to the folks they serve. Come help us fit folks to bikes and do any fin
+ al tune-ups.
+LAST-MODIFIED:20250423T210846Z
+LOCATION:Step Up Ministry\, 1701 Oberlin Rd\, Raleigh\, NC 27608\, USA
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Step Up Ministry - Bike Distribution
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260816T130000Z
+DTEND:20260816T170000Z
+DTSTAMP:20260815T181228Z
+UID:2n9rod2aph778di380en0ncuuh@google.com
+CREATED:20260729T194234Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260806T210316Z
+LOCATION:Public Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Kickstand Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250403T200000Z
+DTEND:20250403T220000Z
+DTSTAMP:20260815T181228Z
+UID:6la1nqdtv31qft5qkjgs23tnov@google.com
+CREATED:20250118T173059Z
+DESCRIPTION:Free adult bike repairs\, safety checks\, and tune-ups. <span>F
+ irst come\, first served. </span>
+LAST-MODIFIED:20250127T220928Z
+LOCATION:Peach Road Cultural Center\, 911 Ileagnes Rd\, Raleigh\, NC 27603\
+ , USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Repairs @ Peach Road Cultural Center
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20180210T180000Z
+DTEND:20180210T200000Z
+DTSTAMP:20260815T181228Z
+UID:7ks6m5qjm30g70ivu3rkg9echm@google.com
+CREATED:20180208T004747Z
+LAST-MODIFIED:20180208T004747Z
+LOCATION:Oak City Outreach Center\, 215 S Person St\, Raleigh\, NC 27601\, 
+ USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair @ OCOC
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250302T190000Z
+DTEND:20250302T220000Z
+DTSTAMP:20260815T181228Z
+UID:07s90fph0b9doa49a2fep25f8g@google.com
+CREATED:20250223T140754Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250223T140754Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251116T170000Z
+DTEND:20251116T210000Z
+DTSTAMP:20260815T181228Z
+UID:3k3u3mmibom3tq465t36ab32os@google.com
+CREATED:20251106T202408Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20251106T202408Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250427T170000Z
+DTEND:20250427T210000Z
+DTSTAMP:20260815T181228Z
+UID:3c9pe951n148oflfuudkudpj33@google.com
+CREATED:20250328T110103Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250328T110104Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251120T220000Z
+DTEND:20251121T000000Z
+DTSTAMP:20260815T181228Z
+UID:0r0tp0rh2i5scdu31nr9bgiusn@google.com
+CREATED:20251015T131113Z
+DESCRIPTION:Free adult bike repairs\, safety checks\, and tune-ups. <span>F
+ irst come\, first served. </span>
+LAST-MODIFIED:20251015T131113Z
+LOCATION:Peach Road Cultural Center\, 911 Ileagnes Rd\, Raleigh\, NC 27603\
+ , USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Free Bike Repairs @ Peach Road Park
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250712T210000Z
+DTEND:20250713T010000Z
+DTSTAMP:20260815T181228Z
+UID:17vakgchc0o7utargclrevpu4k@google.com
+CREATED:20250617T113104Z
+DESCRIPTION:\nJoin us for an alleycat & cookout! New to alleycats? Alleycat
+ s are fun\, choose-your-own-adventure rides inspired by bike couriers. You’
+ ll get a list of stops\, plan a route\, and hit as many stops as you can (o
+ r want to) before the cutoff. Each stop earns you a random crayon. At the e
+ nd\, use them to color in a drawing. Best ones win prizes!\n\nRide solo or 
+ party-pace with a group. Perfect for beginners\, newcomers\, veteran townie
+ s\, and everyone in between. Featuring a post-ride cookout with hot dogs (v
+ eggie and meet)\, drinks\, and snacks. Proceeds go to Raleigh Community Kic
+ kstand\, a collective providing free repairs\, bikes\, and training for fol
+ ks in need. See you there!\n \n\nMelted Crayon Alleycat & Cookout - A party
+ -pace\, choose-your-own-adventure ride with a coloring twist benefitting Ra
+ leigh Community Kickstand!\n$10 Suggested Donation\nWhere: Jaycee Park | 24
+ 05 Wade Ave\nWhen: Saturday\, July 12 | Registration: 5pm | Start: 6pm | Cu
+ toff + Cookout: 8pm\nFree safety checks at registration. Cookout + coloring
+  contest after cutoff.
+LAST-MODIFIED:20250628T115412Z
+LOCATION:Jaycee Park\, 2405 Wade Ave\, Raleigh\, NC 27607\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Melted Crayon Alleycat & Cookout
+TRANSP:OPAQUE
+ATTACH;FILENAME=1.png;FMTTYPE=image/png:https://drive.google.com/open?id=1v
+ ZUpXbvLwM9Vz-h3aEy3htGaBhZuNQeC
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20180113T180000Z
+DTEND:20180113T200000Z
+DTSTAMP:20260815T181228Z
+UID:1sbh6povkqpln50aj6j6ef08ac@google.com
+CREATED:20171228T151757Z
+LAST-MODIFIED:20180103T213426Z
+LOCATION:Oak City Outreach Center\, 215 S Person St\, Raleigh\, NC 27601\, 
+ USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair @ OCOC
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20250309T110000
+DTEND;TZID=America/New_York:20250309T130000
+RRULE:FREQ=MONTHLY;UNTIL=20250511T035959Z;BYDAY=2SU
+DTSTAMP:20260815T181228Z
+UID:3milpna6167ikjujde2hmm0rjp@google.com
+CREATED:20250224T133801Z
+DESCRIPTION:<span>Free basic bike repair skill-share workshop at Eliza Pool
+  Park for the Raleigh Really\, Really Free Market (RRFM). We will also be o
+ ffering free adult bike <span>safety checks</span> and tune-ups. <span>Firs
+ t come\, first served. </span></span>
+LAST-MODIFIED:20250616T224113Z
+LOCATION:Eliza Pool Park\, 1600 Fayetteville St\, Raleigh\, NC 27603\, USA
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Repair Skill Share & Basic Tune-Ups @ Raleigh RRFM in Eliza Pool Pa
+ rk
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241124T180000Z
+DTEND:20241124T220000Z
+DTSTAMP:20260815T181228Z
+UID:094ec9c7706k976dl31fp4q5ct@google.com
+CREATED:20241111T152039Z
+DESCRIPTION:<p>Cranksgiving is a fun choose-your-own-adventure event all ab
+ out riding a bike and giving back to our communities in need during the hol
+ iday season. <b>This year’s beneficiary is Healing Transitions.</b></p><p>W
+ e’ll provide you with a list of essential food items to purchase\, offer so
+ me challenges for bonus points\, and give you a map of nearby grocery store
+ s. However\, how you choose to participate is entirely up to you! Whether y
+ ou ride to just one store or visit them all\, join as a team or go solo\, w
+ e’re happy to see you on your bike doing some good!</p><p>We will be giving
+  out points for weight\, distance\, and key items. So grab your cargo bike\
+ , panniers\, backpack\, and any and everything you can mount to your bike t
+ o carry a load. </p><p>Learn more about Cranksgiving: <a href="https://cran
+ ksgiving.org/" target="_blank">https://cranksgiving.org/</a></p><p>Learn mo
+ re about Healing Transitions: <a href="https://healing-transitions.org/" ta
+ rget="_blank">https://healing-transitions.org/</a></p>
+LAST-MODIFIED:20241111T152039Z
+LOCATION:Crank Arm Brewing Company\, 319 W Davie St\, Raleigh\, NC 27601\, 
+ USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Cranksgiving: A Bicycle Food Drive for Healing Transitions
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260326T210000Z
+DTEND:20260326T230000Z
+DTSTAMP:20260815T181228Z
+UID:0ubansvqtuon0dj6fatt7kmopk@google.com
+CREATED:20260219T105524Z
+DESCRIPTION:Free adult bike repairs\, safety checks\, and tune-ups. <span>F
+ irst come\, first served. </span>
+LAST-MODIFIED:20260227T215659Z
+LOCATION:Peach Road Cultural Center\, 911 Ileagnes Rd\, Raleigh\, NC 27603\
+ , USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Free Bike Repair @ Peach Road Park
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260422T210000Z
+DTEND:20260423T000000Z
+DTSTAMP:20260815T181228Z
+UID:1d23bsd08fri5o8t4dc3a8ooin@google.com
+CREATED:20260401T152657Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260401T152658Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250729T210000Z
+DTEND:20250730T010000Z
+DTSTAMP:20260815T181228Z
+UID:6o6oj3gf2ko30cdmc28g3ff2gr@google.com
+CREATED:20250629T131009Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250629T131009Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260624T210000Z
+DTEND:20260625T000000Z
+DTSTAMP:20260815T181228Z
+UID:6g4bsogf57ljkt94pimk4uv3ld@google.com
+CREATED:20260602T212601Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260602T212602Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20260614T110000
+DTEND;TZID=America/New_York:20260614T130000
+DTSTAMP:20260815T181228Z
+UID:3a38a6os219idtfmkl5f9j6ghb@google.com
+RECURRENCE-ID;TZID=America/New_York:20260614T110000
+CREATED:20250224T133801Z
+DESCRIPTION:<span>Free basic bike repair skill-share workshop at Eliza Pool
+  Park for the Raleigh Really\, Really Free Market (RRFM). We will also be o
+ ffering free adult bike <span>safety checks</span> and tune-ups. <span>Firs
+ t come\, first served. </span></span>
+LAST-MODIFIED:20260713T165616Z
+LOCATION:Eliza Pool Park\, 1600 Fayetteville St\, Raleigh\, NC 27603\, USA
+SEQUENCE:7
+STATUS:CONFIRMED
+SUMMARY:Repair Skill Share & Basic Tune-Ups @ Raleigh RRFM in Eliza Pool Pa
+ rk
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250707T220000Z
+DTEND:20250708T000000Z
+DTSTAMP:20260815T181228Z
+UID:0uvjfpnjidhr5gsjve4vrisi57@google.com
+CREATED:20250627T221835Z
+DESCRIPTION:Raleigh Community Kickstand is offering a basic bike maintenanc
+ e workshop where you'll learn the skills you need to feel safe and self-suf
+ ficient on your bike. We'll cover the essentials of bike maintenance like: 
+ fixing flats\, chain care\, brake and shifting adjustments\, and more. We'l
+ l also share resources on bike repair\, local infrastructure and organizati
+ ons\, and how to navigate the world via bike.<br><br>Bring your bike if you
+  can. No experience required. Sign up to let us know you’re coming.<br><br>
+ Sign-up: <a href="https://raleighcommunitykickstand.org/workshop" target="_
+ blank">raleighcommunitykickstand.org/workshop</a><br>When: Monday\, July 7 
+ 6-8pm<br>Where: RUMAH (415 Hillsborough St)<br>Suggested donation: $5 (no o
+ ne turned away for lack of funds). Of the collected donations\, $50 will be
+  donated to RUMAH for use of the space. Any additional proceeds will suppor
+ t Raleigh Community Kickstand's efforts to provide free bike repair for all
+ .
+LAST-MODIFIED:20250628T131845Z
+LOCATION:RUMAH\, 415 Hillsborough St Suite 101\, Raleigh\, NC 27603\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Basic Bike Maintenance Workshop @ RUMAH
+TRANSP:OPAQUE
+ATTACH;FILENAME=3.png;FMTTYPE=image/png:https://drive.google.com/open?id=1a
+ 0jCwbBqa_TvkuK-gu94vlsU-CmnCqTV
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20250809T130000
+DTEND;TZID=America/New_York:20250809T150000
+RRULE:FREQ=MONTHLY;BYDAY=2SA
+DTSTAMP:20260815T181228Z
+UID:4f0c5jfubqnia0bsgguu97dvhl_R20250809T170000@google.com
+CREATED:20240603T162450Z
+DESCRIPTION:Our monthly free community bike repair event! Hosted the second
+  Saturday of each month from 1-3pm at Oak City Cares\, a multiservice cente
+ r for folks experiencing housing insecurity. We fix/replace brakes\, clean 
+ chains/drivetrains\, tune shifters\, fix flats\, and make other minor adjus
+ tments. First come\, first served.<br> <br><a href="https://docs.google.com
+ /spreadsheets/d/1VJGkxpowGLi9LNfFjneI8mNoEKFTLBa6J27K8PHTpyE/edit?gid=30251
+ 2647#gid=302512647" class="pastedDriveLink-0">RCK Volunteer Signup</a>
+LAST-MODIFIED:20260507T120504Z
+LOCATION:Oak City Cares\, 1430 S Wilmington St\, Raleigh\, NC 27603\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Repair @ Oak City Cares
+TRANSP:OPAQUE
+ATTACH;FILENAME=RCK Flyer 25_0710.png;FMTTYPE=image/png:https://drive.googl
+ e.com/open?id=1adwdYGzmzIANt72BRDPROmlYSPNraoe3
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260702T220000Z
+DTEND:20260703T000000Z
+DTSTAMP:20260815T181228Z
+UID:0ulor55f20ojns3lbrf50ks0um@google.com
+CREATED:20260629T172336Z
+DESCRIPTION:Free adult bike repairs\, safety checks\, and tune-ups with Ral
+ eigh Community Kickstand and Oaks &amp\; Spokes. <span>First come\, first s
+ erved. </span>
+LAST-MODIFIED:20260629T172336Z
+LOCATION:Peach Road Cultural Center\, 911 Ileagnes Rd\, Raleigh\, NC 27603\
+ , USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Free Bike Repair @ Peach Road Park
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250923T210000Z
+DTEND:20250924T000000Z
+DTSTAMP:20260815T181228Z
+UID:577dqnl0l93ul45ncdq5cajv1h@google.com
+CREATED:20250901T132511Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20250901T132511Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260714T210000Z
+DTEND:20260715T000000Z
+DTSTAMP:20260815T181228Z
+UID:4qbjblfd52u5p3bb3q4bunnigu@google.com
+CREATED:20260630T173436Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260630T173443Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200808T130000
+DTEND;TZID=America/New_York:20200808T150000
+DTSTAMP:20260815T181228Z
+UID:522nndh99fvjjebq637qg96rts@google.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/uoq-siez-iyf
+RECURRENCE-ID;TZID=America/New_York:20200808T130000
+CREATED:20200802T223129Z
+DESCRIPTION:Open community bicycle repair event at the Oak City Cares Multi
+ services Center\, <span>a hub for connecting individuals and families at ri
+ sk of\, or currently experiencing homelessness.</span> We host a repair eve
+ nt at OCC every 2nd Saturday of the month. We fix/replace brakes\, clean ch
+ ains/drivetrains\, tune shifters\, fix flats\, and make other minor adjustm
+ ents.<br><br><a href="https://oakcitycares.org/" target="_blank">https://oa
+ kcitycares.org/</a>\n\nJoin with Google Meet: https://meet.google.com/uoq-s
+ iez-iyf\n\nLearn more about Meet at: https://support.google.com/a/users/ans
+ wer/9282720
+LAST-MODIFIED:20221123T092850Z
+LOCATION:Oak City Cares 1430 S. Wilmington Street\, Raleigh\, NC 27603
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair @ Oak City Cares
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250201T200000Z
+DTEND:20250201T220000Z
+DTSTAMP:20260815T181228Z
+UID:0ebkaairc9pm8ulnbtbpqscrvl@google.com
+CREATED:20250118T173017Z
+DESCRIPTION:Free adult bike repairs\, safety checks\, and tune-ups. <span>F
+ irst come\, first served. </span>
+LAST-MODIFIED:20250127T220632Z
+LOCATION:Peach Road Cultural Center\, 911 Ileagnes Rd\, Raleigh\, NC 27603\
+ , USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Repair @ Peach Rd Cultural Center
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251123T180000Z
+DTEND:20251123T220000Z
+DTSTAMP:20260815T181228Z
+UID:384m67uiiso0ssnb5nk5sv9pbt@google.com
+CREATED:20251027T153101Z
+DESCRIPTION:Cranksgiving is a fun choose-your-own-adventure event all about
+  riding a bike and helping folks in our community during the holiday season
+ .\n\nYou’ll get a list of essential food items\, some bonus challenges\, an
+ d a map of nearby grocery stores. You can also help by picking up and deliv
+ ering goods that others have donated at our drop-off points.\n\nHowever you
+  choose to participate is entirely up to you. Every one can make a differen
+ ce\, whether you’re buying\, carrying\, or collecting!\n\nWe will be giving
+  out points for weight\, distance\, and key items. So grab your cargo bike\
+ , panniers\, backpack\, and any and everything you can mount to your bike t
+ o carry a load.\n \nRegistration: 1:00pm\nStart: 1:30pm\nCut-Off: 3:30pm
+LAST-MODIFIED:20251111T125923Z
+LOCATION:Crank Arm Brewing Company\, 319 W Davie St\, Raleigh\, NC 27601\, 
+ USA
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Cranksgiving! 
+TRANSP:OPAQUE
+ATTACH;FILENAME=cranksgiving2025.jpg;FMTTYPE=image/jpeg:https://drive.googl
+ e.com/open?id=1T759whdk5VAfrmXirDL5q7m7OFvoOQKC
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250506T220000Z
+DTEND:20250507T000000Z
+DTSTAMP:20260815T181228Z
+UID:7tkv0g9omsblgfjiuf6gad50hd@google.com
+CREATED:20250403T154536Z
+DESCRIPTION:Raleigh Community Kickstand is offering a series of free bike r
+ epair workshops. These workshops are intended for folks of all skill levels
+ \, whether you want to learn how to maintain your own bike or volunteer wit
+ h us in the future to tune up a bike for folks in the community. All are we
+ lcome!\n\nYou can come to either or both of the sessions. On May 6th\, we w
+ ill cover basic bike maintenance including flat fixing\, chain maintenance\
+ , brake adjustments\, and more. On May 27th\, we will cover drivetrain main
+ tenance\, including derailleur adjustments and shifting overhauls. Bring yo
+ ur own bike or learn using one of ours. Come ready to get your hands a bit 
+ greasy and throw back a Raleigh Brewing Company beer\, cider\, kombucha\, o
+ r seltzer!
+LAST-MODIFIED:20250409T151449Z
+LOCATION:Raleigh Brewing Company\, 3709 Neil St\, Raleigh\, NC 27607\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Free Bike Repair Workshop: Basic Bike Maintenance
+TRANSP:OPAQUE
+ATTACH;FILENAME=repair workshop.png;FMTTYPE=image/png:https://drive.google.
+ com/open?id=1qUQhepO4_OglUgaT-mQMxgDRLkaHK07M
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260524T150000Z
+DTEND:20260524T190000Z
+DTSTAMP:20260815T181228Z
+UID:6on4p0t6bms42ujk1cvn93o7pj@google.com
+CREATED:20260430T164609Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260430T164609Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20250216T140000
+DTEND;TZID=America/New_York:20250216T160000
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=2;BYDAY=SU
+DTSTAMP:20260815T181228Z
+UID:2relnsh9ib24ckdu1627omqp06@google.com
+CREATED:20250127T225157Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB!</span>
+LAST-MODIFIED:20250127T225157Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260721T210000Z
+DTEND:20260722T000000Z
+DTSTAMP:20260815T181228Z
+UID:2frcc3c39lvuovnnvvsih4dk7p@google.com
+CREATED:20260630T173449Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260707T114929Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250821T210000Z
+DTEND:20250821T230000Z
+DTSTAMP:20260815T181228Z
+UID:45cvidubo7r7cf8bf3jsh9k6vf@google.com
+CREATED:20250802T154457Z
+DESCRIPTION:Free adult bike repairs\, safety checks\, and tune-ups. <span>F
+ irst come\, first served. </span>
+LAST-MODIFIED:20250802T154457Z
+LOCATION:Peach Road Cultural Center\, 911 Ileagnes Rd\, Raleigh\, NC 27603\
+ , USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Repairs @ Peach Road Park
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260318T210000Z
+DTEND:20260319T000000Z
+DTSTAMP:20260815T181228Z
+UID:2avvni5s3sabr1sfsglpj55mbh@google.com
+CREATED:20260228T161204Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260228T161204Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200808T130000
+DTEND;TZID=America/New_York:20200808T150000
+RRULE:FREQ=MONTHLY;UNTIL=20201212T180000Z;BYDAY=2SA
+EXDATE;TZID=America/New_York:20201010T130000
+DTSTAMP:20260815T181228Z
+UID:522nndh99fvjjebq637qg96rts@google.com
+CREATED:20200802T223129Z
+DESCRIPTION:Open community bicycle repair event at the Oak City Cares Multi
+ services Center\, <span>a hub for connecting individuals and families at ri
+ sk of\, or currently experiencing homelessness.</span> We host a repair eve
+ nt at OCC every 2nd Saturday of the month. We fix/replace brakes\, clean ch
+ ains/drivetrains\, tune shifters\, fix flats\, and make other minor adjustm
+ ents.<br><br><a href="https://oakcitycares.org/" target="_blank">https://oa
+ kcitycares.org/</a>
+LAST-MODIFIED:20210109T131335Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair @ Oak City Cares
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250918T210000Z
+DTEND:20250919T000000Z
+DTSTAMP:20260815T181228Z
+UID:7qvpo91jd5oohsar2brtfk8okk@google.com
+CREATED:20250901T132535Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20250901T132535Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260808T210000Z
+DTEND:20260809T010000Z
+DTSTAMP:20260815T181228Z
+UID:0hke18mt9guao68qv51ed96hrk@google.com
+CREATED:20260626T164301Z
+DESCRIPTION:Join us for our second annual alleycat & cookout! New to alleyc
+ ats? Alleycats are fun\, choose-your-own-adventure rides inspired by bike c
+ ouriers. You’ll get a list of stops\, plan a route\, and hit as many stops 
+ as you can (or want to) before the cutoff. Each stop earns you a random cra
+ yon. At the end\, use them to color in a drawing. Best ones win prizes!\n\n
+ Ride solo or party-pace with a group. Perfect for beginners\, newcomers\, v
+ eteran townies\, and everyone in between. Featuring a post-ride cookout wit
+ h hot dogs (veggie and meet)\, drinks\, and snacks. Proceeds go to Raleigh 
+ Community Kickstand\, a collective providing free repairs\, bikes\, and tra
+ ining for folks in need. See you there!\n\nMelted Crayon Benefit Alleycat &
+  Cookout - A party-pace\, choose-your-own-adventure ride with a coloring tw
+ ist benefiting Raleigh Community Kickstand!\n$10 Suggested Donation\nWhere:
+  Jaycee Park | 2405 Wade Ave\nWhen: Saturday\, August 8 | Registration: 5pm
+  | Start: 6pm | Cutoff + Cookout: 8pm\nFree safety checks at registration. 
+ Cookout + coloring contest after cutoff.
+LAST-MODIFIED:20260714T142244Z
+LOCATION:Jaycee Park\, 2405 Wade Ave\, Raleigh\, NC 27607\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Melted Crayon Benefit Alleycat & Cookout
+TRANSP:OPAQUE
+ATTACH;FILENAME=alleycat2026.png;FMTTYPE=image/png:https://drive.google.com
+ /open?id=1iQ2sxUol7-YAZubSxXF5j8Kj31mp5U_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250817T130000Z
+DTEND:20250817T170000Z
+DTSTAMP:20260815T181228Z
+UID:7dlejagns30mus961agoar4sgi@google.com
+CREATED:20250802T151323Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20250802T151323Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260712T140000Z
+DTEND:20260712T170000Z
+DTSTAMP:20260815T181228Z
+UID:5671s90ee711minto57qgt2b0c@google.com
+CREATED:20260708T185626Z
+DESCRIPTION:Going to see the Dix Park sunflowers in full bloom this weekend
+ ? Ride your bike! Oaks &amp\; Spokes and Raleigh Community Kickstand will b
+ e offering free bike valet at their shipping container bike shop in the bac
+ k of the gravel lot off the Hunt Drive entrance\, just north of the sunflow
+ ers. Skip searching for a tree to lock up to and leave your bike with us in
+ stead. While you&#39\;re there\, grab some stickers\, get a free safety che
+ ck\, and learn a bit about bike maintenance and what we do.
+LAST-MODIFIED:20260708T185626Z
+LOCATION:35°46'26.6"N 78°39'37.1"W
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bike Valet @ Dix Park Sunflowers!
+TRANSP:OPAQUE
+ATTACH;FILENAME=20260708_154415685_iOS.jpg;FMTTYPE=image/jpeg:https://drive
+ .google.com/open?id=1tJkhXeExij5mBNZciecNkSc5T0oOts46
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20251109T110000
+DTEND;TZID=America/New_York:20251109T130000
+RRULE:FREQ=MONTHLY;UNTIL=20270131T045959Z;BYDAY=2SU
+EXDATE;TZID=America/New_York:20251214T110000
+EXDATE;TZID=America/New_York:20260208T110000
+EXDATE;TZID=America/New_York:20260308T110000
+EXDATE;TZID=America/New_York:20260510T110000
+EXDATE;TZID=America/New_York:20260712T110000
+EXDATE;TZID=America/New_York:20260809T110000
+EXDATE;TZID=America/New_York:20261011T110000
+EXDATE;TZID=America/New_York:20260913T110000
+DTSTAMP:20260815T181228Z
+UID:3a38a6os219idtfmkl5f9j6ghb@google.com
+CREATED:20250224T133801Z
+DESCRIPTION:<span>Free basic bike repair skill-share workshop at Eliza Pool
+  Park for the Raleigh Really\, Really Free Market (RRFM). We will also be o
+ ffering free adult bike <span>safety checks</span> and tune-ups. <span>Firs
+ t come\, first served. </span></span>
+LAST-MODIFIED:20260713T165616Z
+LOCATION:Eliza Pool Park\, 1600 Fayetteville St\, Raleigh\, NC 27603\, USA
+SEQUENCE:5
+STATUS:CONFIRMED
+SUMMARY:Repair Skill Share & Basic Tune-Ups @ Raleigh RRFM in Eliza Pool Pa
+ rk
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250722T210000Z
+DTEND:20250723T010000Z
+DTSTAMP:20260815T181228Z
+UID:3s5tmqfckqne9k4f8m99ikf915@google.com
+CREATED:20250629T130953Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250629T130954Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260517T140000Z
+DTEND:20260517T180000Z
+DTSTAMP:20260815T181228Z
+UID:2iplqlt8nv8clspp2384n42g7f@google.com
+CREATED:20260425T230233Z
+DESCRIPTION:Did you know that Oaks & Spokes / RCK was gifted a shipping con
+ tainer full of bikes from Trips for Kids RDU? Our new (old) container is no
+ w living at Dix Park and needs some TLC! Come help clean out the container 
+ and learn about bike repair as we tune up kids' bikes to give away. Snacks 
+ and bevs provided. Meet in the gravel lot off the Dix Park entrance at Hunt
+  Dr. Near "Sunflower Field #1" or 35.774059\, -78.660315.
+LAST-MODIFIED:20260426T133927Z
+LOCATION:35.774059\, -78.660315
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Volunteer Work Day Container Clean-Out
+TRANSP:OPAQUE
+ATTACH;FILENAME=20 - May 17 - Container Clean Out.jpg;FMTTYPE=image/jpeg:ht
+ tps://drive.google.com/open?id=1IgwKm9r1q2_HEa6sJZyJ1iTRGe-zD6J5
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250624T200000Z
+DTEND:20250625T000000Z
+DTSTAMP:20260815T181228Z
+UID:5h7rrtf42ikriioijcsdpgh9hf@google.com
+CREATED:20250530T192738Z
+DESCRIPTION:<span>Curious about bike repair? Join us for community shop hou
+ rs at our storage space! Bring your bike to tune up or help refurbish one f
+ or our next distribution event. No experience? No problem. We’ll teach you 
+ what you need to know. We have tools\, tunes\, and a ParkTools BBB! Contact
+  <a href="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">v
+ olunteer@raleighcommunitykickstand.org</a> for gate code access.</span>
+LAST-MODIFIED:20250616T224113Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20250112T140000
+DTEND;TZID=America/New_York:20250112T160000
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=3;BYDAY=SU
+DTSTAMP:20260815T181228Z
+UID:0cpb1cvso8tdpuhegi8hsupfqg@google.com
+CREATED:20250102T155100Z
+DESCRIPTION:<span>Got a bike to fix or curious about bike repair? Join us f
+ or community shop hours at our storage space! Bring your bike to tune up or
+  help refurbish one for our next distribution event. No experience? No prob
+ lem. We’ll teach you what you need to know. We have tools\, tunes\, and a P
+ arkTools BBB!</span>
+LAST-MODIFIED:20250102T171557Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+ATTACH;FILENAME=shop hour small.png;FMTTYPE=image/png:https://drive.google.
+ com/open?id=1h_fuMjzWS42QUoy8jYbr5bLdGQxVTPTQ
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260823T130000Z
+DTEND:20260823T170000Z
+DTSTAMP:20260815T181228Z
+UID:7kghk59cp76fdmffpb3vtgatfr@google.com
+CREATED:20260729T194244Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260806T210334Z
+LOCATION:Public Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Kickstand Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241218T220000Z
+DTEND:20241219T000000Z
+DTSTAMP:20260815T181228Z
+UID:3fue990ubppkh11fcp6mt81q0b@google.com
+CREATED:20241126T141614Z
+LAST-MODIFIED:20241126T174435Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Fix-A-Bike / Fix-Your-Bike
+TRANSP:OPAQUE
+ATTACH;FILENAME=fixabike fixyourbike.png;FMTTYPE=image/png:https://drive.go
+ ogle.com/open?id=1-YRmmGjzHgCWg488viZoWfu1NzZprAUc
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20191012T170000Z
+DTEND:20191012T190000Z
+DTSTAMP:20260815T181228Z
+UID:41t6o86bmj8u3od7f0ls7nrf62@google.com
+CREATED:20191004T182328Z
+LAST-MODIFIED:20191004T182329Z
+LOCATION:Oak City Cares 1430 S. Wilmington Street\, Raleigh\, NC 27603
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241211T220000Z
+DTEND:20241212T000000Z
+DTSTAMP:20260815T181228Z
+UID:4pb3fvfi7siinlkgmm1j24jtnq@google.com
+CREATED:20241126T174448Z
+LAST-MODIFIED:20241126T174448Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Fix-A-Bike / Fix-Your-Bike
+TRANSP:OPAQUE
+ATTACH;FILENAME=fixabike fixyourbike.png;FMTTYPE=image/png:https://drive.go
+ ogle.com/open?id=1-YRmmGjzHgCWg488viZoWfu1NzZprAUc
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20250713T110000
+DTEND;TZID=America/New_York:20250713T130000
+RRULE:FREQ=MONTHLY;UNTIL=20251109T045959Z;BYDAY=2SU
+EXDATE;TZID=America/New_York:20251012T110000
+DTSTAMP:20260815T181228Z
+UID:g26f0tsj9imvh79imafbl4v4q2@google.com
+CREATED:20250224T133801Z
+DESCRIPTION:<span>Free basic bike repair skill-share workshop at Eliza Pool
+  Park for the Raleigh Really\, Really Free Market (RRFM). We will also be o
+ ffering free adult bike <span>safety checks</span> and tune-ups. <span>Firs
+ t come\, first served. </span></span>
+LAST-MODIFIED:20251204T031021Z
+LOCATION:Eliza Pool Park\, 1600 Fayetteville St\, Raleigh\, NC 27603\, USA
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:Repair Skill Share & Basic Tune-Ups @ Raleigh RRFM in Eliza Pool Pa
+ rk
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251012T150000Z
+DTEND:20251012T170000Z
+DTSTAMP:20260815T181228Z
+UID:5t87ddr3lacupksln67gujnff9@google.com
+CREATED:20251011T122236Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20251011T122236Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20191109T180000Z
+DTEND:20191109T200000Z
+DTSTAMP:20260815T181228Z
+UID:5nb3iq7cka65bd74lkcfu5jg1i@google.com
+CREATED:20191004T182345Z
+LAST-MODIFIED:20191004T182345Z
+LOCATION:Oak City Cares 1430 S. Wilmington Street\, Raleigh\, NC 27603
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Bike Repair
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251019T140000Z
+DTEND:20251019T180000Z
+DTSTAMP:20260815T181228Z
+UID:27reqc8vug2auhv1j8qj9qlt1f@google.com
+CREATED:20251004T143519Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20251004T143519Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260610T210000Z
+DTEND:20260611T000000Z
+DTSTAMP:20260815T181228Z
+UID:2lg9ugt29oriff4r1n69h7ii8t@google.com
+CREATED:20260602T212500Z
+DESCRIPTION:<span>We’ve had our storage unit where we host community shop h
+ ours for a year and a half now. In that time\, we’ve built up quite an inve
+ ntory of parts and need some help reorganizing. Come help us sort things in
+ to new filing cabinets\, develop an inventory system\, and create some part
+ s bins for our pop-up repair events. You will leave with some with snacks a
+ nd maybe even some weirdo bike parts?</span><br><span> </span><br><span>Acc
+ ess to the shop requires getting through a locked gate</span>. Contact <a h
+ ref="mailto:volunteer@raleighcommunitykickstand.org" target="_blank">volunt
+ eer@raleighcommunitykickstand.org</a> in advance for the code!
+LAST-MODIFIED:20260603T001556Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours - Organizing Edition
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260308T160000Z
+DTEND:20260308T200000Z
+DTSTAMP:20260815T181228Z
+UID:51u3if4th2b438d6hc6f7q142d@google.com
+CREATED:20260228T161051Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260228T161051Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260707T210000Z
+DTEND:20260708T000000Z
+DTSTAMP:20260815T181228Z
+UID:3rn3l86vbe9hj752ctc1eh4aom@google.com
+CREATED:20260630T173429Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260630T173429Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250812T210000Z
+DTEND:20250813T010000Z
+DTSTAMP:20260815T181228Z
+UID:5lo80bgqa5to7n3jfmb3gveov9@google.com
+CREATED:20250806T201108Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need. <span><span>Contact <a href="mailto:volunteer@r
+ aleighcommunitykickstand.org" target="_blank">volunteer@raleighcommunitykic
+ kstand.org</a> in advance for gate code access.</span></span>
+LAST-MODIFIED:20250806T201109Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260617T210000Z
+DTEND:20260618T000000Z
+DTSTAMP:20260815T181228Z
+UID:b8c314np565pni61i4fnsf2dgc@google.com
+CREATED:20260603T001616Z
+DESCRIPTION:Need tools\, space\, or a hand fixing your bike? Swing by our s
+ torage unit turned DIY community bike shop. We’ve got stands\, tools\, part
+ s\, tunes\, and support! Bring a bike to work on\, or help fix one of ours 
+ to give to someone in need.<br><br><span>Access to the shop requires gettin
+ g through a locked gate</span>. Contact <a href="mailto:volunteer@raleighco
+ mmunitykickstand.org" target="_blank">volunteer@raleighcommunitykickstand.o
+ rg</a> in advance for the code!
+LAST-MODIFIED:20260603T001616Z
+LOCATION:SecurCare Self Storage\, 4615 Beryl Rd\, Raleigh\, NC 27606\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Community Shop Hours
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
