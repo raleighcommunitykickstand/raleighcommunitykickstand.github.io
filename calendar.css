@@ -1,0 +1,514 @@
+/* =========================================================
+   RCK CALENDAR
+   FullCalendar 7 + Bootstrap 5 theme
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   RCK COLORS
+   --------------------------------------------------------- */
+
+:root {
+  --rck-yellow: #f7f573;
+  --rck-teal: #148378;
+  --rck-orange: #ef4036;
+  --rck-pink: #f4b8ff;
+  --rck-green: #00bf6c;
+
+  --rck-black: #000000;
+  --rck-white: #ffffff;
+
+  --rck-grey-dark: #1d2124;
+  --rck-grey-darker: #161616;
+}
+
+/* =========================================================
+   CALENDAR PAGE LAYOUT
+   ========================================================= */
+
+html,
+body.calendar-page-body {
+  /* height: 100%; */
+  min-height: 100vh;
+}
+
+body.calendar-page-body {
+  min-height: 100dvh;
+  background: var(--rck-black);
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--rck-black);
+}
+
+/* Navbar takes whatever height it naturally needs */
+#mainNav {
+  flex: 0 0 auto;
+}
+
+/*
+  Main takes every remaining pixel below navbar.
+  Bootstrap .container controls the width.
+*/
+.calendar-page {
+  flex: 1 1 auto;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* =========================================================
+   PAGE HEADING
+   ========================================================= */
+
+.calendar-page-header {
+  flex: 0 0 auto;
+
+  margin-bottom: 0.75rem;
+}
+
+.calendar-page-title {
+  color: var(--rck-teal);
+
+  font-family: "HWTArtz", "Courier New", monospace;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1;
+}
+
+/* =========================================================
+   CALENDAR SHELL
+   ========================================================= */
+
+.calendar-shell {
+  background: var(--rck-black);
+
+  border: 2px solid var(--rck-white);
+  border-radius: 16px;
+
+  box-shadow: 7px 7px 0 var(--rck-orange);
+
+  /* overflow: hidden; */
+}
+
+#calendar {
+  width: 100%;
+}
+
+.fc {
+  font-family: "Courier New", monospace;
+  color: var(--rck-white);
+}
+
+/* =========================================================
+   CALENDAR TOOLBAR
+   ========================================================= */
+
+.rck-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 0.75rem 1rem;
+
+  background: var(--rck-grey-dark);
+  color: var(--rck-white);
+
+  border-bottom: 2px solid var(--rck-white);
+}
+
+.rck-toolbar-section {
+  display: flex;
+  align-items: center;
+
+  gap: 0.4rem;
+}
+
+.rck-toolbar-title {
+  margin: 0;
+
+  color: var(--rck-yellow);
+
+  font-family: "Courier New", monospace;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* =========================================================
+   TOOLBAR BUTTONS
+   ========================================================= */
+
+.rck-calendar-button {
+  min-height: 2.25rem;
+
+  padding: 0.35rem 0.7rem;
+
+  background: var(--rck-teal);
+  color: var(--rck-white);
+
+  border: 2px solid var(--rck-white);
+  border-radius: 6px;
+
+  font-family: "Courier New", monospace;
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  line-height: 1;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.rck-calendar-button:hover {
+  background: var(--rck-orange);
+  color: var(--rck-white);
+
+  transform: translateY(-1px);
+}
+
+.rck-calendar-button:focus-visible {
+  outline: 3px solid var(--rck-pink);
+  outline-offset: 2px;
+}
+
+/* Selected Month/List button */
+.rck-calendar-button.active,
+.rck-calendar-button[aria-pressed="true"] {
+  background: var(--rck-yellow);
+  color: var(--rck-black);
+}
+
+/* =========================================================
+   WEEKDAY HEADERS
+   ========================================================= */
+
+.rck-day-header {
+  background: var(--rck-teal);
+  color: var(--rck-white);
+
+  font-weight: bold;
+}
+
+.rck-day-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================================
+   MONTH CELLS
+   ========================================================= */
+
+.rck-day-cell {
+  background: var(--rck-black);
+  color: var(--rck-white);
+}
+
+.rck-day-cell a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Today */
+.rck-day-cell-today {
+  outline: 2px solid var(--rck-pink);
+  outline-offset: -2px;
+  background: var(--rck-pink) !important;
+  color: var(--rck-black);
+}
+
+.rck-day-cell-today a {
+  display: inline-block;
+  padding: 1px 7px;
+  background: var(--rck-pink);
+  color: var(--rck-black);
+  border-radius: 999px;
+}
+
+/* =========================================================
+   EVENTS
+   ========================================================= */
+
+.rck-event {
+  cursor: pointer;
+
+  border-radius: 7px;
+
+  font-family: "Courier New", monospace;
+  font-weight: normal;
+}
+
+.rck-block-event {
+  padding: 2px 5px;
+}
+
+.rck-event,
+.rck-event * {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.rck-event:hover {
+  background: var(--rck-orange) !important;
+  color: var(--rck-white) !important;
+
+  transform: translateY(-1px);
+}
+
+.rck-event a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rck-event-title {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+/* =========================================================
+   LIST VIEW
+   ========================================================= */
+
+.rck-list-day-header {
+  background: var(--rck-teal);
+  color: var(--rck-white);
+
+  font-weight: bold;
+}
+
+.rck-list-day-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rck-list-day-header-today {
+  background: var(--rck-pink);
+  color: var(--rck-black);
+}
+
+.rck-list-event {
+  background: var(--rck-black);
+  color: var(--rck-white);
+
+  cursor: pointer;
+}
+
+.rck-list-event:hover {
+  background: var(--rck-orange);
+}
+
+/* =========================================================
+   DESKTOP: ENTIRE PAGE FITS VIEWPORT
+   ========================================================= */
+
+@media (min-width: 768px) {
+  body.calendar-page-body {
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+  body.calendar-page-body {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .calendar-page {
+    display: block;
+
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .calendar-page-title {
+    font-size: 2rem;
+  }
+
+  .calendar-shell {
+    height: auto;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 var(--rck-orange);
+  }
+
+  #calendar,
+  .fc {
+    height: auto;
+  }
+
+  .rck-toolbar {
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+
+    padding: 0.6rem;
+  }
+
+  .rck-toolbar-title {
+    width: 100%;
+
+    text-align: center;
+
+    order: -1;
+  }
+
+  .rck-calendar-button {
+    font-size: 0.8rem;
+  }
+}
+
+/* =========================================================
+   EVENT MODAL
+   ========================================================= */
+
+.hidden {
+  display: none !important;
+}
+
+/* ---------------------------------------------------------
+   MODAL LAYOUT
+   --------------------------------------------------------- */
+
+.event-modal {
+  position: fixed;
+  inset: 0;
+
+  z-index: 5000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+}
+
+.event-modal-backdrop {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* ---------------------------------------------------------
+   MODAL CARD
+   --------------------------------------------------------- */
+
+.event-modal-card {
+  position: relative;
+  z-index: 1;
+
+  width: min(700px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: var(--rck-black);
+  color: var(--rck-white);
+
+  border: 2px solid var(--rck-white);
+  border-radius: 1rem;
+
+  box-shadow: 8px 8px 0 var(--rck-orange);
+}
+
+.event-modal-body {
+  padding: 1.5rem;
+}
+
+/* ---------------------------------------------------------
+   MODAL CLOSE BUTTON
+   --------------------------------------------------------- */
+
+.event-modal-close {
+  position: absolute;
+
+  top: 0.75rem;
+  right: 0.75rem;
+
+  z-index: 2;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: 2px solid var(--rck-white);
+  border-radius: 50%;
+
+  background: var(--rck-black);
+  color: var(--rck-white);
+
+  font-size: 1.5rem;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.event-modal-close:hover {
+  background: var(--rck-orange);
+}
+
+/* ---------------------------------------------------------
+   MODAL CONTENT
+   --------------------------------------------------------- */
+
+.event-modal-kicker {
+  margin-bottom: 0.5rem;
+
+  color: var(--rck-pink);
+}
+
+#event-modal-title {
+  margin-bottom: 1rem;
+}
+
+.event-modal-location {
+  margin-bottom: 1rem;
+
+  color: var(--rck-yellow);
+}
+
+.event-modal-description {
+  margin-top: 1rem;
+
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/* Google Calendar descriptions can contain HTML links */
+.event-modal-description a,
+.event-modal-card a {
+  color: var(--rck-teal);
+
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.event-modal-description a:visited,
+.event-modal-card a:visited {
+  color: var(--rck-pink);
+}
+
+.event-modal-description a:hover,
+.event-modal-card a:hover {
+  color: var(--rck-yellow);
+}
+
+/* ---------------------------------------------------------
+   MODAL ACCESSIBILITY
+   --------------------------------------------------------- */
+
+.event-modal-card a:focus,
+.event-modal-close:focus {
+  outline: 2px solid var(--rck-yellow);
+  outline-offset: 2px;
+}
