@@ -1,0 +1,54 @@
+name: Update Google Calendar
+
+on:
+  # Lets you run it manually from the Actions tab
+  workflow_dispatch:
+
+  # Run once per hour
+  schedule:
+    - cron: "34 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Download Google Calendar ICS
+        env:
+          CALENDAR_URL: "https://calendar.google.com/calendar/ical/hq05amnbaa5pr0u7ulc2v2ic44%40group.calendar.google.com/public/full.ics"
+        run: |
+          mkdir -p data
+
+          curl \
+            --fail \
+            --location \
+            --silent \
+            --show-error \
+            --retry 3 \
+            "$CALENDAR_URL" \
+            --output data/calendar.ics.tmp
+
+          # Make sure Google actually returned an iCalendar file
+          grep -q "BEGIN:VCALENDAR" data/calendar.ics.tmp
+
+          mv data/calendar.ics.tmp data/calendar.ics
+
+      - name: Commit calendar if changed
+        run: |
+          if [ -z "$(git status --porcelain -- data/calendar.ics)" ]; then
+            echo "Calendar has not changed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/calendar.ics
+          git commit -m "Update calendar"
+          git push
