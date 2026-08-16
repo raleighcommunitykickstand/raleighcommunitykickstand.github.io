@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "34 * * * *"
+    - cron: "34 */12 * * *"
 
 permissions:
   contents: write
@@ -37,32 +37,82 @@ jobs:
       - name: Check for meaningful calendar changes
         id: calendar_diff
         run: |
-          normalize_ics() {
-            sed \
-              -e 's/\r$//' \
-              -e '/^DTSTAMP:/d' \
-              "$1"
-          }
+          python <<'PY'
+          from pathlib import Path
 
-          # No existing calendar = definitely new
-          if [ ! -f data/calendar.ics ]; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
+          def unfold(text):
+              text = text.replace("\r\n", "\n").replace("\r", "\n")
 
-          normalize_ics data/calendar.ics > /tmp/calendar-old.ics
-          normalize_ics data/calendar.ics.tmp > /tmp/calendar-new.ics
+              lines = text.splitlines()
+              result = []
 
-          if cmp -s /tmp/calendar-old.ics /tmp/calendar-new.ics; then
-            echo "No meaningful calendar changes."
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "Calendar content changed:"
-            diff -u /tmp/calendar-old.ics /tmp/calendar-new.ics || true
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
+              for line in lines:
+                  if line.startswith((" ", "\t")) and result:
+                      result[-1] += line[1:]
+                  else:
+                      result.append(line)
 
-      - name: Replace calendar
+              return result
+
+
+          def normalize(path):
+              lines = unfold(Path(path).read_text(encoding="utf-8"))
+
+              header = []
+              events = []
+              current_event = None
+
+              for line in lines:
+
+                  if line == "BEGIN:VEVENT":
+                      current_event = []
+
+                  elif line == "END:VEVENT":
+                      # DTSTAMP changes every time Google exports the calendar.
+                      current_event = [
+                          line
+                          for line in current_event
+                          if not line.startswith("DTSTAMP:")
+                      ]
+
+                      events.append("\n".join(current_event))
+                      current_event = None
+
+                  elif current_event is not None:
+                      current_event.append(line)
+
+                  elif line != "END:VCALENDAR":
+                      header.append(line)
+
+              # Google returns events in arbitrary order.
+              events.sort()
+
+              return (
+                  "\n".join(header)
+                  + "\n"
+                  + "\n".join(
+                      f"BEGIN:VEVENT\n{event}\nEND:VEVENT"
+                      for event in events
+                  )
+                  + "\nEND:VCALENDAR\n"
+              )
+
+
+          old_path = Path("data/calendar.ics")
+          new_path = Path("data/calendar.ics.tmp")
+
+          if not old_path.exists():
+              changed = True
+          else:
+              changed = normalize(old_path) != normalize(new_path)
+
+          with open("/tmp/calendar_changed", "w") as f:
+              f.write("true" if changed else "false")
+          PY
+
+          echo "changed=$(cat /tmp/calendar_changed)" >> "$GITHUB_OUTPUT"
+
+      - name: Save updated calendar
         if: steps.calendar_diff.outputs.changed == 'true'
         run: |
           mv data/calendar.ics.tmp data/calendar.ics
