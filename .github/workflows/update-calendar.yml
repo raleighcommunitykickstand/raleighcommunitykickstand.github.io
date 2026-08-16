@@ -1,10 +1,8 @@
 name: Update Google Calendar
 
 on:
-  # Lets you run it manually from the Actions tab
   workflow_dispatch:
 
-  # Run once per hour
   schedule:
     - cron: "34 * * * *"
 
@@ -34,18 +32,44 @@ jobs:
             "$CALENDAR_URL" \
             --output data/calendar.ics.tmp
 
-          # Make sure Google actually returned an iCalendar file
           grep -q "BEGIN:VCALENDAR" data/calendar.ics.tmp
 
-          mv data/calendar.ics.tmp data/calendar.ics
-
-      - name: Commit calendar if changed
+      - name: Check for meaningful calendar changes
+        id: calendar_diff
         run: |
-          if [ -z "$(git status --porcelain -- data/calendar.ics)" ]; then
-            echo "Calendar has not changed."
+          normalize_ics() {
+            sed \
+              -e 's/\r$//' \
+              -e '/^DTSTAMP:/d' \
+              "$1"
+          }
+
+          # No existing calendar = definitely new
+          if [ ! -f data/calendar.ics ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
+          normalize_ics data/calendar.ics > /tmp/calendar-old.ics
+          normalize_ics data/calendar.ics.tmp > /tmp/calendar-new.ics
+
+          if cmp -s /tmp/calendar-old.ics /tmp/calendar-new.ics; then
+            echo "No meaningful calendar changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Calendar content changed:"
+            diff -u /tmp/calendar-old.ics /tmp/calendar-new.ics || true
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Replace calendar
+        if: steps.calendar_diff.outputs.changed == 'true'
+        run: |
+          mv data/calendar.ics.tmp data/calendar.ics
+
+      - name: Commit calendar
+        if: steps.calendar_diff.outputs.changed == 'true'
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
