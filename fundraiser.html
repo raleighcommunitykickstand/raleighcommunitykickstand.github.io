@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundraiser</title>
+
+  <!-- icon for browser -->
+  <link rel="icon" type="image/png" href="/media/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/media/favicon.svg" />
+  <link rel="shortcut icon" href="/media/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="RCK" />
+  <link rel="manifest" href="/media/site.webmanifest" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- FullCalendar structure -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.2/skeleton.css" rel="stylesheet">
+  <!-- FullCalendar Bootstrap theme -->
+  <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@7.0.2/theme.css" rel="stylesheet">
+  <!-- Your CSS LAST -->
+  <link href="style.css" rel="stylesheet">
+  <link href="calendar.css" rel="stylesheet">
+  <!-- iCalendar parser -->
+  <script src="https://unpkg.com/ical.js@2.2.1/dist/ical.es5.min.cjs"></script>
+  <!-- FullCalendar -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.2/all/global.js"></script>
+  <!-- FullCalendar Bootstrap theme -->
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@7.0.2/global.js"></script>
+  <!-- FullCalendar iCalendar -->
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@7.0.2/global.js"></script>
+
+</head>
+
+<body>
+
+  <!-- navbar header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <div class="container px-3">
+      <a class="navbar-brand" href="index.html">
+        <img class="brand-logo pe-1 pe-lg-3" src="media/RCK_by.png" alt="RCK logo">
+        Raleigh Community Kickstand
+      </a>
+    </div>
+  </nav>
+
+
+  <div id="partnerPopover" class="partner-popover-root" hidden></div>
+  <div id="event-modal" class="event-modal hidden" aria-hidden="true">
+    <div class="event-modal-backdrop"></div>
+
+    <div class="event-modal-card" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
+      <button id="event-modal-close" class="event-modal-close" type="button" aria-label="Close">
+        ×
+      </button>
+
+      <img id="event-modal-image" class="event-modal-image hidden" alt="" />
+
+      <div class="event-modal-body">
+        <p id="event-modal-date" class="event-modal-kicker"></p>
+        <h3 id="event-modal-title" class="event-modal-title"></h3>
+        <p id="event-modal-location" class="event-modal-location"></p>
+        <div id="event-modal-description" class="event-modal-description"></div>
+        <div id="event-modal-links" class="event-modal-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container bg-primary calendar-page">
+    <div class="container">
+      <div class="row p-3">
+        <h1 class="text-center">We're raising funds for a new community bike hub!</h1>
+
+
+        <img src="media/sherri larry transparent.png" alt="Sherri and Larry">
+        <p>&nbsp;</p>
+
+        <p>Meet Sherri and Larry! They are our shipping containers in Dix Park that we're converting into a new
+          community
+          bike hub to provide folks with the tools and knowledge to move freely and sustainably throughout their city.
+          The
+          goal of this new hub is to remove barriers to bike ownership and upkeep. A working bike provides independence,
+          flexibility, and dignity. We believe everyone deserves mobility independence regardless of income, housing
+          status,
+          or prior mechanical experience.</p>
+
+
+        <!-- <img src="media/sherri larry transparent.png" alt="Sherri and Larry"> -->
+
+
+
+        <p>Types of programming in this space will include:</p>
+        <ul>
+          <li>Community shop hours - open hours for you to come use our tools and stands to work on bikes or learn to
+            work
+            on bikes</li>
+          <li>Bike repair clinics - opportunities for community members who can't afford a tune-up to seek help
+            maintaining
+            their bikes</li>
+          <li>Volunteer work sessions - events to refurbish donated bikes to give to folks without access to reliable
+            transportation</li>
+          <li>Maintenance workshops - formal workshops to learn bike repair</li>
+          <li>And much more!</li>
+        </ul>
+
+        <!-- <img src="media/sherri larry transparent.png" alt="Sherri and Larry"> -->
+
+
+        <p>We need your help to make this happen! We are looking to raise at least $8,050 to transform Sherri and Larry
+          into
+          a working bike shop. Here's how the funds will be used:</p>
+        <ul>
+          <li><strong>Solar Fund - $3,550</strong> - Covers the materials for a solar power system. <a
+              href="https://ncsolarnow.com/">NCSolarNow</a> is generously donating their time and expertise to design
+            and
+            install the project.</li>
+          <li><strong>New Home Fund - $2,500</strong> - Covers the workbenches, storage, lighting, fans, and other
+            infrastructure needed to turn these two containers into a functional bike shop.</li>
+          <li><strong>Tool Fund - $1,000</strong> - Rounds out our existing tool collection with shop repair stands,
+            specialty tools, and additional portable mechanic tool sets.</li>
+          <li><strong>Parts Fund - $1,000</strong> - Provides an initial stock of parts and supplies so we can start
+            repairing bikes as soon as the shop opens.</li>
+        </ul>
+
+        <p>It's not just a fundraiser. Sherri and Larry are in love! The campaign will culminate in a fun wedding
+          ceremony
+          on Saturday, Sep 26 at 4pm.</p>
+
+
+        <p>Help make their special day even more special by helping us reach our fundraising goal! Learn more about the
+          project and donate to the new hub through their registry: <a
+            href="https://theknot.com/sherriandlarry2026">theknot.com/sherriandlarry2026</a></p>
+
+
+        <p>Watch a video of their story here:</p>
+
+        <br>
+        <video controls width="800">
+          <source src="media/sherri-larry.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>&nbsp;</p>
+
+
+        <p>Here is a flyer you can share:</p>
+        <img src="newsletter/images/2026_09_fundraiser.webp" alt="Sherri and Larry">
+        <p>&nbsp;</p>
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="calendar.js"></script>
+
+</body>
+
+</html>
