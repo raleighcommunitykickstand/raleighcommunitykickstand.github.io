@@ -1,7 +1,7 @@
 const TICKER_VALUES = [
-  221, // events
-  977, // repairs
-  2337, // distributed
+  227, // events
+  991, // repairs
+  2398, // distributed
 ];
 
 const TICKER_SPEED = 100;

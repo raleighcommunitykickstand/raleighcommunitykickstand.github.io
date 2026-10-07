@@ -1,0 +1,217 @@
+<mjml>
+  <mj-head>
+    <mj-raw> <meta name="color-scheme" content="light dark"> <meta name="supported-color-schemes" content="light dark"> </mj-raw>
+    <mj-font name="HWTArtz" href="https://raleighcommunitykickstand.org/fonts/hwtartz.css" />
+    <mj-attributes>
+      <mj-all font-family="'Courier New', Courier, monospace" />
+      <mj-body background-color="#010101" width="700px" />
+      <mj-section padding="12px 16px" />
+      <mj-column padding="28px" border="2px solid #f7f573" />
+      <mj-text padding="0px" font-size="16px" line-height="1.6" />
+      <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#010101">
+    <!-- TROUBLE_VIEWING -->
+    <!-- <mj-section padding="8px 16px 0px 16px">
+      <mj-column background-color="#1d2124" padding="28px" border="2px solid #148378">
+        <mj-text color="#ffffff" align="center" font-size="12px" line-height="1.4">Having trouble viewing this email? <a href="https://raleighcommunitykickstand.org/newsletter/2026_09_fundraiser.html" style="color: #148378; text-decoration: underline">View it in your browser.</a></mj-text>
+      </mj-column>
+    </mj-section> -->
+
+    <!-- HEADER -->
+    <mj-section padding="16px 16px 8px 16px">
+      <mj-column background-color="#000000" border="2px solid #148378" padding="20px">
+        <mj-image src="https://raleighcommunitykickstand.org/media/RCK_logo-by.png" alt="Kickstand Logo" width="220px" fluid-on-mobile="true" align="center" padding="0 0 16px 0" />
+
+        <mj-text font-family="HWTArtz, 'Courier New', Courier, monospace" color="#f7f573" font-size="36px" font-weight="700" align="center" letter-spacing="1px" line-height="1.1">
+          HELP US BUILD A NEW BIKE HUB IN RALEIGH!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          WE&#x27;VE RAISED $5,000 OF $8,000 SO FAR, WE STILL NEED YOUR HELP!
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Here&#x27;s a special edition of our newsletter with a history lesson about Community Kickstand and an ask about the future.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          If you already contribute a lot of your time to the co-op or you don&#x27;t have the resources to donate, please share with folks who can contribute. If you can contribute or just want to learn more, read on and donate here: <a href="http://theknot.com/sherriandlarry2026" style="color:#148378; text-decoration:underline;">theknot.com/sherriandlarry2026</a>
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <strong>Note</strong>: We just updated our newsletters to use a Google group to more easily send them out and allow people to sign up and control their subscriptions themselves.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+<mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          HOW WE GOT HERE
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_09_fundraiser1.webp"
+          alt="Repair Event from 2019 at Oak City Outreach Center"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          In 2017, a dozen of us sat around a table at Crank Arm Brewery and dreamt up a vision for a new bike co-op in Raleigh. It was an odd collection of folks from across the bike community brought together by Harry Rybacki of Oaks &amp; Spokes and a common interest to see a new bike co-op in Raleigh.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          1304 Bikes, Raleigh&#x27;s original bike co-op, had been evicted from their place on Mayview Ave due to zoning issues eight years prior in 2009. They served the community since 2004 and without a proper space, were unable to continue forward. We find ourselves in a similar position.
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_09_fundraiser2.webp"
+          alt="Old Site of 1304 Bikes &amp; ACRe"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Raleigh Community Kickstand was officially born in April 2017. It started with that initial crew of folks doing pop-up repair events once a month for those seeking hot meals and services at the Oak City Outreach Center in downtown Raleigh. We did this the second Saturday of each month from 1-3pm--an event we&#x27;ve been doing to this day for 114 months, now at the new center called Oak City Cares.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          We started with a basic collection of our personal tools, flipping bikes upside down to work on them, and repacking hubs on top of trash can lids in a parking lot. And honestly, not too much has changed aside from the scale of the work we do. We have more tools, more knowledge, and more volunteers, but we are still fixing bikes in the middle of parking lots despite the weather and the temperature, all the while trying not to spill bearings all over the parking lot. I frequently joke that if I ever had the opportunity to work on a bike in air conditioning, I think I&#x27;d forget everything I ever knew. I dare someone to find us a space and challenge that notion.
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_09_fundraiser3.webp"
+          alt="Repair Event from 2018 at Oak City Outreach Center"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Over the years, our scope has grown beyond just pop-up repair events. We began collecting bike donations, refurbishing them, and distributing them to folks experiencing housing insecurity and/or without reliable access to any other form of transportation. We now offer regular maintenance workshops and host community shop hours where people can come to our DIY shop space to use our tools to work on their bikes. To date, we&#x27;ve repaired 3,362 bikes, given away 2,371 bikes, and hosted 225 free public events.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          This work would not be possible without our many volunteers, particularly John &amp; Liz, who have devoted so much of their time and yard to this organization. We&#x27;ve also been supported by so many within the community including fellow bike organizations and mutual aid collectives, bike shops, and individuals who have donated their bikes, their time, and their money.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+<mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        <mj-text
+          font-family="'Courier New', Courier, monospace"
+          color="#148378"
+          font-size="32px"
+          line-height="1.05"
+          font-weight="700"
+          align="center"
+          padding-bottom="14px"
+        >
+          WHERE WE ARE HEADED
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_09_fundraiser4.webp"
+          alt="Repair Event from 2025 at Oak City Cares"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Which brings us to where we are now. We&#x27;ve been looking for a space to take this next step--to create a bike hub for bike repair and bike programming. For almost a decade, we&#x27;ve provided folks with the tools, resources, and knowledge to move freely and sustainably throughout their city through pop-up events. Now we want a place we can call home, where folks know they can find us. Where we can open the doors and welcome people in, without having to haul tools across the city and find someone to lend us a space.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          We&#x27;ve identified that next step and we need your help to make it happen. We were given two shipping containers to convert into a new community bike shop in Dix Park, one from Trips for Kids RDU and one from a community member. The goal of this new space is to remove barriers to bike ownership and upkeep, but we need to raise $8,050 to make that happen.
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_09_fundraiser5.webp"
+          alt="Sherri &amp; Larry - Containers at Dix Park"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Here is what we need to convert these containers into a usable community bike hub:
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <ul><li><strong>Solar Fund - $3,550</strong> - Covers the materials for a solar power system. <a href="https://ncsolarnow.com/" style="color:#148378; text-decoration:underline;">NCSolarNow</a> is generously donating their time and expertise to design and install the project.</li><li><strong>New Home Fund - $2,500</strong> - Covers the workbenches, storage, lighting, fans, and other infrastructure needed to turn these two containers into a functional bike shop.</li><li><strong>Tool Fund - $1,000</strong> - Rounds out our existing tool collection with shop repair stands, specialty tools, and additional portable mechanic tool sets.</li><li><strong>Parts Fund - $1,000</strong> - Provides an initial stock of parts and supplies so we can start repairing bikes as soon as the shop opens.</li></ul>
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          These containers, affectionately referred to as Sherri &amp; Larry, will be a new home for Raleigh Community Kickstand and Oaks &amp; Spokes. They will serve as a new home for all manner of bike programming including:
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          <ul><li><strong>Community shop hours</strong> - open hours for you to come use our tools and stands to work on bikes or learn to work on bikes</li><li><strong>Bike repair clinics</strong> - opportunities for community members who can&#x27;t afford a tune-up to seek help maintaining their bikes</li><li><strong>Volunteer work sessions</strong> - events to refurbish donated bikes to give to folks without access to reliable transportation</li><li><strong>Maintenance workshops</strong> - formal classes to learn bike maintenance and repair</li><li>And much more!</li></ul>
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_09_fundraiser6.webp"
+          alt="Repair Workshop at Raleigh Brewing"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          But to keep it characteristically weird, it&#x27;s not just a fundraiser--it&#x27;s a wedding. Sherri and Larry are in love! They are getting married in a fun ceremony in Dix Park on Saturday, Sep 26 at 4pm. The fundraiser is being run through the registry on their wedding website. Help us make this new chapter a reality and make Sherri and Larry&#x27;s special day. Learn more about the project, donate to their registry, and RSVP for the wedding ceremony at <a href="https://theknot.com/sherriandlarry2026" style="color:#148378; text-decoration:underline;">theknot.com/sherriandlarry2026</a>.
+        </mj-text>
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          Please share the image above or <a href="../media/fundraiser.pdf" style="color:#148378; text-decoration:underline;">this PDF</a> with folks who would be interested in contributing.
+        </mj-text>
+        <mj-image
+          src="https://raleighcommunitykickstand.org/newsletter/images/2026_09_fundraiser.webp"
+          alt="Container Fundraiser Flyer"
+          width="400px"
+          fluid-on-mobile="true"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text color="#ffffff" align="left" padding="0 0 16px 0">
+          These containers are the next step in our quest for a more permanent home for bike repair and education in Raleigh. A place where we can host regular hours and easily roll up the doors and welcome people in. If you know of opportunities and/or are interested in helping us provide a public space to support mobility independence for all, please contact <a href="mailto:info@raleighcommunitykickstand.org" style="color:#148378; text-decoration:underline;">info@raleighcommunitykickstand.org</a>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section padding="12px 16px 24px 16px">
+      <mj-column background-color="#161616" padding="20px" border="2px solid #148378">
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center" font-size="20px">
+          <strong>Raleigh Community Kickstand</strong>
+        </mj-text>
+
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center"> Fix. Teach. Give. </mj-text>
+
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center">
+          <a href="https://raleighcommunitykickstand.org" style="color: #148378; text-decoration: underline">Website</a>
+          |
+          <a href="https://www.instagram.com/communitykickstand" style="color: #148378; text-decoration: underline">Instagram</a>
+          |
+          <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4" style="color: #148378; text-decoration: underline">Paypal</a>
+          |
+          <a href="https://venmo.com/communitykickstand" style="color: #148378; text-decoration: underline">Venmo</a>
+        </mj-text>
+
+        <!-- <mj-divider padding="22px 0 18px 0" border-width="2px" border-color="#148378" /> -->
+
+        <!-- <mj-text color="#ffffff" align="center" font-size="10px"> You're receiving this email because you signed up for updates or attended a Kickstand event. If you don't want to receive these emails anymore, just let me know. </mj-text> -->
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

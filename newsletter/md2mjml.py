@@ -432,16 +432,17 @@ def main():
     slugs = []
 
     for md_file in md_files:
-        month_slug = md_file.stem
+        match = re.fullmatch(r"(\d{4}_\d{2})(?:_.+)?", md_file.stem)
 
-        if not re.fullmatch(r"\d{4}_\d{2}", month_slug):
-            print(f"Skipping {md_file.name} (expected format YYYY_MM.md)")
+        if not match:
+            print(f"Skipping {md_file.name} (expected format YYYY_MM.md or YYYY_MM_name.md)")
             continue
 
+        month_slug = match.group(1)
         slugs.append(month_slug)
 
         try:
-            create_mjml(month_slug)
+            create_mjml(md_file.stem)
         except Exception as e:
             print(f"Failed for {md_file.name}: {e}")
 
