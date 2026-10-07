@@ -133,7 +133,7 @@
         <mj-image
           src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_caps.webp"
           alt="Kickstand Top Caps"
-          width="400px"
+          width="480px"
           fluid-on-mobile="true"
           align="center"
           padding="0 0 16px 0"
@@ -210,7 +210,7 @@
         <mj-image
           src="https://raleighcommunitykickstand.org/newsletter/images/2026_03_aab.webp"
           alt="AAB Leaderboard"
-          width="400px"
+          width="560px"
           fluid-on-mobile="true"
           align="center"
           padding="0 0 16px 0"

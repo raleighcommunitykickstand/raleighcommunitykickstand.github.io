@@ -6,7 +6,10 @@ import subprocess
 from ftfy import fix_text
 from bs4 import BeautifulSoup
 from bs4.element import NavigableString, Tag
+from pathlib import Path
+from PIL import Image
 
+ROOT_DIR = Path(__file__).parent.parent
 NEWSLETTERS_DIR = Path("newsletter")
 TEMPLATE_FILE = NEWSLETTERS_DIR / "template.mjml"
 LOCAL_IMAGE_DIR = NEWSLETTERS_DIR / "images"
@@ -139,12 +142,25 @@ def mj_text_block(content: str, align: str = "left", extra_attrs: str = "") -> s
         </mj-text>"""
 
 
-def mj_image_block(src: str, alt: str) -> str:
+def mj_image_block(src: str, alt: str, filename: str) -> str:
+    image_path = LOCAL_IMAGE_DIR / filename
+
+    with Image.open(image_path) as image:
+        width, height = image.size
+        aspect_ratio = width / height
+
+    if aspect_ratio >= 1.5:
+        mjml_width = "560px"
+    elif aspect_ratio >= 1.1:
+        mjml_width = "480px"
+    else:
+        mjml_width = "400px"
+
     return f"""
         <mj-image
           src="{escape_text(src)}"
           alt="{escape_text(alt)}"
-          width="400px"
+          width="{mjml_width}"
           fluid-on-mobile="true"
           align="center"
           padding="0 0 16px 0"
@@ -209,7 +225,7 @@ def render_paragraph_block(node: Tag) -> str:
         # src, filename = resolve_and_validate_image(image.get("src", ""))
         src, filename = resolve_and_validate_image(get_attr_text(image, "src"))
         alt = get_attr_text(image, "alt") or filename
-        return mj_image_block(src, alt)
+        return mj_image_block(src, alt, filename)
 
     content = "".join(render_inline_html(child) for child in node.children).strip()
     if not content:
