@@ -36,7 +36,7 @@
     <!-- FOOTER -->
     <mj-section padding="12px 16px 24px 16px">
       <mj-column background-color="#161616" padding="20px" border="2px solid #148378">
-        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center" font-size="20px">
+        <mj-text color="#ffffff" font-size="16px" line-height="1.6" align="center">
           <strong>Raleigh Community Kickstand</strong>
         </mj-text>
 

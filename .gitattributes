@@ -1,0 +1,3 @@
+# mjml writes LF line endings; check these out as LF too so regenerating
+# newsletters doesn't make unchanged files show up as modified on Windows.
+newsletter/*.html text eol=lf

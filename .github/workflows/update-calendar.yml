@@ -29,6 +29,7 @@ jobs:
             --silent \
             --show-error \
             --retry 3 \
+            --header "Accept-Language: en-US,en;q=0.9" \
             "$CALENDAR_URL" \
             --output data/calendar.ics.tmp
 
@@ -38,7 +39,23 @@ jobs:
         id: calendar_diff
         run: |
           python <<'PY'
+          import re
           from pathlib import Path
+
+          # Google auto-appends Meet text to some descriptions and localizes it
+          # differently per fetch (English one day, Spanish the next).
+          MEET = re.compile(
+              r"(\\n)*-::~:~::~:~.*?::~:~::-"
+              r"|(\\n)*(Join with Google Meet|Únase con Google Meet|Join by phone).*$",
+              re.S,
+          )
+
+
+          def clean(line):
+              if line.startswith("DESCRIPTION"):
+                  line = MEET.sub("", line)
+              return line
+
 
           def unfold(text):
               text = text.replace("\r\n", "\n").replace("\r", "\n")
@@ -69,11 +86,12 @@ jobs:
 
                   elif line == "END:VEVENT":
                       # DTSTAMP changes every time Google exports the calendar.
-                      current_event = [
-                          line
+                      # Google also reorders lines (e.g. EXDATEs) within an event.
+                      current_event = sorted(
+                          clean(line)
                           for line in current_event
                           if not line.startswith("DTSTAMP:")
-                      ]
+                      )
 
                       events.append("\n".join(current_event))
                       current_event = None

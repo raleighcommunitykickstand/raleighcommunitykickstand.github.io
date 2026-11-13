@@ -1,3 +1,4 @@
+import argparse
 from pathlib import Path
 import html
 import re
@@ -5,12 +6,12 @@ import shutil
 import subprocess
 from ftfy import fix_text
 from bs4 import BeautifulSoup
-from bs4.element import NavigableString, Tag
-from pathlib import Path
+from bs4.element import Comment, NavigableString, Tag
 from PIL import Image
 
-ROOT_DIR = Path(__file__).parent.parent
-NEWSLETTERS_DIR = Path("newsletter")
+# Based on this script's location, so it works no matter which folder you run it from
+NEWSLETTERS_DIR = Path(__file__).resolve().parent
+ROOT_DIR = NEWSLETTERS_DIR.parent
 TEMPLATE_FILE = NEWSLETTERS_DIR / "template.mjml"
 LOCAL_IMAGE_DIR = NEWSLETTERS_DIR / "images"
 MARKED_RENDERER = NEWSLETTERS_DIR / "render_markdown.mjs"
@@ -49,21 +50,65 @@ def escape_text(text: str) -> str:
 
 
 def parse_markdown(md: str) -> tuple[str, list[tuple[str, str]]]:
-    title_match = re.search(r"^#\s+(.+)$", md, flags=re.MULTILINE)
-    if not title_match:
+    """
+    Returns (title, [(section_title, section_body), ...]).
+
+    '# ' and '## ' lines only count outside ``` code fences and <!-- comments -->.
+    Text between the title and the first '## ' becomes a section with title "".
+    """
+    newsletter_title = None
+    sections = []
+    current_title = ""
+    current_lines = []
+    in_fence = False
+    in_comment = False
+
+    for line in md.splitlines():
+        stripped = line.strip()
+        is_heading_candidate = not in_fence and not in_comment
+
+        if stripped.startswith(("```", "~~~")) and not in_comment:
+            in_fence = not in_fence
+        elif not in_fence:
+            # Track <!-- ... --> that may span several lines
+            pos = 0
+            while True:
+                if in_comment:
+                    end = line.find("-->", pos)
+                    if end == -1:
+                        break
+                    in_comment, pos = False, end + 3
+                else:
+                    start = line.find("<!--", pos)
+                    if start == -1:
+                        break
+                    in_comment, pos = True, start + 4
+
+        if is_heading_candidate:
+            title_match = re.match(r"^#\s+(.+?)\s*$", line)
+            if title_match and newsletter_title is None:
+                newsletter_title = title_match.group(1).strip().upper()
+                continue
+
+            section_match = re.match(r"^##\s+(.+?)\s*$", line)
+            if section_match:
+                body = "\n".join(current_lines).strip()
+                if current_title or body:
+                    sections.append((current_title, body))
+                current_title = section_match.group(1).strip()
+                current_lines = []
+                continue
+
+        current_lines.append(line)
+
+    body = "\n".join(current_lines).strip()
+    if current_title or body:
+        sections.append((current_title, body))
+
+    if newsletter_title is None:
         raise ValueError("Missing top-level '# Newsletter Title'")
 
-    newsletter_title = title_match.group(1).strip().upper()
-
-    parts = re.split(r"^##\s+(.+?)\s*$", md, flags=re.MULTILINE)
-    sections = []
-
-    for i in range(1, len(parts), 2):
-        section_title = parts[i].strip()
-        section_body = parts[i + 1].strip()
-        sections.append((section_title, section_body))
-
-    if not sections:
+    if not any(title for title, _ in sections):
         raise ValueError("Expected at least one '##' section")
 
     return newsletter_title, sections
@@ -128,14 +173,15 @@ def paragraph_is_only_image(node: Tag) -> Tag | None:
 
 
 def paragraph_is_caption_only(text: str) -> bool:
-    lowered = text.strip().lower()
-    return lowered.startswith("flyer by") or lowered.startswith("photo by")
+    # Photo by / Photos by / Flyer by / Flyers by
+    return re.match(r"(photos?|flyers?)\s+by\b", text.strip(), flags=re.IGNORECASE) is not None
 
 
 def mj_text_block(content: str, align: str = "left", extra_attrs: str = "") -> str:
-    attrs = f' color="#ffffff" align="{align}" padding="0 0 16px 0"'
-    if extra_attrs:
-        attrs += f" {extra_attrs.strip()}"
+    attr_map = {"color": "#ffffff", "align": align, "padding": "0 0 16px 0"}
+    # extra_attrs override the defaults; a duplicate attribute would be ignored by MJML
+    attr_map.update(re.findall(r'([\w-]+)="([^"]*)"', extra_attrs))
+    attrs = "".join(f' {name}="{value}"' for name, value in attr_map.items())
 
     return f"""<mj-text{attrs}>
           {content}
@@ -178,6 +224,10 @@ def get_attr_text(node: Tag, attr: str, default: str = "") -> str:
 
 
 def render_inline_html(node) -> str:
+    # <!-- comments --> are NavigableStrings in bs4; drop them, don't print them
+    if isinstance(node, Comment):
+        return ""
+
     if isinstance(node, NavigableString):
         return escape_text(str(node))
 
@@ -212,6 +262,23 @@ def render_inline_html(node) -> str:
 
     if name == "br":
         return "<br />"
+
+    if name == "img":
+        # Image sharing a line with text: keep it inline instead of dropping it
+        src, filename = resolve_and_validate_image(get_attr_text(node, "src"))
+        alt = escape_text(get_attr_text(node, "alt") or filename)
+        return f'<img src="{escape_text(src)}" alt="{alt}" style="max-width:100%; height:auto;" />'
+
+    if name in {"ul", "ol"}:
+        # Nested list inside a list item or blockquote
+        return f"<{name}>{inner}</{name}>"
+
+    if name == "li":
+        return f"<li>{inner}</li>"
+
+    if name == "p":
+        # Paragraph inside a blockquote or loose list item: keep paragraph breaks
+        return f'<p style="margin:0 0 12px 0;">{inner}</p>'
 
     if name == "span":
         return inner
@@ -303,7 +370,7 @@ def render_heading_block(node: Tag) -> str:
 def render_image_block(node: Tag) -> str:
     src, filename = resolve_and_validate_image(get_attr_text(node, "src"))
     alt = get_attr_text(node, "alt") or filename
-    return mj_image_block(src, alt)
+    return mj_image_block(src, alt, filename)
 
 
 def html_block_to_mjml(node: Tag) -> str:
@@ -349,6 +416,10 @@ def section_body_to_mjml(body: str) -> str:
     rendered_blocks = []
 
     for node in soup.contents:
+        # Commented-out markdown (<!-- ... -->) should not appear in the email
+        if isinstance(node, Comment):
+            continue
+
         if isinstance(node, NavigableString):
             text = str(node).strip()
             if text:
@@ -364,10 +435,10 @@ def section_body_to_mjml(body: str) -> str:
 
 
 def render_section(title: str, body: str) -> str:
-    return f"""
-    <mj-section>
-      <mj-column background-color="#1d2124" border="2px solid #f7f573">
-        <mj-text
+    # An untitled section (intro text before the first ##) gets no heading
+    title_block = ""
+    if title:
+        title_block = f"""<mj-text
           font-family="'Courier New', Courier, monospace"
           color="#148378"
           font-size="32px"
@@ -378,7 +449,12 @@ def render_section(title: str, body: str) -> str:
         >
           {escape_text(title.upper())}
         </mj-text>
-        {section_body_to_mjml(body)}
+        """
+
+    return f"""
+    <mj-section>
+      <mj-column background-color="#1d2124" border="2px solid #f7f573">
+        {title_block}{section_body_to_mjml(body)}
       </mj-column>
     </mj-section>
     """.strip()
@@ -392,7 +468,8 @@ def compile_mjml_to_html(mjml_path: Path):
         raise FileNotFoundError("Could not find npx or npx.cmd on PATH")
 
     cmd = f'npx mjml "{mjml_path.as_posix()}" -o "{html_path.as_posix()}"'
-    subprocess.run(cmd, shell=True, check=True)
+    # Run from the repo root so npx finds the mjml in node_modules there
+    subprocess.run(cmd, shell=True, check=True, cwd=ROOT_DIR)
     print(f"Compiled {html_path}")
 
 
@@ -423,7 +500,7 @@ def create_mjml(month_slug: str) -> Path:
 
 def write_newsletters_js(slugs: list[str]):
     js_path = NEWSLETTERS_DIR / "newsletters.js"
-    sorted_slugs = sorted(slugs)
+    sorted_slugs = sorted(slugs, key=slug_key)
 
     js_content = "const newsletters = [\n"
     for slug in sorted_slugs:
@@ -438,7 +515,19 @@ def iter_newsletter_markdown_files():
     return sorted(path for path in NEWSLETTERS_DIR.glob("*.md") if path.name.lower() != "template.md")
 
 
+def slug_key(slug: str) -> str:
+    # Old files use underscores (2026_10), new ones dashes (2026-11); compare them as equals
+    return slug.replace("_", "-").lower()
+
+
 def main():
+    parser = argparse.ArgumentParser(
+        description="Build newsletter MJML/HTML from markdown. With no arguments, builds only the newest issue."
+    )
+    parser.add_argument("issues", nargs="*", help="issues to build, e.g. 2026-11 (2026_11 also works)")
+    parser.add_argument("--all", action="store_true", help="rebuild every issue, including ones already sent")
+    args = parser.parse_args()
+
     md_files = iter_newsletter_markdown_files()
 
     if not md_files:
@@ -448,20 +537,41 @@ def main():
     slugs = []
 
     for md_file in md_files:
-        match = re.fullmatch(r"(\d{4}_\d{2})(?:_.+)?", md_file.stem)
+        # YYYY-MM.md / YYYY-MM-name.md (new) or YYYY_MM.md / YYYY_MM_name.md (old)
+        match = re.fullmatch(r"\d{4}[-_]\d{2}(?:[-_].+)?", md_file.stem)
 
         if not match:
-            print(f"Skipping {md_file.name} (expected format YYYY_MM.md or YYYY_MM_name.md)")
+            print(f"Skipping {md_file.name} (expected format YYYY-MM.md or YYYY-MM-name.md)")
             continue
 
-        month_slug = match.group(1)
-        slugs.append(month_slug)
+        # Use the full stem so 2026_09_fundraiser gets its own slide
+        slugs.append(md_file.stem)
 
+    if not slugs:
+        print(f"No newsletter markdown files found in {NEWSLETTERS_DIR}")
+        return
+
+    # Sent issues are only rebuilt when asked for, so their web copies don't change by accident
+    if args.all:
+        to_build = slugs
+    elif args.issues:
+        by_key = {slug_key(s): s for s in slugs}
+        to_build = []
+        for issue in args.issues:
+            slug = by_key.get(slug_key(Path(issue).stem))
+            if slug is None:
+                raise SystemExit(f"No newsletter named {issue} in {NEWSLETTERS_DIR}")
+            to_build.append(slug)
+    else:
+        to_build = [max(slugs, key=slug_key)]
+
+    for slug in to_build:
         try:
-            create_mjml(md_file.stem)
+            create_mjml(slug)
         except Exception as e:
-            print(f"Failed for {md_file.name}: {e}")
+            print(f"Failed for {slug}.md: {e}")
 
+    # Always list every issue, built this run or not
     write_newsletters_js(slugs)
 
 
