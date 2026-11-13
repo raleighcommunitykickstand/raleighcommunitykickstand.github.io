@@ -1,4 +1,4 @@
-const url = "spoke_city.pdf";
+const url = "media/spoke-city.pdf";
 const windowThreshold = 960;
 const container = document.getElementById("zine-container");
 let pdfDoc = null;

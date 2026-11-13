@@ -41,8 +41,8 @@ html {
 body {
   background-color: #000;
   margin: 10px auto;
-  /* background: url("./media/linktree_opt.svg") no-repeat center center; */
-  background: url("./media/linktree.png") no-repeat center center;
+  /* background: url("./media/linktree-opt.svg") no-repeat center center; */
+  background: url("./media/linktree.webp") no-repeat center center;
   background-size: cover;
 }
 
