@@ -1,0 +1,402 @@
+/* colors
+ Yellow - #f7f573
+ Teal - #148378
+ Blue -  #17a2b8
+ Orange - #ef4036
+ light grey - #dae0e5
+ dark grey - #1d2124
+ dark dark grey - #161616
+  */
+
+/* -----------------------------------------------
+   BRAND COLORS (Named Variables)
+------------------------------------------------ */
+:root {
+  --rck-yellow: #f7f573;
+  --rck-teal: #148378;
+  --rck-orange: #ef4036;
+
+  --rck-light-1: #fefde7;
+  --rck-light-2: #f9f89f;
+  --rck-light-3: #fcfbcf;
+
+  --rck-grey-dark: #1d2124;
+  --rck-grey-darker: #161616;
+  --rck-true-black: #000;
+}
+
+/* -----------------------------------------------
+   FONT IMPORTS
+------------------------------------------------ */
+/* Browsers use the first format they support: woff2 (all current browsers), then woff
+   (older browsers). font-display: swap shows text in the fallback font until HWTArtz loads. */
+@font-face {
+  font-family: "HWTArtz";
+  src:
+    url("../fonts/HWTArtzW00-Regular.woff2") format("woff2"),
+    url("../fonts/HWTArtzW00-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+/* -----------------------------------------------
+   GLOBAL TYPOGRAPHY
+------------------------------------------------ */
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  background-color: var(--rck-true-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+p,
+li,
+div {
+  font-family: "Courier New";
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a {
+  font-family: "Courier New";
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--rck-teal);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+h1 {
+  font-family: "HWTArtz", "Courier New", monospace;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+h3 {
+  /* margin: 2.5rem 0 1.5rem 0; */
+}
+
+/* -----------------------------------------------
+  Layout
+------------------------------------------------ */
+section {
+  padding: 3rem;
+}
+
+/* make container wider before it clamps */
+.my-wide-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0; /* wrapper should NOT add gutters */
+  padding-right: 0;
+  background-color: black;
+}
+
+/* Below 1920px: FORCE no max-width */
+@media (max-width: 1919px) {
+  .my-wide-container {
+    max-width: none !important;
+  }
+}
+
+/* custom widths above 1920px */
+@media (min-width: 1920px) {
+  .my-wide-container {
+    max-width: 1800px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .my-wide-container {
+    max-width: 2000px;
+  }
+}
+
+@media (min-width: 2800px) {
+  .my-wide-container {
+    max-width: 2200px;
+  }
+}
+
+/* -----------------------------------------------
+  NAVBAR
+------------------------------------------------ */
+#navbar-spacer {
+  /* height: var(--navbar-height); */
+  width: 100%;
+}
+
+nav,
+a.navbar-brand,
+.nav-item .nav-link {
+  font-family: "HWTArtz", "Courier New", monospace;
+  color: var(--rck-yellow);
+  /* letter-spacing: 0.05em; */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+.navbar-brand {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.9rem, 5vw, 1.25rem);
+  white-space: nowrap;
+}
+
+.brand-logo {
+  height: 100%;
+  max-height: 40px;
+  width: auto;
+  user-select: none;
+}
+
+/* shrink the button hitbox */
+.navbar-toggler {
+  line-height: 1;
+}
+
+/* shrink the icon inside */
+.navbar-toggler-icon {
+  width: 18px; /* default ~24px */
+  height: 18px; /* default ~24px */
+  background-size: 18px 18px;
+}
+
+/* -----------------------------------------------
+   BANNER HEADER
+------------------------------------------------ */
+header h1 {
+  font-size: clamp(2rem, 1.5rem + 3vw, 4.5rem);
+  color: var(--rck-yellow);
+  margin: auto;
+}
+
+header p {
+  font-family: "Courier New";
+  font-size: clamp(1rem, 0.5rem + 0.8vw, 1.75rem);
+  color: white;
+}
+
+.header-icon {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* -----------------------------------------------
+  IMAGE SPACING
+------------------------------------------------ */
+.donate-img {
+  height: 80px;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.image-col {
+  display: flex;
+  align-items: center;
+}
+
+.side-img {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: center;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-left {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: left;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-right {
+  height: 100%; /* image fills column height */
+  width: auto; /* prevents width from forcing height collapse */
+  object-fit: cover; /* crop without distortion */
+  object-position: right;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.side-img-triple {
+  flex: 1; /* each image takes equal height */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+
+  min-height: 120px; /* stop shrinking too much */
+  max-height: 250px; /* stop growing too much on huge screens */
+}
+
+.shadow-bold {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9) !important;
+}
+
+.shadow-rck-orange {
+  box-shadow: 0 10px 25px rgba(239, 64, 54, 0.45) !important; /* #ef4036 */
+}
+
+.shadow-rck-teal {
+  box-shadow: 0 10px 25px rgba(20, 131, 120, 0.45) !important; /* #148378 */
+}
+
+.shadow-rck-yellow {
+  box-shadow: 0 10px 25px rgba(247, 245, 115, 0.35) !important; /* #f7f573 */
+}
+
+.shadow-rck-retro {
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8) !important;
+}
+
+.shadow-rck-depth {
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(20, 131, 120, 0.35) !important;
+}
+
+/* -----------------------------------------------
+  BACKGROUND COLORS
+------------------------------------------------ */
+.bg-primary {
+  background-color: var(--rck-light-2) !important;
+}
+.bg-light {
+  background-color: var(--rck-light-3) !important;
+}
+.bg-lighter {
+  background-color: var(--rck-light-1) !important;
+}
+.bg-dark {
+  background-color: var(--rck-grey-dark) !important;
+}
+.bg-black {
+  background-color: var(--rck-grey-darker) !important;
+}
+.bg-trueblack {
+  background-color: var(--rck-true-black) !important;
+}
+.bg-teal {
+  background-color: var(--rck-teal) !important;
+}
+
+/* -----------------------------------------------
+  TEXT COLORS
+------------------------------------------------ */
+.text-green {
+  color: var(--rck-teal) !important;
+}
+.text-red {
+  color: var(--rck-orange) !important;
+}
+.text-black {
+  color: #000 !important;
+}
+
+/* -----------------------------------------------
+  ABOUT SECTION
+------------------------------------------------ */
+#about {
+  scroll-margin-top: 100px;
+}
+
+.motto-logo {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .motto-logo {
+    width: 80px;
+  }
+}
+
+/* -----------------------------------------------
+  TICKER
+------------------------------------------------ */
+#ticker-container {
+  font-family: "HWTArtz", "Courier New", monospace;
+  text-align: center;
+}
+
+#ticker-container h3 {
+  font-family: "HWTArtz", "Courier New", monospace;
+  font-size: clamp(1rem, 10vw, 1.5rem);
+  margin: clamp(0.5rem, 10vw, 1rem);
+}
+
+.ticker-value {
+  font-family: "HWTArtz", "Courier New", monospace;
+  font-size: clamp(3rem, 10vw, 8rem);
+  margin: calc(-0.4 * clamp(3rem, 10vw, 8rem));
+  letter-spacing: 0.1em;
+  color: var(--rck-teal);
+}
+
+/* -----------------------------------------------
+  CALENDAR (Embedded Google Calendar)
+------------------------------------------------ */
+.responsiveCal {
+  /* display: inline-block; */
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.responsiveCal iframe {
+  width: 100%;
+  border: solid 1px #777;
+  height: 300px;
+  display: block;
+}
+
+/* -----------------------------------------------
+  CONTACT SECTION
+------------------------------------------------ */
+.contact-section {
+  padding-top: 5rem;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 4px solid var(--rck-orange);
+}
+
+.contact-section .card h4 {
+  font-family: "HWTArtz", "Courier New", monospace;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.contact-section .card img {
+  user-select: none;
+  height: 8rem;
+}

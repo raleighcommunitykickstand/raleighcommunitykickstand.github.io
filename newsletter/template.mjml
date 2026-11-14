@@ -23,7 +23,7 @@
     <!-- HEADER -->
     <mj-section padding="16px 16px 8px 16px">
       <mj-column background-color="#000000" border="2px solid #148378" padding="20px">
-        <mj-image src="https://raleighcommunitykickstand.org/media/RCK_logo-by.png" alt="Kickstand Logo" width="220px" fluid-on-mobile="true" align="center" padding="0 0 16px 0" />
+        <mj-image src="https://raleighcommunitykickstand.org/newsletter/images/logo-full-gear-yellow-black.png" alt="Kickstand Logo" width="220px" fluid-on-mobile="true" align="center" padding="0 0 16px 0" />
 
         <mj-text font-family="HWTArtz, 'Courier New', Courier, monospace" color="#f7f573" font-size="36px" font-weight="700" align="center" letter-spacing="1px" line-height="1.1">
           {{ NEWSLETTER_TITLE }}

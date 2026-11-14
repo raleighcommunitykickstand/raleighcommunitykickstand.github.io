@@ -481,6 +481,13 @@ def create_mjml(month_slug: str) -> Path:
     template = TEMPLATE_FILE.read_text(encoding="utf-8")
     markdown = clean_markdown_text(markdown_file)
 
+    # Classic Outlook for Windows (and some other email apps) can't show .webp; email copies
+    # are .jpg/.png (made by utils/convert_images.py). Warn, but still build.
+    webp_images = re.findall(r"!\[[^\]]*\]\(([^)\s]+\.webp)\)", re.sub(r"<!--.*?-->", "", markdown, flags=re.S))
+    if webp_images:
+        print(f"  WARNING {month_slug}.md uses .webp images that won't show in classic Outlook; "
+              f"use the .jpg/.png copies instead: {', '.join(Path(p).name for p in webp_images)}")
+
     newsletter_title, sections = parse_markdown(markdown)
 
     rendered_sections = [render_section(section_title, section_body) for section_title, section_body in sections]

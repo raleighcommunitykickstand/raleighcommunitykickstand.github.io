@@ -1,0 +1,110 @@
+/* @font-face {
+  font-family: "HWTArtz";
+  src:
+    url("../fonts/HWTArtzW00-Regular.woff2") format("woff2"),
+    url("../fonts/HWTArtzW00-Regular.woff") format("woff");
+  font-display: swap;
+} */
+
+:root {
+  --font: "Courier New", monospace;
+  --textColor: white;
+  --invertColor: black;
+
+  --rck-yellow: #f7f573;
+  --rck-teal: #148378;
+  --rck-orange: #ef4036;
+
+  --rck-light-1: #fefde7;
+  --rck-light-2: #f9f89f;
+  --rck-light-3: #fcfbcf;
+
+  --rck-grey-dark: #1d2124;
+  --rck-grey-darker: #161616;
+  --rck-true-black: #000;
+}
+
+html {
+  font-family: var(--font);
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: bold;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  text-align: center;
+}
+
+body {
+  background-color: #000;
+  margin: 10px auto;
+  /* Repeating pixel-art bike from media/bike.aseprite (112x128 tile with transparent
+     margins, made by utils/bike_gifs.py). Two copies, the second shifted half a tile, give
+     staggered rows. Shown at 2x; keep sizes at whole multiples of 112x128 so the pixels
+     stay crisp (3x = 336px 384px with the 2nd position at 168px 192px = fewer, bigger bikes). */
+  background-image: url("../media/bike-tile.gif"), url("../media/bike-tile.gif");
+  background-size: 224px 256px;
+  background-position: 0 0, 112px 128px;
+  background-repeat: repeat;
+  image-rendering: pixelated;
+}
+
+/* Dim the bikes a bit so the text and buttons stay readable (0 = full bikes, 1 = black) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* People who turn off animations get a still frame */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    background-image: url("../media/bike-tile.png"), url("../media/bike-tile.png");
+  }
+}
+
+img {
+  width: 150px;
+  height: 129px;
+  display: block;
+  margin: 20px auto;
+}
+
+#description {
+  margin: 20px;
+  font-size: 16px;
+  text-shadow: 1px 1px 0 #777;
+}
+
+main {
+  width: auto;
+  max-width: 500px;
+  margin: 15px auto 45px auto;
+}
+
+a {
+  color: var(--invertColor);
+  text-decoration: none;
+  text-align: center;
+
+  border: 2px solid var(--textColor);
+  border-radius: 10px;
+
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.2s;
+  background-color: #f7f573;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+a:hover {
+  background-color: #00000080;
+  color: var(--textColor);
+  text-shadow: 1px 1px 0 #000;
+  transition: 0.2s;
+}

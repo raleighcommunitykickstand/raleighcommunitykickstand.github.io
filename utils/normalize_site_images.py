@@ -1,6 +1,9 @@
 """
-Lowercase + dash-ify file names in photos/ and media/ and update every link to them
-in the website's HTML, JS, CSS, and manifest files.
+Lowercase + dash-ify file names in media/ (and all its subfolders) and update every link to
+them in the website's HTML, JS, CSS, and manifest files.
+
+The originals in _media/photos/ are renamed the same way, so they keep matching their .webp
+in media/photos/ (otherwise utils/convert_images.py would recreate the old .webp name).
 
     IMG_3451.jpg                  -> img-3451.jpg
     sherri larry transparent.png  -> sherri-larry-transparent.png
@@ -24,13 +27,21 @@ from urllib.parse import quote
 # This script lives in utils/; everything is relative to the repo root
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
-FOLDERS = ["photos", "media"]
+# media/ and every folder inside it. Deepest first, so a link like media/photos/x.webp
+# matches media/photos, not media.
+MEDIA_DIR = "media"
+FOLDERS = sorted(
+    (os.path.relpath(dp, ROOT_DIR).replace("\\", "/") for dp, _, _ in os.walk(os.path.join(ROOT_DIR, MEDIA_DIR))),
+    key=lambda f: (-f.count("/"), f),
+)
+# Unpublished photo originals: renamed alongside media/photos so convert_images keeps matching names
+FOLDERS.append("_media/photos")
 
 # Files whose links get updated
 TEXT_EXTS = (".html", ".htm", ".js", ".mjs", ".css", ".json", ".webmanifest", ".xml", ".md", ".txt", ".yml")
 
 # Never edited. newsletter/ is the emailed newsletters; it is only scanned for protected files.
-SKIP_DIRS = {".git", "node_modules", "bootstrap", "fonts", "newsletter", "utils"}
+SKIP_DIRS = {".git", "node_modules", "bootstrap", "fonts", "newsletter", "utils", "_media"}
 
 NEWSLETTER_DIR = os.path.join(ROOT_DIR, "newsletter")
 
@@ -73,7 +84,10 @@ def protected_files():
                 continue
             text = read_text(os.path.join(dirpath, f)) or ""
             for folder, name in pattern.findall(text):
-                protected.add((folder.lower(), name.replace("%20", " ").lower()))
+                # Protect by base name, so RCK_logo-by.png also keeps its RCK_logo-by.webp copy
+                # (renaming only the .webp would make convert_images recreate the old name)
+                base = os.path.splitext(name.replace("%20", " "))[0]
+                protected.add((folder.lower(), base.lower()))
     return protected
 
 
@@ -82,9 +96,9 @@ def git_case_duplicates(folder):
     r = subprocess.run(["git", "ls-files", folder], cwd=ROOT_DIR, capture_output=True, text=True)
     seen, dupes = {}, set()
     for path in r.stdout.splitlines():
-        if path.count("/") != 1:
+        name = path[len(folder) + 1 :]
+        if "/" in name:
             continue  # only files directly in the folder
-        name = path.split("/", 1)[1]
         if name.lower() in seen and seen[name.lower()] != name:
             dupes.add(name.lower())
         seen[name.lower()] = name
@@ -106,7 +120,7 @@ def plan_renames(protected):
             new = normalize(old)
             if new == old:
                 continue
-            if (folder, old.lower()) in protected:
+            if (folder, os.path.splitext(old)[0].lower()) in protected:
                 print(f"  KEEP {folder}/{old}: linked from a sent newsletter")
                 continue
             if old.lower() in dupes:

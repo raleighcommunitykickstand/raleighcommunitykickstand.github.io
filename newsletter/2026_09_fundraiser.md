@@ -57,7 +57,7 @@ These containers, affectionately referred to as Sherri & Larry, will be a new ho
 
 But to keep it characteristically weird, it's not just a fundraiser--it's a wedding. Sherri and Larry are in love! They are getting married in a fun ceremony in Dix Park on Saturday, Sep 26 at 4pm. The fundraiser is being run through the registry on their wedding website. Help us make this new chapter a reality and make Sherri and Larry's special day. Learn more about the project, donate to their registry, and RSVP for the wedding ceremony at [theknot.com/sherriandlarry2026](https://theknot.com/sherriandlarry2026).
 
-Please share the image above or [this PDF](../media/fundraiser.pdf) with folks who would be interested in contributing.
+Please share the image above or [this PDF](../media/docs/fundraiser.pdf) with folks who would be interested in contributing.
 
 ![Container Fundraiser Flyer](images/2026_09_fundraiser.webp)
 

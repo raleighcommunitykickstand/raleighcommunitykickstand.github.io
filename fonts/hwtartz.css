@@ -1,6 +1,11 @@
+/* Loaded by every newsletter email (template.mjml) from this exact URL; keep the file name.
+   Full URLs because emails have no page to resolve relative paths against.
+   Only some email apps (e.g. Apple Mail) load web fonts; others use the fallback in the email. */
 @font-face {
   font-family: "HWTArtz";
-  src: url("https://raleighcommunitykickstand.org/fonts/HWTArtz.woff") format("woff");
+  src:
+    url("https://raleighcommunitykickstand.org/fonts/HWTArtzW00-Regular.woff2") format("woff2"),
+    url("https://raleighcommunitykickstand.org/fonts/HWTArtzW00-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

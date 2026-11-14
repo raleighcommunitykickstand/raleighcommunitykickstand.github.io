@@ -8,10 +8,11 @@ from pillow_heif import register_heif_opener
 
 register_heif_opener()
 
-# This script lives in utils/; the images are in newsletter/images/
+# This script lives in utils/. It reads the full-quality originals from _media/newsletter-images/
+# (not published) and writes the GIF to newsletter/images/, where newsletters link to it.
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-INPUT_DIR = os.path.join(ROOT_DIR, "newsletter", "images/")
-OUTPUT_DIR = INPUT_DIR
+INPUT_DIR = os.path.join(ROOT_DIR, "_media", "newsletter-images/")
+OUTPUT_DIR = os.path.join(ROOT_DIR, "newsletter", "images/")
 
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".heic", ".heif", ".webp")
 

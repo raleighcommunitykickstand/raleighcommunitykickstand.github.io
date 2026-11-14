@@ -1,3 +1,7 @@
+/_media/photos/
+/_media/newsletter-images/
+/_depr/
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
