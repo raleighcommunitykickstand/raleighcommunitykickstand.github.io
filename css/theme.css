@@ -1,0 +1,49 @@
+/* =========================================================
+   THEME
+   My brand colors, font stacks, and the HWT Artz web font.
+   Every page loads this first (the links page too), so a color
+   change here shows up across the whole site.
+
+   Palette for reference:
+     Yellow  #f7f573    Teal  #148378    Orange  #ef4036
+     Pink    #f4b8ff    Blue  #17a2b8 (logo variants only)
+   ========================================================= */
+
+:root {
+  /* Brand colors */
+  --rck-yellow: #f7f573;
+  --rck-teal: #148378;
+  --rck-orange: #ef4036;
+  --rck-pink: #f4b8ff; /* calendar "today" + highlights */
+
+  /* Light yellows I use for page/section backgrounds (1 = palest) */
+  --rck-light-1: #fefde7;
+  --rck-light-2: #f9f89f;
+  --rck-light-3: #fcfbcf;
+
+  /* Neutrals */
+  --rck-white: #ffffff;
+  --rck-grey-dark: #1d2124; /* navbar, footer, cards */
+  --rck-grey-darker: #161616;
+  --rck-black: #000000;
+
+  /* Fonts: HWT Artz for headings/logo-style text, Courier New for everything else */
+  --rck-font-display: "HWTArtz", "Courier New", monospace;
+  --rck-font-body: "Courier New", monospace;
+}
+
+/* ---------------------------------------------------------
+   HWT ARTZ WEB FONT
+   Browsers take the first format they support: woff2 (every
+   current browser), then woff (older ones). font-display: swap
+   shows the fallback font until HWT Artz finishes loading.
+   Same font files the emails use (fonts/hwtartz.css).
+   --------------------------------------------------------- */
+
+@font-face {
+  font-family: "HWTArtz";
+  src:
+    url("../fonts/HWTArtzW00-Regular.woff2") format("woff2"),
+    url("../fonts/HWTArtzW00-Regular.woff") format("woff");
+  font-display: swap;
+}

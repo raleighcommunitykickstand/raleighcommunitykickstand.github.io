@@ -1,0 +1,311 @@
+/* =========================================================
+   SITE
+   The shared look for every regular page: base type, links,
+   layout, the navbar, the teal banner header, image and
+   shadow helpers, and color utilities.
+
+   Load order on a page:
+     1. Bootstrap (CDN)
+     2. css/theme.css   (colors + fonts)
+     3. css/site.css    (this file)
+     4. a page file if the page needs one (home.css, calendar.css)
+
+   A new one-off page only needs theme.css + site.css; see
+   _templates/one-off.html for a ready-to-copy starting point.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   BASE
+   Courier New, bold, on black, with teal links. Set through
+   Bootstrap's own variables so every Bootstrap element picks
+   them up and everything else inherits them from <body>.
+   --------------------------------------------------------- */
+
+:root {
+  --bs-body-font-family: var(--rck-font-body);
+  --bs-body-font-weight: bold;
+  --bs-body-bg: var(--rck-black);
+  --bs-link-color: var(--rck-teal);
+  --bs-link-hover-color: var(--rck-orange);
+}
+
+/* Bootstrap makes headings medium weight; mine are bold */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* Long URLs wrap instead of overflowing on phones */
+a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Page titles are the only headings in HWT Artz */
+h1 {
+  font-family: var(--rck-font-display);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+/* ---------------------------------------------------------
+   LAYOUT
+   --------------------------------------------------------- */
+
+section {
+  padding: 3rem;
+}
+
+/* Full-width wrapper that only starts to clamp on really big screens
+   (the Bootstrap .container inside it handles the normal widths and gutters) */
+.my-wide-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--rck-black);
+}
+
+/* Stepped max-widths on very wide screens */
+@media (min-width: 1920px) {
+  .my-wide-container {
+    max-width: 1800px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .my-wide-container {
+    max-width: 2000px;
+  }
+}
+
+@media (min-width: 2800px) {
+  .my-wide-container {
+    max-width: 2200px;
+  }
+}
+
+/* ---------------------------------------------------------
+   NAVBAR
+   Bootstrap's dark navbar with my logo + HWT Artz in yellow.
+   --------------------------------------------------------- */
+
+/* Yellow brand and links; a link turns white on hover and
+   for the section I'm scrolled to */
+.navbar-dark {
+  --bs-navbar-brand-color: var(--rck-yellow);
+  --bs-navbar-brand-hover-color: var(--rck-yellow);
+  --bs-navbar-color: var(--rck-yellow);
+  --bs-navbar-hover-color: var(--rck-white);
+  --bs-navbar-active-color: var(--rck-white);
+}
+
+.navbar {
+  font-family: var(--rck-font-display);
+}
+
+.navbar-brand {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.9rem, 5vw, 1.25rem);
+  white-space: nowrap;
+}
+
+.brand-logo {
+  height: 100%;
+  max-height: 40px;
+  width: auto;
+  user-select: none;
+}
+
+/* Smaller hamburger button and icon than Bootstrap's default (~24px) */
+.navbar-toggler {
+  line-height: 1;
+}
+
+.navbar-toggler-icon {
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+}
+
+/* ---------------------------------------------------------
+   BANNER HEADER
+   The teal header with the big yellow title and a pixel-art
+   bike on each side (media/bike.gif, media/bike-flipped.gif).
+   --------------------------------------------------------- */
+
+header h1 {
+  font-size: clamp(2rem, 1.5rem + 3vw, 4.5rem);
+  color: var(--rck-yellow);
+  margin: auto;
+}
+
+header p {
+  font-size: clamp(1rem, 0.5rem + 0.8vw, 1.75rem);
+  color: var(--rck-white);
+}
+
+/* Keep pixel art crisp when it's scaled up */
+.header-icon {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* ---------------------------------------------------------
+   IMAGES
+   Photos next to text: the photo fills the column's height
+   and crops instead of stretching.
+   --------------------------------------------------------- */
+
+.image-col {
+  display: flex;
+  align-items: center;
+}
+
+.side-img,
+.side-img-left,
+.side-img-right {
+  height: 100%;
+  width: auto; /* so the width doesn't force the height to collapse */
+  object-fit: cover;
+  object-position: center;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+/* Same, but keep the left or right edge of the photo when it crops */
+.side-img-left {
+  object-position: left;
+}
+
+.side-img-right {
+  object-position: right;
+}
+
+/* Three photos stacked in one column, each taking an equal share of the height */
+.side-img-triple {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  min-height: 120px;
+  max-height: 250px;
+}
+
+/* ---------------------------------------------------------
+   SHADOWS
+   --------------------------------------------------------- */
+
+/* The soft dark + teal shadow I use on homepage photos */
+.shadow-rck-depth {
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(20, 131, 120, 0.35) !important;
+}
+
+/* Hard, offset "sticker" shadows */
+.shadow-bold {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9) !important;
+}
+
+.shadow-rck-retro {
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Soft glows in brand colors */
+.shadow-rck-orange {
+  box-shadow: 0 10px 25px rgba(239, 64, 54, 0.45) !important;
+}
+
+.shadow-rck-teal {
+  box-shadow: 0 10px 25px rgba(20, 131, 120, 0.45) !important;
+}
+
+.shadow-rck-yellow {
+  box-shadow: 0 10px 25px rgba(247, 245, 115, 0.35) !important;
+}
+
+/* ---------------------------------------------------------
+   BACKGROUND COLORS
+   My own bg-rck-* names (one per color in theme.css) so they
+   never get mixed up with Bootstrap's bg-primary, bg-dark, etc.
+   --------------------------------------------------------- */
+
+.bg-rck-light-1 {
+  background-color: var(--rck-light-1) !important;
+}
+.bg-rck-light-2 {
+  background-color: var(--rck-light-2) !important;
+}
+.bg-rck-light-3 {
+  background-color: var(--rck-light-3) !important;
+}
+.bg-rck-grey-dark {
+  background-color: var(--rck-grey-dark) !important;
+}
+.bg-rck-grey-darker {
+  background-color: var(--rck-grey-darker) !important;
+}
+.bg-rck-black {
+  background-color: var(--rck-black) !important;
+}
+.bg-rck-teal {
+  background-color: var(--rck-teal) !important;
+}
+
+/* ---------------------------------------------------------
+   BUTTONS
+   Bootstrap's outline button and dropdown in teal instead of
+   Bootstrap blue (the "Subscribe to Calendar" buttons).
+   --------------------------------------------------------- */
+
+.btn-outline-primary {
+  --bs-btn-border-width: 2px; /* a bit heavier than Bootstrap's 1px so it stands out */
+  --bs-btn-font-weight: bold;
+  --bs-btn-color: var(--rck-teal);
+  --bs-btn-border-color: var(--rck-teal);
+  --bs-btn-hover-color: var(--rck-white);
+  --bs-btn-hover-bg: var(--rck-teal);
+  --bs-btn-hover-border-color: var(--rck-teal);
+  --bs-btn-active-color: var(--rck-white);
+  --bs-btn-active-bg: var(--rck-teal);
+  --bs-btn-active-border-color: var(--rck-teal);
+  --bs-btn-focus-shadow-rgb: 20, 131, 120; /* teal glow when tabbed to */
+}
+
+/* The highlighted item while clicking in a dropdown menu */
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--rck-teal);
+}
+
+/* ---------------------------------------------------------
+   TEXT COLORS
+   (Bootstrap's own .text-black and .text-white already match)
+   --------------------------------------------------------- */
+
+.text-rck-teal {
+  color: var(--rck-teal) !important;
+}
+.text-rck-orange {
+  color: var(--rck-orange) !important;
+}
+
+/* ---------------------------------------------------------
+   UTILITIES
+   --------------------------------------------------------- */
+
+/* Hide something completely (js/calendar.js toggles this on the event pop-up) */
+.hidden {
+  display: none !important;
+}

@@ -66,15 +66,6 @@ function setupExternalLinks() {
   });
 }
 
-function updateNavbarSpacer() {
-  const nav = document.getElementById("mainNav");
-  const spacer = document.getElementById("navbar-spacer");
-
-  if (!nav || !spacer) return;
-
-  spacer.style.height = nav.offsetHeight + "px";
-}
-
 function setupScrollSpyAndNavbar() {
   const mainNav = document.body.querySelector("#mainNav");
 
@@ -101,8 +92,5 @@ function setupScrollSpyAndNavbar() {
 document.addEventListener("DOMContentLoaded", () => {
   animateTicker();
   setupExternalLinks();
-  updateNavbarSpacer();
   setupScrollSpyAndNavbar();
 });
-
-window.addEventListener("resize", updateNavbarSpacer);

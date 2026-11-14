@@ -34,7 +34,8 @@
     <!-- FullCalendar Bootstrap theme -->
     <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@7.0.2/theme.css" rel="stylesheet" integrity="sha384-nyVrSJeIBCXnGRFUFFm8nr/oMDn7cLH9GTmj7mGfR1rh20EvUWjOX1cfRVgJKAkl" crossorigin="anonymous">
     <!-- Your CSS LAST -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
     <link href="css/calendar.css" rel="stylesheet">
     <!-- iCalendar parser -->
     <script src="https://unpkg.com/ical.js@2.2.1/dist/ical.es5.min.cjs" integrity="sha384-ju8ozm4ZyuCTzjb4fvLmPUASX0zfc5jLOvyN9wadLx23y965jxfdbKTPMIeLrliP" crossorigin="anonymous"></script>
@@ -50,7 +51,7 @@
 <body class="calendar-page-body">
 
     <!-- navbar header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-rck-grey-dark" id="mainNav">
         <div class="container px-3">
             <a class="navbar-brand" href="index.html">
                 <img class="brand-logo pe-1 pe-lg-3" src="media/logos/logo-rck-circle-black-yellow.svg" alt="RCK logo">
@@ -60,7 +61,6 @@
     </nav>
 
 
-    <div id="partnerPopover" class="partner-popover-root" hidden></div>
     <div id="event-modal" class="event-modal hidden" aria-hidden="true">
         <div class="event-modal-backdrop"></div>
 
@@ -68,8 +68,6 @@
             <button id="event-modal-close" class="event-modal-close" type="button" aria-label="Close">
                 ×
             </button>
-
-            <img id="event-modal-image" class="event-modal-image hidden" alt="" />
 
             <div class="event-modal-body">
                 <p id="event-modal-date" class="event-modal-kicker"></p>
@@ -81,7 +79,7 @@
         </div>
     </div>
 
-    <main class="container bg-primary calendar-page">
+    <main class="container bg-rck-light-2 calendar-page">
 
         <header class="calendar-page-header text-center">
             <h1 class="calendar-page-title">Upcoming Events</h1>
@@ -115,6 +113,8 @@
 
     </main>
 
+    <!-- Bootstrap JS: makes the "Subscribe to Calendar" dropdown open -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/calendar.js"></script>
 
 </body>

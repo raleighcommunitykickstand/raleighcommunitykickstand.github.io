@@ -1,43 +1,20 @@
-/* @font-face {
-  font-family: "HWTArtz";
-  src:
-    url("../fonts/HWTArtzW00-Regular.woff2") format("woff2"),
-    url("../fonts/HWTArtzW00-Regular.woff") format("woff");
-  font-display: swap;
-} */
-
-:root {
-  --font: "Courier New", monospace;
-  --textColor: white;
-  --invertColor: black;
-
-  --rck-yellow: #f7f573;
-  --rck-teal: #148378;
-  --rck-orange: #ef4036;
-
-  --rck-light-1: #fefde7;
-  --rck-light-2: #f9f89f;
-  --rck-light-3: #fcfbcf;
-
-  --rck-grey-dark: #1d2124;
-  --rck-grey-darker: #161616;
-  --rck-true-black: #000;
-}
+/* =========================================================
+   LINKS
+   My link-in-bio page (links.html): one column of big yellow
+   buttons over the tiled pixel-art bikes. It has its own look,
+   so it only shares colors and fonts (theme.css), not site.css.
+   ========================================================= */
 
 html {
-  font-family: var(--font);
-  color: var(--textColor);
+  font-family: var(--rck-font-body);
+  color: var(--rck-white);
   font-size: 16px;
   font-weight: bold;
-
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
   text-align: center;
 }
 
 body {
-  background-color: #000;
+  background-color: var(--rck-black);
   margin: 10px auto;
   /* Repeating pixel-art bike from media/bike.aseprite (112x128 tile with transparent
      margins, made by utils/bike_gifs.py). Two copies, the second shifted half a tile, give
@@ -60,13 +37,14 @@ body::before {
   pointer-events: none;
 }
 
-/* People who turn off animations get a still frame */
+/* Still frame for anyone who has animations turned off */
 @media (prefers-reduced-motion: reduce) {
   body {
     background-image: url("../media/bike-tile.png"), url("../media/bike-tile.png");
   }
 }
 
+/* The logo at the top */
 img {
   width: 150px;
   height: 129px;
@@ -86,25 +64,27 @@ main {
   margin: 15px auto 45px auto;
 }
 
+/* Every link is a yellow button with black text */
 a {
-  color: var(--invertColor);
+  color: var(--rck-black);
   text-decoration: none;
   text-align: center;
 
-  border: 2px solid var(--textColor);
+  border: 2px solid var(--rck-white);
   border-radius: 10px;
 
   display: block;
   margin: 10px;
   padding: 10px;
   transition: 0.2s;
-  background-color: #f7f573;
-  text-shadow: 1px 1px 0 #fff;
+  background-color: var(--rck-yellow);
+  text-shadow: 1px 1px 0 var(--rck-white);
 }
 
+/* On hover the button goes see-through dark with white text */
 a:hover {
   background-color: #00000080;
-  color: var(--textColor);
-  text-shadow: 1px 1px 0 #000;
+  color: var(--rck-white);
+  text-shadow: 1px 1px 0 var(--rck-black);
   transition: 0.2s;
 }

@@ -52,7 +52,6 @@ function initCalendar() {
   const modalDate = document.getElementById("event-modal-date");
   const modalLocation = document.getElementById("event-modal-location");
   const modalDescription = document.getElementById("event-modal-description");
-  const modalImage = document.getElementById("event-modal-image");
   const modalLinks = document.getElementById("event-modal-links");
 
   function openModal() {
@@ -100,8 +99,6 @@ function initCalendar() {
     openModal();
   }
 
-  const today = new Date();
-
   const calendar = new FullCalendar.Calendar(calendarEl, {
     timeZone: TIME_ZONE,
 
@@ -119,7 +116,6 @@ function initCalendar() {
     },
 
     height: "auto",
-    aspectRatio: 2.0,
 
     headerToolbar: {
       left: "prev,next",
@@ -149,7 +145,6 @@ function initCalendar() {
       format: "ics",
     },
 
-    dayMaxEvents: true,
     fixedWeekCount: false,
     showNonCurrentDates: false,
     displayEventEnd: false,
@@ -157,6 +152,7 @@ function initCalendar() {
     eventClass: "rck-event",
     blockEventClass: "rck-block-event",
     listItemEventClass: "rck-list-event",
+    blockEventTimeClass: "rck-event-time",
     blockEventTitleClass: "rck-event-title",
 
     eventDisplay: "block", // wrap event title
@@ -195,7 +191,7 @@ function initCalendar() {
 
     resizeTimer = setTimeout(() => {
       const mobile = isMobile();
-      const nextView = mobile ? "listMonth" : "dayGridMonth";
+      const nextView = mobile ? "listUpcoming" : "dayGridMonth"; // same views as on page load
 
       if (calendar.view.type !== nextView) {
         calendar.changeView(nextView);
