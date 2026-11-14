@@ -45,6 +45,9 @@ starting with that name; `--fade 6`, `--duration 3000`, `--width 600`, `-o name.
 - Colors are at the top of the script (`INKS`, `INNERS`, `INNERS_FOR_INK`).
 - `.ai` files must be saved with **Create PDF Compatible File** checked, black shapes + white inner parts.
 - Website: use the `.svg`. Email: use a `.png`.
+- It also writes `<name>-outlined.ai` next to each `logo-*`/`badge-*` source in `_media/logos/`: same
+  black/white artwork with the text turned into shapes, so it opens anywhere without HWT Artz installed
+  (good for sending to printers/designers). Edit the original `.ai`, never the `-outlined` one — it gets overwritten.
 
 ## Pixel-art bike
 

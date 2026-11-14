@@ -654,10 +654,93 @@ def render_png(svg_path, png_path, viewbox_width):
     )
 
 
+# ---------------------------------------------------------------- outlined .ai copies
+
+OUTLINED_SUFFIX = "-outlined"  # logo-rck-circle.ai -> logo-rck-circle-outlined.ai (text as shapes, no font)
+PATH_TOKEN = re.compile(r"[MLHVCQZmlhvcqz]|-?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?")
+
+
+def svg_path_to_pdf(d):
+    """Absolute SVG path commands (M L H V C Q Z) -> PDF path operators."""
+    toks, out, i = PATH_TOKEN.findall(d), [], 0
+    cmd, cx, cy, sx, sy = None, 0.0, 0.0, 0.0, 0.0
+    num = lambda: float(toks[i])
+    while i < len(toks):
+        if toks[i].isalpha():
+            cmd = toks[i]; i += 1
+            if cmd in "Zz":
+                out.append("h"); cx, cy = sx, sy
+                continue
+        if cmd == "M":
+            cx, cy = float(toks[i]), float(toks[i + 1]); sx, sy = cx, cy; i += 2
+            out.append(f"{cx:.3f} {cy:.3f} m"); cmd = "L"  # extra pairs after M are line-tos
+        elif cmd == "L":
+            cx, cy = float(toks[i]), float(toks[i + 1]); i += 2; out.append(f"{cx:.3f} {cy:.3f} l")
+        elif cmd == "H":
+            cx = num(); i += 1; out.append(f"{cx:.3f} {cy:.3f} l")
+        elif cmd == "V":
+            cy = num(); i += 1; out.append(f"{cx:.3f} {cy:.3f} l")
+        elif cmd == "C":
+            p = [float(t) for t in toks[i:i + 6]]; i += 6
+            out.append("{:.3f} {:.3f} {:.3f} {:.3f} {:.3f} {:.3f} c".format(*p)); cx, cy = p[4], p[5]
+        elif cmd == "Q":  # TrueType glyph curves: convert quadratic to cubic
+            qx, qy, x, y = (float(t) for t in toks[i:i + 4]); i += 4
+            c1 = (cx + 2 / 3 * (qx - cx), cy + 2 / 3 * (qy - cy))
+            c2 = (x + 2 / 3 * (qx - x), y + 2 / 3 * (qy - y))
+            out.append(f"{c1[0]:.3f} {c1[1]:.3f} {c2[0]:.3f} {c2[1]:.3f} {x:.3f} {y:.3f} c"); cx, cy = x, y
+        else:
+            raise ValueError(f"unsupported path command {cmd!r}")
+    return " ".join(out)
+
+
+def svg_to_outlined_pdf(svg_text):
+    """
+    Write the converted artwork (all text already turned into shapes) as a minimal PDF.
+    Illustrator .ai files are PDF-based, so this opens and edits in Illustrator with no font needed.
+    """
+    root = ET.fromstring(svg_text)
+    vx, vy, w, h = (float(v) for v in re.split(r"[ ,]+", root.get("viewBox").strip()))
+    ops = [f"1 0 0 -1 {-vx:.3f} {h + vy:.3f} cm"]  # SVG is y-down, PDF is y-up
+    rgb = lambda hx: " ".join(f"{int(hx[k:k + 2], 16) / 255:.4f}" for k in (1, 3, 5))
+    for el in root.iter(f"{{{SVG_NS}}}path"):
+        fill, stroke = el.get("fill", "#000000"), el.get("stroke", "none")
+        has_fill, has_stroke = fill != "none", stroke != "none"
+        if not (has_fill or has_stroke):
+            continue
+        ops.append("q")
+        if has_fill:
+            ops.append(f"{rgb(fill)} rg")
+        if has_stroke:
+            ops.append(f"{rgb(stroke)} RG {float(el.get('stroke-width', 1)):.3f} w")
+        ops.append(svg_path_to_pdf(el.get("d", "")))
+        star = "*" if el.get("fill-rule") == "evenodd" else ""
+        ops.append(("B" + star) if has_fill and has_stroke else ("f" + star) if has_fill else "S")
+        ops.append("Q")
+    content = zlib.compress("\n".join(ops).encode("ascii"))
+    box = f"[0 0 {w:.3f} {h:.3f}]"
+    objects = [
+        b"<< /Type /Catalog /Pages 2 0 R >>",
+        b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+        f"<< /Type /Page /Parent 2 0 R /MediaBox {box} /ArtBox {box} /TrimBox {box} /Resources << >> /Contents 4 0 R >>".encode(),
+        b"<< /Length %d /Filter /FlateDecode >>\nstream\n" % len(content) + content + b"\nendstream",
+    ]
+    pdf, offsets = bytearray(b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n"), []
+    for n, body in enumerate(objects, 1):
+        offsets.append(len(pdf))
+        pdf += b"%d 0 obj\n" % n + body + b"\nendobj\n"
+    xref = len(pdf)
+    pdf += b"xref\n0 %d\n0000000000 65535 f \n" % (len(objects) + 1)
+    pdf += b"".join(b"%010d 00000 n \n" % o for o in offsets)
+    pdf += b"trailer\n<< /Size %d /Root 1 0 R >>\nstartxref\n%d\n%%%%EOF\n" % (len(objects) + 1, xref)
+    return bytes(pdf)
+
+
 def load_sources(prefix):
     names = {}
     for f in sorted(os.listdir(SRC_DIR)):
         base, ext = os.path.splitext(f)
+        if base.endswith(OUTLINED_SUFFIX):
+            continue  # our own outlined copies are outputs, not sources
         if ext.lower() in (".svg", ".ai") and base.startswith((LOGO_PREFIX, BADGE_PREFIX)) and base.startswith(prefix):
             # .svg wins over .ai of the same name
             if ext.lower() == ".svg" or base not in names:
@@ -686,6 +769,12 @@ def main():
         except Exception as e:
             print(f"SKIP {os.path.basename(path)}: {e}")
             continue
+
+        # Outlined copy of the original artwork (same colors), next to the source in _media/logos/
+        if path.lower().endswith(".ai"):
+            outlined = os.path.join(SRC_DIR, name + OUTLINED_SUFFIX + ".ai")
+            with open(outlined, "wb") as fh:
+                fh.write(svg_to_outlined_pdf(base_svg))
 
         vb = re.search(r'viewBox="[-\d.]+[ ,]+[-\d.]+[ ,]+([\d.]+)', base_svg)
         vb_width = float(vb.group(1)) if vb else 1000
