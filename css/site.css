@@ -37,13 +37,15 @@ body {
   background-color: var(--rck-black);
 }
 
-/* Bootstrap makes headings medium weight; mine are bold */
+/* Bootstrap makes headings medium weight; mine are bold
+   (.h1 is Bootstrap's "looks like an h1" class, see below) */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1 {
   font-weight: bold;
 }
 
@@ -52,9 +54,14 @@ a {
   overflow-wrap: anywhere;
 }
 
-/* Page titles are the only headings in HWT Artz */
-h1 {
+/* Big titles in HWT Artz. Each page has one real <h1> (its title); bigger
+   section titles, like About/Fix/Teach/Give on the homepage, are <h2 class="h1">
+   so they look the same but screen readers and search engines see the
+   right outline. */
+h1,
+.h1 {
   font-family: var(--rck-font-display);
+  margin-top: 0;
   margin-bottom: 1.5rem;
 }
 
@@ -69,6 +76,15 @@ h2 {
 
 section {
   padding: 3rem;
+}
+
+/* Phones: no extra side padding, just the Bootstrap .container's own small
+   margins, so text and the agenda get the whole width of the screen */
+@media (max-width: 767.98px) {
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* Full-width wrapper that only starts to clamp on really big screens

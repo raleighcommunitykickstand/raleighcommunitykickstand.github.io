@@ -83,8 +83,11 @@
       color: #ffffff;
     }
 
-    #controls button:focus {
-      outline: none;
+    /* A ring when tabbing to the arrows with a keyboard (mouse clicks don't show it) */
+    #controls button:focus-visible {
+      outline: 2px solid #e0e0e0;
+      outline-offset: 2px;
+      border-radius: 4px;
     }
 
     #zine-container.single-page {
@@ -126,11 +129,6 @@
       border-color: #666;
     }
 
-    #zine-spacer {
-      height: 0;
-      visibility: hidden;
-    }
-
     #page-indicator {
       font-size: 1rem;
     }
@@ -150,10 +148,9 @@
   </nav>
 
   <div id="zine-container"></div>
-  <div id="zine-spacer"></div>
   <div id="controls">
-    <button onclick="prevPage()" aria-label="Previous page">&lt;</button>
-    <button onclick="nextPage()" aria-label="Next page">&gt;</button>
+    <button id="zine-prev" type="button" aria-label="Previous page">&lt;</button>
+    <button id="zine-next" type="button" aria-label="Next page">&gt;</button>
   </div>
   <p id="page-indicator"></p>
   <p>Photos and design by <a style="text-decoration: underline" target="_blank"
@@ -170,6 +167,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" integrity="sha384-/1qUCSGwTur9vjf/z9lmu/eCUYbpOTgSjmpbMQZ1/CtX2v/WcAIKqRv+U1DUCG6e" crossorigin="anonymous"></script>
+  <script src="js/site.js"></script>
   <script src="js/zine.js"></script>
 
 </body>

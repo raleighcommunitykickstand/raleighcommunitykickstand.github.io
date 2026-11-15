@@ -1,4 +1,17 @@
-const MOBILE_BREAKPOINT = 768;
+/* =========================================================
+   CALENDAR
+   My events from data/calendar.ics (a copy of the Google
+   Calendar that the update-calendar GitHub Action refreshes),
+   drawn with FullCalendar 7 in two places:
+     - calendar.html: the full calendar (#calendar)
+     - index.html: the Upcoming Events agenda (#agenda)
+   Clicking an event on either one opens the same pop-up.
+
+   Needs FullCalendar, its Bootstrap theme and iCalendar
+   plugins, ical.js, and Bootstrap's JS loaded first.
+   ========================================================= */
+
+const MOBILE_BREAKPOINT = 768; // matches the phone styles in css/calendar.css
 const TIME_ZONE = "America/New_York";
 
 function isMobile() {
@@ -253,21 +266,13 @@ function initAgenda(agendaEl, showEvent) {
     initialView: "listUpcoming",
     headerToolbar: false,
     height: "auto",
-
-    // Once the events are drawn (the next frame), measure
-    eventsSet() {
-      requestAnimationFrame(fitToFirstEvents);
-    },
   });
 
   agenda.render();
 
-  // Titles wrap differently at different widths, so measure again after a resize
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(fitToFirstEvents, 150);
-  });
+  // Measure again whenever the full list changes height: when the events finish
+  // loading and drawing, or when titles wrap differently after a resize
+  new ResizeObserver(fitToFirstEvents).observe(agendaEl.firstElementChild);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

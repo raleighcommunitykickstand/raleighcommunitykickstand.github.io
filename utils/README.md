@@ -4,13 +4,13 @@ All of these run from the repo root (`python utils/<script>.py`) or from inside 
 
 ## Where things live
 
-| Folder | What | Published? |
-|---|---|---|
-| `_media/photos/` | Full-size photo originals | No (git-ignored, OneDrive only) |
-| `_media/newsletter-images/` | Full-size newsletter originals | No (git-ignored, OneDrive only) |
-| `_media/logos/` | Logo + badge `.ai` files | No |
-| `media/` | Everything the site uses (photos, logos, docs, icons) | Yes |
-| `newsletter/images/` | Email-ready newsletter images | Yes |
+| Folder                      | What                                                  | Published?                      |
+| --------------------------- | ----------------------------------------------------- | ------------------------------- |
+| `_media/photos/`            | Full-size photo originals                             | No (git-ignored, OneDrive only) |
+| `_media/newsletter-images/` | Full-size newsletter originals                        | No (git-ignored, OneDrive only) |
+| `_media/logos/`             | Logo + badge `.ai` files                              | No                              |
+| `media/`                    | Everything the site uses (photos, logos, docs, icons) | Yes                             |
+| `newsletter/images/`        | Email-ready newsletter images                         | Yes                             |
 
 **Never rename or delete anything a sent email links to:** older files in `newsletter/images/`,
 `media/RCK_logo-by.png`, `fonts/hwtartz.css` and the files it loads, and the newsletter `.html` pages.
@@ -75,6 +75,8 @@ our own domain (read from `CNAME`) are checked against the local files — that 
 ## Setup (new computer)
 
 - Python: `pip install pillow pillow-heif fonttools beautifulsoup4 ftfy`
-- Node (for md2mjml): `npm install mjml marked` in the repo root
+- Node (for md2mjml): `npm install` in the repo root. It installs the exact mjml and marked
+  versions in `package.json` / `package-lock.json` into `node_modules/` (git ignores that folder,
+  but md2mjml needs it, so don't delete it).
 - ImageMagick (`magick`) for logo PNGs; Aseprite for the bike
-- Copy `_media/` over from OneDrive — the originals aren't in git.
+- Copy `_media/` over from local copy — the originals aren't in git.

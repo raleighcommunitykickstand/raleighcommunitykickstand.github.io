@@ -44,7 +44,8 @@
 
 </head>
 
-<body id="page-top">
+<!-- data-bs-spy: Bootstrap highlights the navbar link for the section I'm scrolled to -->
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -40%">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-rck-grey-dark sticky-top" id="mainNav" data-bs-theme="dark">
@@ -97,7 +98,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1>About</h1>
+            <h2 class="h1">About</h2>
           </div>
         </div>
 
@@ -196,17 +197,17 @@
         <div class="row" id="ticker-container">
           <div class="col-md-4">
             <h3>Hosted</h3>
-            <div class="ticker-value">0</div>
+            <div class="ticker-value">227</div>
             <h3>free public events</h3>
           </div>
           <div class="col-md-4">
             <h3>Performed</h3>
-            <div class="ticker-value">0</div>
+            <div class="ticker-value">991</div>
             <h3>Free Bike Repairs</h3>
           </div>
           <div class="col-md-4">
             <h3>Refurbished & Distributed</h3>
-            <div class="ticker-value">0</div>
+            <div class="ticker-value">2398</div>
             <h3>Bikes For Free</h3>
           </div>
         </div>
@@ -263,7 +264,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1>Fix</h1>
+            <h2 class="h1">Fix</h2>
           </div>
         </div>
 
@@ -368,7 +369,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1>Teach</h1>
+            <h2 class="h1">Teach</h2>
             <p>At our pop-up repair events and shop hours, repair and learning happen side-by-side. We share tools and
               walk people through common bike repairs so they can fix their own bikes and build confidence maintaining
               their transportation.</p>
@@ -505,7 +506,7 @@
 
         <div class="row">
           <div class="col-12">
-            <h1>Give</h1>
+            <h2 class="h1">Give</h2>
             <h2>Contribute financially</h2>
             <p>Donate via <a href="https://www.paypal.com/donate/?hosted_button_id=MZC359U2QVAM4">PayPal</a>
               or <a href="https://venmo.com/communitykickstand">Venmo</a></p>
@@ -715,7 +716,7 @@
 
   <!-- Bootstrap core JavaScript v5.3.8-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  <!-- iCalendar parser -->
+  <!-- iCalendar parser (from unpkg, not jsDelivr: this .cjs file is the only build FullCalendar can use, and jsDelivr serves .cjs files in a way browsers won't run) -->
   <script src="https://unpkg.com/ical.js@2.2.1/dist/ical.es5.min.cjs" integrity="sha384-ju8ozm4ZyuCTzjb4fvLmPUASX0zfc5jLOvyN9wadLx23y965jxfdbKTPMIeLrliP" crossorigin="anonymous"></script>
   <!-- FullCalendar -->
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.2/all/global.js" integrity="sha384-VOBPyldKwKRFHmpOO0HhaDPzmZvV9B1YWOgHYV6e9gzklIm9Q0u4nHIEBPTrRSh6" crossorigin="anonymous"></script>
@@ -724,8 +725,9 @@
   <!-- FullCalendar iCalendar -->
   <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@7.0.2/global.js" integrity="sha384-o7n3dKCv5LaHDkEk4ETdWIjVk/U8VezuYYtNaVRL1VsjGhIovpfv8IEwmdUPW7nI" crossorigin="anonymous"></script>
   <!-- my javascript -->
+  <script src="js/site.js"></script>
   <script src="js/calendar.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/home.js"></script>
 
 
 </body>

@@ -1,0 +1,9 @@
+{
+  "name": "raleighcommunitykickstand-site",
+  "private": true,
+  "description": "Tools for building the newsletters (utils/md2mjml.py runs them). The website itself doesn't need any of this.",
+  "devDependencies": {
+    "marked": "18.0.3",
+    "mjml": "5.1.0"
+  }
+}

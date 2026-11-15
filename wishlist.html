@@ -3,6 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Private page: I only share this link directly. Nothing on the site links here,
+         and this keeps it out of Google and other search results. -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>Wishlist Sign-Up</title>
+
     <!-- icon for browser -->
     <link rel="icon" type="image/png" href="/media/icons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/media/icons/favicon.svg" />
@@ -11,8 +17,7 @@
     <meta name="apple-mobile-web-app-title" content="RCK" />
     <link rel="manifest" href="/media/icons/site.webmanifest" />
 
-    <title>Wishlist Sign-Up</title>
-    <!-- link previews (Facebook, iMessage, Slack, etc.) -->
+    <!-- link previews (Facebook, iMessage, Slack, etc.) for when I send the link to someone -->
     <meta property="og:site_name" content="Raleigh Community Kickstand">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Wishlist Sign-Up | Raleigh Community Kickstand">
@@ -23,28 +28,49 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Raleigh Community Kickstand logo with the words Fix. Teach. Give.">
     <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+
     <style>
-        html,
+        /* The navbar on top, then the form filling the rest of the screen */
         body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            height: 100dvh; /* phones: the visible height, not counting the browser's address bar */
         }
 
-        iframe {
+        .wishlist-form {
+            flex: 1;
             width: 100%;
-            height: 100%;
             border: none;
         }
     </style>
 </head>
 
 <body>
-    <iframe
+
+    <!-- navbar header -->
+    <nav class="navbar navbar-expand-lg bg-rck-grey-dark" id="mainNav" data-bs-theme="dark">
+        <div class="container px-3">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo pe-1 pe-lg-3" src="media/logos/logo-rck-circle-black-yellow.svg" alt="RCK logo">
+                Raleigh Community Kickstand
+            </a>
+        </div>
+    </nav>
+
+    <iframe class="wishlist-form" title="Wishlist sign-up form"
         src="https://docs.google.com/forms/d/e/1FAIpQLScJOXkSdQWTMMx0cqHdZXRWZ30yRzWC8l3E1liDExlu5Jf5fQ/viewform?embedded=true"
         allowfullscreen>
         Loading…
     </iframe>
+
+    <script src="js/site.js"></script>
+
 </body>
 
 </html>
