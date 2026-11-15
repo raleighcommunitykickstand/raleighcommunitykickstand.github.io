@@ -55,7 +55,7 @@ img {
 #description {
   margin: 20px;
   font-size: 16px;
-  text-shadow: 1px 1px 0 #777;
+  text-shadow: 1px 1px 0 var(--rck-grey);
 }
 
 main {
@@ -83,7 +83,7 @@ a {
 
 /* On hover the button goes see-through dark with white text */
 a:hover {
-  background-color: #00000080;
+  background-color: rgba(0, 0, 0, 0.5);
   color: var(--rck-white);
   text-shadow: 1px 1px 0 var(--rck-black);
   transition: 0.2s;

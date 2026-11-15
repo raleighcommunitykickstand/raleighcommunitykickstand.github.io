@@ -24,9 +24,17 @@
 :root {
   --bs-body-font-family: var(--rck-font-body);
   --bs-body-font-weight: bold;
-  --bs-body-bg: var(--rck-black);
+  /* Bootstrap 5.3 colors links from the -rgb versions; a few other parts still read the plain ones */
   --bs-link-color: var(--rck-teal);
+  --bs-link-color-rgb: var(--rck-teal-rgb);
   --bs-link-hover-color: var(--rck-orange);
+  --bs-link-hover-color-rgb: var(--rck-orange-rgb);
+}
+
+/* Black page behind everything. (Not --bs-body-bg: Bootstrap 5.3 also uses
+   that for cards and dropdown menus, and I want those to stay white.) */
+body {
+  background-color: var(--rck-black);
 }
 
 /* Bootstrap makes headings medium weight; mine are bold */
@@ -42,7 +50,6 @@ h6 {
 /* Long URLs wrap instead of overflowing on phones */
 a {
   overflow-wrap: anywhere;
-  word-break: break-word;
 }
 
 /* Page titles are the only headings in HWT Artz */
@@ -70,7 +77,6 @@ section {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--rck-black);
 }
 
 /* Stepped max-widths on very wide screens */
@@ -98,8 +104,9 @@ section {
    --------------------------------------------------------- */
 
 /* Yellow brand and links; a link turns white on hover and
-   for the section I'm scrolled to */
-.navbar-dark {
+   for the section I'm scrolled to. (Each navbar has data-bs-theme="dark",
+   Bootstrap 5.3's way of saying "light text on a dark bar".) */
+.navbar[data-bs-theme="dark"] {
   --bs-navbar-brand-color: var(--rck-yellow);
   --bs-navbar-brand-hover-color: var(--rck-yellow);
   --bs-navbar-color: var(--rck-yellow);
@@ -159,7 +166,6 @@ header p {
   width: 100%;
   height: auto;
   image-rendering: pixelated;
-  image-rendering: crisp-edges;
 }
 
 /* ---------------------------------------------------------
@@ -211,7 +217,7 @@ header p {
 .shadow-rck-depth {
   box-shadow:
     0 12px 25px rgba(0, 0, 0, 0.5),
-    0 4px 12px rgba(20, 131, 120, 0.35) !important;
+    0 4px 12px rgba(var(--rck-teal-rgb), 0.35) !important;
 }
 
 /* Hard, offset "sticker" shadows */
@@ -225,15 +231,15 @@ header p {
 
 /* Soft glows in brand colors */
 .shadow-rck-orange {
-  box-shadow: 0 10px 25px rgba(239, 64, 54, 0.45) !important;
+  box-shadow: 0 10px 25px rgba(var(--rck-orange-rgb), 0.45) !important;
 }
 
 .shadow-rck-teal {
-  box-shadow: 0 10px 25px rgba(20, 131, 120, 0.45) !important;
+  box-shadow: 0 10px 25px rgba(var(--rck-teal-rgb), 0.45) !important;
 }
 
 .shadow-rck-yellow {
-  box-shadow: 0 10px 25px rgba(247, 245, 115, 0.35) !important;
+  box-shadow: 0 10px 25px rgba(var(--rck-yellow-rgb), 0.35) !important;
 }
 
 /* ---------------------------------------------------------
@@ -281,7 +287,7 @@ header p {
   --bs-btn-active-color: var(--rck-white);
   --bs-btn-active-bg: var(--rck-teal);
   --bs-btn-active-border-color: var(--rck-teal);
-  --bs-btn-focus-shadow-rgb: 20, 131, 120; /* teal glow when tabbed to */
+  --bs-btn-focus-shadow-rgb: var(--rck-teal-rgb); /* teal glow when tabbed to */
 }
 
 /* The highlighted item while clicking in a dropdown menu */
@@ -299,13 +305,4 @@ header p {
 }
 .text-rck-orange {
   color: var(--rck-orange) !important;
-}
-
-/* ---------------------------------------------------------
-   UTILITIES
-   --------------------------------------------------------- */
-
-/* Hide something completely (js/calendar.js toggles this on the event pop-up) */
-.hidden {
-  display: none !important;
 }

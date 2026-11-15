@@ -16,6 +16,12 @@
   --rck-orange: #ef4036;
   --rck-pink: #f4b8ff; /* calendar "today" + highlights */
 
+  /* The same brand colors as plain R, G, B numbers, for see-through
+     versions like rgba(var(--rck-teal-rgb), 0.5) */
+  --rck-yellow-rgb: 247, 245, 115;
+  --rck-teal-rgb: 20, 131, 120;
+  --rck-orange-rgb: 239, 64, 54;
+
   /* Light yellows I use for page/section backgrounds (1 = palest) */
   --rck-light-1: #fefde7;
   --rck-light-2: #f9f89f;
@@ -23,6 +29,7 @@
 
   /* Neutrals */
   --rck-white: #ffffff;
+  --rck-grey: #777777; /* soft text shadow on the links page */
   --rck-grey-dark: #1d2124; /* navbar, footer, cards */
   --rck-grey-darker: #161616;
   --rck-black: #000000;

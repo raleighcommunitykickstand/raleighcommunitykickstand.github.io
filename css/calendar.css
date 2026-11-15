@@ -1,9 +1,10 @@
 /* =========================================================
    CALENDAR
-   The events page (calendar.html): FullCalendar 7 with the
-   Bootstrap 5 theme, restyled in my colors, plus the pop-up
-   that shows an event's details. js/calendar.js adds the
-   rck-* class names to FullCalendar's parts.
+   The events page (calendar.html) and the Upcoming Events
+   agenda on the homepage: FullCalendar 7 with the Bootstrap 5
+   theme, restyled in my colors, plus the pop-up that shows an
+   event's details. js/calendar.js adds the rck-* class names
+   to FullCalendar's parts.
    Loaded after theme.css and site.css.
    ========================================================= */
 
@@ -16,7 +17,6 @@
 body.calendar-page-body {
   min-height: 100vh;
   min-height: 100dvh; /* phones: the visible height, not counting the browser's address bar */
-  background: var(--rck-black);
 
   display: flex;
   flex-direction: column;
@@ -44,7 +44,6 @@ body.calendar-page-body {
 .calendar-page-title {
   color: var(--rck-teal);
 
-  font-family: var(--rck-font-display);
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1;
 }
@@ -100,9 +99,7 @@ body.calendar-page-body {
 
   color: var(--rck-yellow);
 
-  font-family: var(--rck-font-body);
   font-size: 1.25rem;
-  font-weight: bold;
 }
 
 /* =========================================================
@@ -121,7 +118,6 @@ body.calendar-page-body {
   border: 2px solid var(--rck-white);
   border-radius: 6px;
 
-  font-family: var(--rck-font-body);
   font-size: 0.875rem;
   font-weight: bold;
 
@@ -170,12 +166,12 @@ body.calendar-page-body {
 .rck-day-header {
   background: var(--rck-teal);
   color: var(--rck-white);
-
-  font-weight: bold;
 }
 
+/* FullCalendar's Bootstrap theme also gives day cells and list date bars
+   Bootstrap's bg-body-* classes, which use !important, so my colors need it too */
 .rck-day-cell {
-  background: var(--rck-black);
+  background: var(--rck-black) !important;
   color: var(--rck-white);
 }
 
@@ -194,8 +190,6 @@ body.calendar-page-body {
   cursor: pointer;
 
   border-radius: 7px;
-
-  font-family: var(--rck-font-body);
 }
 
 .rck-block-event {
@@ -205,7 +199,7 @@ body.calendar-page-body {
 /* White text everywhere in an event, and no faded look on past events */
 .rck-event,
 .rck-event * {
-  color: #ffffff !important;
+  color: var(--rck-white) !important;
   opacity: 1 !important;
 }
 
@@ -234,14 +228,12 @@ body.calendar-page-body {
 
 /* The date bar above each day's events (pink for today) */
 .rck-list-day-header {
-  background: var(--rck-teal);
+  background: var(--rck-teal) !important; /* see .rck-day-cell */
   color: var(--rck-white);
-
-  font-weight: bold;
 }
 
 .rck-list-day-header-today {
-  background: var(--rck-pink);
+  background: var(--rck-pink) !important;
   color: var(--rck-black);
 }
 
@@ -250,8 +242,24 @@ body.calendar-page-body {
   color: var(--rck-white);
 }
 
-.rck-list-event:hover {
+/* Orange when hovered, tabbed to, or tapped
+   (FullCalendar's Bootstrap theme would make the last two light grey) */
+.rck-list-event:hover,
+.rck-list-event:focus-visible,
+.rck-list-event:active {
   background: var(--rck-orange);
+}
+
+/* Just wide enough for "10:00am" or "all-day"
+   (FullCalendar would give the time up to 200px) */
+.rck-list-event-time {
+  width: 6rem;
+}
+
+/* Long titles wrap instead of getting cut off */
+.rck-list-event-title {
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 /* =========================================================
@@ -300,85 +308,36 @@ body.calendar-page-body {
 
 /* =========================================================
    EVENT POP-UP
-   Opens when an event is clicked; closes with the X, the dark
-   backdrop, or Escape (js/calendar.js).
+   Bootstrap's modal (calendar.html, index.html), dressed like the calendar
+   box. Bootstrap handles opening, closing (X, backdrop, Escape)
+   and keyboard focus; js/calendar.js fills in the event.
    ========================================================= */
 
-/* Covers the whole screen and centers the card */
 .event-modal {
-  position: fixed;
-  inset: 0;
-
-  z-index: 5000;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 1rem;
+  --bs-modal-width: 700px;
+  --bs-modal-bg: var(--rck-black);
+  --bs-modal-color: var(--rck-white);
+  --bs-modal-border-color: var(--rck-white);
+  --bs-modal-border-width: 2px;
+  --bs-modal-border-radius: 1rem;
+  --bs-modal-padding: 1.5rem;
+  --bs-modal-header-padding: 1.5rem 1.5rem 0;
+  --bs-modal-header-border-width: 0;
 }
 
-.event-modal-backdrop {
-  position: absolute;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.75);
-}
-
-/* Same look as the calendar box; scrolls if the description is long */
-.event-modal-card {
-  position: relative;
-  z-index: 1;
-
-  width: min(700px, 100%);
-  max-height: 90vh;
-
-  overflow-y: auto;
-
-  background: var(--rck-black);
-  color: var(--rck-white);
-
-  border: 2px solid var(--rck-white);
-  border-radius: 1rem;
-
+/* Hard orange shadow, like the calendar box */
+.event-modal .modal-content {
   box-shadow: 8px 8px 0 var(--rck-orange);
 }
 
-.event-modal-body {
-  padding: 1.5rem;
+/* Darker than Bootstrap's half-black backdrop (it's added to <body>, outside the modal) */
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.75;
 }
 
-/* Round X button in the top-right corner */
-.event-modal-close {
-  position: absolute;
-
-  top: 0.75rem;
-  right: 0.75rem;
-
-  z-index: 2;
-
-  width: 2.5rem;
-  height: 2.5rem;
-
-  border: 2px solid var(--rck-white);
-  border-radius: 50%;
-
-  background: var(--rck-black);
-  color: var(--rck-white);
-
-  font-size: 1.5rem;
-  line-height: 1;
-
-  cursor: pointer;
-}
-
-.event-modal-close:hover {
-  background: var(--rck-orange);
-}
-
-/* Date line (pink), title, location (yellow), description */
-.event-modal-kicker {
-  margin-bottom: 0.5rem;
+/* Date line (pink) next to the X, then title, location (yellow), description */
+.event-modal-date {
+  margin: 0;
 
   color: var(--rck-pink);
 }
@@ -401,24 +360,26 @@ body.calendar-page-body {
 }
 
 /* Links in the pop-up (Google Calendar descriptions can include them) */
-.event-modal-card a {
+.event-modal a {
   color: var(--rck-teal);
 
   font-weight: bold;
-  text-decoration: underline;
 }
 
-.event-modal-card a:visited {
+.event-modal a:visited {
   color: var(--rck-pink);
 }
 
-.event-modal-card a:hover {
+.event-modal a:hover {
   color: var(--rck-yellow);
 }
 
-/* Clear outline when tabbing with a keyboard */
-.event-modal-card a:focus,
-.event-modal-close:focus {
+/* Clear yellow outline when tabbing with a keyboard */
+.event-modal a:focus-visible {
   outline: 2px solid var(--rck-yellow);
   outline-offset: 2px;
+}
+
+.event-modal .btn-close {
+  --bs-btn-close-focus-shadow: 0 0 0 2px var(--rck-yellow);
 }

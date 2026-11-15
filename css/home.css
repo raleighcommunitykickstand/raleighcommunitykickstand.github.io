@@ -36,13 +36,11 @@
 }
 
 #ticker-container h3 {
-  font-family: var(--rck-font-display);
   font-size: clamp(1rem, 10vw, 1.5rem);
   margin: clamp(0.5rem, 10vw, 1rem);
 }
 
 .ticker-value {
-  font-family: var(--rck-font-display);
   font-size: clamp(3rem, 10vw, 8rem);
   margin: calc(-0.4 * clamp(3rem, 10vw, 8rem)); /* pulls the label in close to the big number */
   letter-spacing: 0.1em;
@@ -50,22 +48,14 @@
 }
 
 /* ---------------------------------------------------------
-   EMBEDDED GOOGLE CALENDAR
+   UPCOMING EVENTS AGENDA
+   The look comes from calendar.css; js/calendar.js sets the
+   height so the first 3 events show and the rest scroll.
    --------------------------------------------------------- */
 
-.responsiveCal {
-  margin: 0 auto;
-  max-width: 640px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-
-.responsiveCal iframe {
-  width: 100%;
-  border: solid 1px #777;
-  height: 300px;
-  display: block;
+#agenda {
+  overflow-y: auto;
+  scrollbar-color: var(--rck-teal) var(--rck-black); /* teal handle on a black track */
 }
 
 /* ---------------------------------------------------------
